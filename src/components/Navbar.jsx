@@ -9,31 +9,53 @@ export default function NavBar({ onSelectMarca, onInicio }) {
   return (
     <div className="navbar">
       <button className="marca" onClick={() => onInicio()}>
-        Inicio
+        <a className="marca " href="#">
+          Inicio
+        </a>
       </button>
 
       <button className="marca">
-        <a href="#cards" onClick={() => handleMarcaClick("Todas las marcas")}>
-          Todas las marcas
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("Todas las marcas")}
+        >
+          Todas
         </a>
       </button>
       <button className="marca">
-        <a href="#cards" onClick={() => handleMarcaClick("Tommy")}>
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("Tommy")}
+        >
           Tommy
         </a>
       </button>
       <button className="marca">
-        <a href="#cards" onClick={() => handleMarcaClick("GAP")}>
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("GAP")}
+        >
           GAP
         </a>
       </button>
       <button className="marca">
-        <a href="#cards" onClick={() => handleMarcaClick("POLO")}>
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("POLO")}
+        >
           Polo
         </a>
       </button>
       <button className="marca">
-        <a href="#cards" onClick={() => handleMarcaClick("Kevingston")}>
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("Kevingston")}
+        >
           Kevingston
         </a>
       </button>

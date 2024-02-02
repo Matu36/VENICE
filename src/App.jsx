@@ -4,7 +4,7 @@ import NavBar from "./components/Navbar";
 import { camisas } from "../src/utils/Camisas";
 import Card from "./components/Card";
 import Footer from "./pages/Footer";
-import ELEGANZA from "../src/assets/img/ELEGANZA.png";
+import VENICE from "../src/assets/img/marca6.png";
 import SliderModels from "./components/SliderModels";
 import miami from "../src/assets/img/miami.jpg";
 import AnimatedWord from "./components/Letras";
@@ -88,16 +88,17 @@ function App() {
             onSelectMarca={setSelectedMarca}
             onInicio={handleInicioClick}
           />
-        </div>
-        <div className="eleganzaImgContainer">
-          <img src={ELEGANZA} alt="ELEGANZA" />
-        </div>
 
-        <div className="onSale">
-          <h1>On Sale!</h1>
-          <h6 style={{ marginTop: "-4rem" }}>
-            <AnimatedWord word="Ropa original de marca" />
-          </h6>
+          <div className="eleganzaImgContainer">
+            <img src={VENICE} alt="VENICE" />
+          </div>
+
+          <div className="onSale">
+            <h1>California dreaming, California dressing</h1>
+            <h3 style={{ marginTop: "-2rem" }}>
+              <AnimatedWord word="Ropa original de marca" />
+            </h3>
+          </div>
         </div>
       </div>
       <div className="cards-container" id="cards">
