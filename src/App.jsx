@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import CAMISA5 from "../src/assets/img/CAMISA5.jpg";
+import VENICEIND from "../src/assets/img/VENICEIND.png";
 import NavBar from "./components/Navbar";
 import { camisas } from "../src/utils/Camisas";
 import Card from "./components/Card";
 import Footer from "./pages/Footer";
 import VENICE from "../src/assets/img/marca6.png";
 import SliderModels from "./components/SliderModels";
-import miami from "../src/assets/img/miami.jpg";
+import experience from "../src/assets/img/experience.png";
 import AnimatedWord from "./components/Letras";
 import AboutUs from "./components/AboutUs";
 import CarritoModal from "./components/CarritoModal";
@@ -83,7 +83,7 @@ function App() {
         {carritoCount > 0 && <span className="badge">{carritoCount}</span>}
       </button>
       <div className="eleganzaContainer">
-        <div>
+        <div className="navBarDiv">
           <NavBar
             onSelectMarca={setSelectedMarca}
             onInicio={handleInicioClick}
@@ -109,10 +109,14 @@ function App() {
       <div className="sliderContainer">
         <SliderModels />
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
 
       <div className="camisasContainer">
-        <img src={CAMISA5} alt="camisas" className="camisasImg" />
-        <img src={miami} alt="miami" className="camisasImg" />
+        <img src={VENICEIND} alt="camisas" className="camisasImg" />
+        <img src={experience} alt="experience" className="camisasImg" />
       </div>
 
       <Footer handleMostrarModalAbout={handleMostrarModalAbout} />

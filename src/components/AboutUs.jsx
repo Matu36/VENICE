@@ -1,5 +1,5 @@
 import React from "react";
-import CAMISA3 from "../assets/img/CAMISA3.jpg";
+import marca3 from "../assets/img/marca3.png";
 import { GrClose } from "react-icons/gr";
 
 export default function AboutUs({ handleCerrarModalAbout }) {
@@ -8,19 +8,16 @@ export default function AboutUs({ handleCerrarModalAbout }) {
       <button onClick={handleCerrarModalAbout} className="close-button">
         <GrClose />
       </button>
-      <img src={CAMISA3} alt="" className="about-image" />
+      <img src={marca3} alt="" className="about-image" />
       <div className="about-content">
         <h2>Sobre Nosotros</h2>
         <span>
-          Bienvenido a Eleganza Shirts, donde la elegancia y la calidad se
-          fusionan para ofrecerte una experiencia única en moda. Somos una
-          empresa dedicada a la importación y distribución de ropa exclusiva,
-          cuidadosamente seleccionada para aquellos que buscan destacar en cada
-          ocasión. En Eleganza Shirts, entendemos que la moda no es solo una
-          elección de vestuario, sino una expresión de estilo y personalidad.
-          Nuestra colección presenta una cuidadosa selección de prendas de alta
-          calidad, diseñadas para brindar comodidad, estilo y distinción a cada
-          paso que das.
+          En Venice Indumentaria, nos destacamos por apostar a la originalidad
+          en la moda. Nos especializamos en la importación y venta de ropa de
+          marcas reconocidas con un fuerte enfoque en el estilo urbano. Nuestra
+          misión es ofrecerte prendas auténticas que reflejen tu individualidad
+          y te hagan destacar en cualquier entorno urbano. ¡Descubre tu estilo
+          único con Venice Indumentaria!
         </span>
       </div>
     </div>

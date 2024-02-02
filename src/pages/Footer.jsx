@@ -1,5 +1,5 @@
 import React from "react";
-import CAMISA6 from "../assets/img/CAMISA6.jpg";
+import marca1 from "../assets/img/marca2.png";
 
 export default function Footer({ handleMostrarModalAbout }) {
   return (
@@ -19,7 +19,7 @@ export default function Footer({ handleMostrarModalAbout }) {
           Sobre Nosotros
         </button>
       </div>
-      <img src={CAMISA6} className="footerImage" />
+      <img src={marca1} className="footerImage" />
     </div>
   );
 }
