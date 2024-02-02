@@ -14,12 +14,14 @@ import remera8 from "../assets/img/remera8.jpg";
 export default function SliderModels() {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true, // Cambiado a true para permitir el bucle infinito
     arrows: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+    autoplay: true, // Habilita el autoplay
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
