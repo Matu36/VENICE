@@ -1,7 +1,10 @@
 import React from "react";
 import marca1 from "../assets/img/marca2.png";
 
-export default function Footer({ handleMostrarModalAbout }) {
+export default function Footer({
+  handleMostrarModalAbout,
+  handleMostrarModalContact,
+}) {
   return (
     <div className="footer">
       <div className="footerSpan">
@@ -11,7 +14,9 @@ export default function Footer({ handleMostrarModalAbout }) {
       </div>
       <div className="footerSpan">
         <span className="spantitle">Atención al cliente</span>
-        <button className="spanbody">Contacto</button>
+        <button onClick={handleMostrarModalContact} className="spanbody">
+          Contacto
+        </button>
       </div>
       <div className="footerSpan">
         <span className="spantitle">Institucional</span>

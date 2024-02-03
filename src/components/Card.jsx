@@ -1,6 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-const Card = ({ id, marca, talle, precio, imagen, codigo }) => {
+const Card = ({
+  id,
+  marca,
+  talle,
+  precio,
+  imagen,
+  codigo,
+  actualizarContadorCarrito,
+}) => {
   const [showAlert, setShowAlert] = useState(false);
 
   const handleComprarClick = () => {
@@ -24,6 +32,7 @@ const Card = ({ id, marca, talle, precio, imagen, codigo }) => {
     setTimeout(() => {
       setShowAlert(false);
     }, 2000);
+    actualizarContadorCarrito();
   };
 
   return (

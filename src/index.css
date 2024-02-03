@@ -112,7 +112,7 @@ button:focus-visible {
 
 @media (max-width: 769px) {
   .card {
-    max-width: 80px;
+    max-width: 120px;
     margin-bottom: 5rem;
 
   }
@@ -144,7 +144,7 @@ button:focus-visible {
 
 .card-content h2,
 .card-content p {
-  color: white; /* Cambié el color del texto a blanco */
+  color: white; 
   font-weight: bold;
   margin: 0;
 }
@@ -275,6 +275,12 @@ button:focus-visible {
 .camisasImg {
   opacity: 0.9;
   max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .camisasImg {
+    height: 300px;
+  }
 }
 
 
@@ -560,7 +566,7 @@ button:focus-visible {
   position: absolute;
   top: 10px;
   left: 80px;
- 
+ color: black;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -758,8 +764,25 @@ button:focus-visible {
  display: flex;
  justify-content: flex-end;
  align-items: flex-end;
+ color: black;
 }
 
 .casa {
   font-size: 25px;
+}
+
+.iconoContacto {
+  font-size: 16px;
+  padding-right: 10px;
+ 
+  
+}
+
+.contacto{
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.letracontacto{
+font-weight: bold;
 }

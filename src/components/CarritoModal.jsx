@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { GrClose } from "react-icons/gr";
 
-export default function CarritoModal({ handleCerrarModalCarrito }) {
+export default function CarritoModal({
+  handleCerrarModalCarrito,
+  actualizarContadorCarrito,
+}) {
   const [carrito, setCarrito] = useState(
     JSON.parse(localStorage.getItem("carrito")) || []
   );
@@ -12,10 +15,13 @@ export default function CarritoModal({ handleCerrarModalCarrito }) {
     const nuevoCarrito = carrito.filter(
       (producto) => producto.id !== productId
     );
+
     localStorage.setItem("carrito", JSON.stringify(nuevoCarrito));
+    actualizarContadorCarrito();
   };
   const removeAllItemsFromCart = () => {
     localStorage.removeItem("carrito");
+    actualizarContadorCarrito();
   };
 
   useEffect(() => {

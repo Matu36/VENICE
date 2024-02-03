@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import NavBar from "./components/Navbar";
+import Contact from "./components/Contact";
 import { camisas } from "../src/utils/Camisas";
 import Card from "./components/Card";
 import Footer from "./pages/Footer";
 import VENICE from "../src/assets/img/marca6.png";
 import SliderModels from "./components/SliderModels";
-import AnimatedWord from "./components/Letras";
 import AboutUs from "./components/AboutUs";
 import CarritoModal from "./components/CarritoModal";
 import { FiShoppingCart } from "react-icons/fi";
@@ -16,6 +16,8 @@ function App() {
   const [modal, setModal] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [modalCarrito, setModalCarrito] = useState(false);
+  const [carritoC, setCarritoC] = useState(0);
+  const [contact, setContact] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,9 +40,22 @@ function App() {
   const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
   const carritoCount = carrito.length;
 
-  useEffect(() => {
-    carritoCount;
-  }, [carritoCount]);
+  const actualizarContadorCarrito = () => {
+    const carritoActualizado =
+      JSON.parse(localStorage.getItem("carrito")) || [];
+    const count = carritoActualizado.length;
+    setCarritoC(count);
+  };
+
+  const handleMostrarModalCarrito = () => {
+    setModalCarrito(true);
+    actualizarContadorCarrito();
+  };
+
+  const handleCerrarModalCarrito = () => {
+    setModalCarrito(false);
+    actualizarContadorCarrito();
+  };
 
   const handleInicioClick = () => {
     setSelectedMarca(null);
@@ -54,37 +69,34 @@ function App() {
     setModal(false);
   };
 
-  const handleMostrarModalCarrito = () => {
-    setModalCarrito(true);
+  const handleMostrarModalContact = () => {
+    setContact(true);
   };
 
-  const handleCerrarModalCarrito = () => {
-    setModalCarrito(false);
+  const handleCerrarModalContact = () => {
+    setContact(false);
   };
 
   return (
     <div className={`container ${scrolled ? "scrolled" : ""}`}>
       {modalCarrito && (
         <div>
-          <CarritoModal handleCerrarModalCarrito={handleCerrarModalCarrito} />
+          <CarritoModal
+            handleCerrarModalCarrito={handleCerrarModalCarrito}
+            actualizarContadorCarrito={actualizarContadorCarrito}
+          />
         </div>
       )}
 
       <button className="shoppingButton" onClick={handleMostrarModalCarrito}>
         <FiShoppingCart />
-        {carritoCount > 0 && <span className="badge">{carritoCount}</span>}
+        {carritoC > 0 && <span className="badge">{carritoC}</span>}
       </button>
       <div className="eleganzaImgContainer">
         <img src={VENICE} alt="VENICE" />
       </div>
       <div className="eleganzaContainer">
         <div className="navBarDiv">
-          {/* <div className="onSale">
-            <h3>
-              <AnimatedWord word="Ropa original de marca" />
-            </h3>
-          </div> */}
-
           <NavBar
             onSelectMarca={setSelectedMarca}
             onInicio={handleInicioClick}
@@ -93,7 +105,11 @@ function App() {
       </div>
       <div className="cards-container" id="cards">
         {filteredCamisas.map((camisa) => (
-          <Card key={camisa.id} {...camisa} />
+          <Card
+            key={camisa.id}
+            {...camisa}
+            actualizarContadorCarrito={actualizarContadorCarrito}
+          />
         ))}
       </div>
       <div className="sliderContainer">
@@ -108,8 +124,18 @@ function App() {
         <img src={VENICEEXPERIENCE} alt="camisas" className="camisasImg" />
       </div>
 
-      <Footer handleMostrarModalAbout={handleMostrarModalAbout} />
+      <Footer
+        handleMostrarModalAbout={handleMostrarModalAbout}
+        handleMostrarModalContact={handleMostrarModalContact}
+      />
       <br />
+      {contact && (
+        <div className="modal">
+          {/* <div className="modal-content"> */}
+          <Contact handleCerrarModalContact={handleCerrarModalContact} />
+          {/* </div> */}
+        </div>
+      )}
       {modal && (
         <div className="modal">
           {/* <div className="modal-content"> */}
