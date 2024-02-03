@@ -117,9 +117,8 @@ function App() {
       </div>
       <br />
       <br />
-      <br />
-      <br />
 
+      <div className="frase">California dreaming, California dressing</div>
       <div className="camisasContainer">
         <img src={VENICEEXPERIENCE} alt="camisas" className="camisasImg" />
       </div>
