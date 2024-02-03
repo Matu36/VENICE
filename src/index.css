@@ -505,9 +505,11 @@ button:focus-visible {
   }
 
   .about-content span {
+   
     font-size: 10px;
     text-align: justify;
     color: #333;
+  
   }
 }
 
@@ -558,7 +560,7 @@ button:focus-visible {
   position: absolute;
   top: 10px;
   left: 80px;
-  color: white;
+ 
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -664,17 +666,11 @@ button:focus-visible {
 }
 
 .close-button-carrito {
-  position: fixed;
-  top: 10px;
-  left: 280px;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  background: #34495e;
-  z-index: 1000;
-  border-radius: 50%;
-  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: none;
+  background: none;
 }
 
 @media (max-width: 1200px) {
@@ -756,4 +752,10 @@ button:focus-visible {
 
 .copy {
   color: #000;
+}
+
+.about-button {
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
 }

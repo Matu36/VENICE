@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { GrClose } from "react-icons/gr";
 
-export default function CarritoModal() {
+export default function CarritoModal({ handleCerrarModalCarrito }) {
   const [carrito, setCarrito] = useState(
     JSON.parse(localStorage.getItem("carrito")) || []
   );
@@ -53,6 +54,12 @@ export default function CarritoModal() {
 
   return (
     <div className="carrito">
+      <button
+        className="close-button-carrito"
+        onClick={handleCerrarModalCarrito}
+      >
+        <GrClose />
+      </button>
       {carrito.length === 0 ? (
         <p style={{ fontWeight: "bold", color: "gray" }}>
           El carrito esta vacío

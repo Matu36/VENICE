@@ -5,10 +5,8 @@ import { GrClose } from "react-icons/gr";
 export default function AboutUs({ handleCerrarModalAbout }) {
   return (
     <div className="about-container">
-      <button onClick={handleCerrarModalAbout} className="close-button">
-        <GrClose />
-      </button>
       <img src={marca3} alt="" className="about-image" />
+
       <div className="about-content">
         <h2>Sobre Nosotros</h2>
         <span>
@@ -19,6 +17,11 @@ export default function AboutUs({ handleCerrarModalAbout }) {
           y te hagan destacar en cualquier entorno urbano. ¡Descubre tu estilo
           único con Venice Indumentaria!
         </span>
+      </div>
+      <div className="about-button">
+        <button onClick={handleCerrarModalAbout}>
+          <GrClose />
+        </button>
       </div>
     </div>
   );

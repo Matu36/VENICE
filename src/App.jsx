@@ -1,17 +1,14 @@
 import { useState, useEffect } from "react";
-import VENICEIND from "../src/assets/img/VENICEIND.png";
 import NavBar from "./components/Navbar";
 import { camisas } from "../src/utils/Camisas";
 import Card from "./components/Card";
 import Footer from "./pages/Footer";
 import VENICE from "../src/assets/img/marca6.png";
 import SliderModels from "./components/SliderModels";
-import experience from "../src/assets/img/experience.png";
 import AnimatedWord from "./components/Letras";
 import AboutUs from "./components/AboutUs";
 import CarritoModal from "./components/CarritoModal";
 import { FiShoppingCart } from "react-icons/fi";
-import { GrClose } from "react-icons/gr";
 import VENICEEXPERIENCE from "../src/assets/img/VENICEEXPERIENCE.png";
 
 function App() {
@@ -69,13 +66,7 @@ function App() {
     <div className={`container ${scrolled ? "scrolled" : ""}`}>
       {modalCarrito && (
         <div>
-          <button
-            className="close-button-carrito"
-            onClick={handleCerrarModalCarrito}
-          >
-            <GrClose />
-          </button>
-          <CarritoModal />
+          <CarritoModal handleCerrarModalCarrito={handleCerrarModalCarrito} />
         </div>
       )}
 
@@ -95,7 +86,6 @@ function App() {
           </div>
 
           <div className="onSale">
-            {/* <h1>California dreaming, California dressing</h1> */}
             <h3>
               <AnimatedWord word="Ropa original de marca" />
             </h3>
