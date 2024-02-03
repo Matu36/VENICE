@@ -114,7 +114,7 @@ button:focus-visible {
   .card {
     max-width: 80px;
     margin-bottom: 5rem;
-    
+
   }
 
   .card-image {
@@ -407,7 +407,7 @@ button:focus-visible {
 
 @media (max-width: 764px) {
   .custom-slider {
-  
+  margin-left: -0.5em;
   }
 }
 
