@@ -10,6 +10,7 @@ import AboutUs from "./components/AboutUs";
 import CarritoModal from "./components/CarritoModal";
 import { FiShoppingCart } from "react-icons/fi";
 import VENICEEXPERIENCE from "../src/assets/img/VENICEEXPERIENCE.png";
+import Toper from "./pages/Toper";
 
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
@@ -92,6 +93,7 @@ function App() {
         <FiShoppingCart />
         {carritoC > 0 && <span className="badge">{carritoC}</span>}
       </button>
+      {/* <Toper /> */}
       <div className="eleganzaImgContainer">
         <img src={VENICE} alt="VENICE" />
       </div>

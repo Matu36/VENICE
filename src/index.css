@@ -801,3 +801,21 @@ font-weight: bold;
     font-size: large;
   }
 }
+
+.Toper {
+  position: absolute;
+top: 0;
+left: 0;
+  border: solid 10px #34495e;
+  width: 100%;
+  color: white;
+  background-color: #34495e;
+  font-family:inherit;
+  font-size: small;
+  font-weight: inherit;
+  font-style: inherit;
+  box-sizing: border-box;
+  
+ 
+
+}

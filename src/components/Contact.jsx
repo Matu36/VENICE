@@ -16,7 +16,7 @@ export default function Contact({ handleCerrarModalContact }) {
           <div className="contacto">
             <span className="letracontacto">
               <FaPhone className="iconoContacto" />
-              221 - 5704647
+              221 - 5991213
             </span>
           </div>
           <div>
