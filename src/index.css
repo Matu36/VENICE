@@ -7,7 +7,6 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: white;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -115,7 +114,7 @@ button:focus-visible {
   .card {
     max-width: 80px;
     margin-bottom: 5rem;
-    margin-top: -2rem;
+    
   }
 
   .card-image {
