@@ -33,8 +33,22 @@ h1 {
 }
 
 @font-face {
+  font-family: "ropa";
+  src: url("../src/assets/fonts/RubikDoodleTriangles-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Indie";
   src: url("../src/assets/fonts/IndieFlower-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "perma";
+  src: url("../src/assets/fonts/PermanentMarker-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -46,7 +60,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -59,11 +73,25 @@ button:focus-visible {
 .marca {
   background-color: white;
   color: black;
-  padding: 0.6em 1.2em;
   margin-right: 3rem;
   margin-bottom: 1rem;
-  /* font-family: "Indie", sans-serif; */
+  font-family: "perma", sans-serif;
   font-size: 20px;
+}
+
+@media (max-width:732px) {
+  .marca {
+  font-size: 15px;
+  }
+  
+}
+
+@media (max-width:600px) {
+  .marca {
+  display: block;
+  margin: auto;
+  }
+  
 }
 
 /* Card.css */
@@ -150,7 +178,7 @@ button:focus-visible {
 
 .footer {
   display: flex;
-  margin: auto;
+  justify-content: space-between;
   bottom: 0;
   margin-top: 5rem;
   background-color: white;
@@ -163,6 +191,7 @@ button:focus-visible {
   width: 500px;
   margin: auto;
   height: 250px;
+ 
 }
 
 @media (max-width: 900px) {
@@ -206,9 +235,22 @@ button:focus-visible {
 }
 
 .eleganzaImgContainer {
-  margin-left: 4rem;
+  max-width: 100%;
   margin-top: 4rem;
 }
+
+.eleganzaImgContainer > img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 570px) {
+  .eleganzaImgContainer > img {
+    margin-left: 3rem;
+  }
+}
+
+
 
 @media (max-width: 476px) {
   .eleganzaContainer {
@@ -216,7 +258,8 @@ button:focus-visible {
   }
 }
 
-.navbar {
+
+.navbar marca.button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,7 +268,8 @@ button:focus-visible {
 .camisasContainer {
   display: flex;
   justify-content: center;
-  margin: auto;
+  align-items: center;
+ 
 }
 
 .camisasImg {
@@ -233,43 +277,6 @@ button:focus-visible {
   max-width: 100%;
 }
 
-@media (max-width: 1100px) {
-  .camisasContainer {
-    width: 54%;
-  }
-
-  .camisasImg {
-    max-width: 80%;
-    width: 600px;
-  }
-}
-
-@media (max-width: 630px) {
-  .camisasContainer {
-    margin-left: -1rem;
-    max-width: 100%;
-    width: 65%;
-    margin-top: 1.5rem;
-  }
-
-  .camisasImg {
-    max-width: 80%;
-    width: 600px;
-    height: 300px;
-  }
-}
-
-@media (max-width: 476px) {
-  .camisasContainer {
-    margin-top: 1.5rem;
-    margin-left: -1rem;
-  }
-  .camisasImg {
-    max-width: 100%;
-    width: 700px;
-    height: 200px;
-  }
-}
 
 .spantitle {
   font-size: large;
@@ -296,13 +303,18 @@ button:focus-visible {
 }
 
 .onSale {
-  font-family: "Hurricane", sans-serif;
+  
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  color: black;
+  /* font-family: "indie", sans-serif;
   font-size: 30px;
-  margin-left: 5rem;
   margin-top: 1rem;
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
-  color: black;
+  /*  */ 
+
 }
 
 @keyframes fadeIn {
@@ -334,7 +346,7 @@ button:focus-visible {
   }
 }
 
-.onSale {
+/* .onSale {
   h1,
   h6 {
     @media (max-width: 827px) {
@@ -342,18 +354,19 @@ button:focus-visible {
       padding-top: 2rem;
     }
   }
-}
+} */
 
-@media (max-width: 764px) {
+/* @media (max-width: 764px) {
   .onSale {
     margin-top: 25rem;
     margin-left: -10rem;
   }
-}
+} */
 
-@media (max-width: 476px) {
+@media (max-width: 574px) {
   .onSale {
-    margin-left: -15rem;
+    font-size: 1rem;
+    
   }
 }
 
@@ -363,7 +376,7 @@ button:focus-visible {
   bottom: 0;
   left: 0;
   width: 100%;
-  border-bottom: 2px solid #007bff;
+  /* border-bottom: 2px solid #007bff; */
   transform: scaleX(0);
   transform-origin: 100% 50%;
   transition: transform 0.3s ease;
@@ -376,13 +389,13 @@ button:focus-visible {
 /* SliderModels.css */
 
 .sliderContainer {
-  margin: auto;
+ margin: auto;
   max-width: 86%;
 }
 
 .custom-slider {
   margin: 0 -50px;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 @media (max-width: 800px) {
@@ -421,9 +434,26 @@ button:focus-visible {
 /* AnimatedWord.css */
 
 .animated-word {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   white-space: nowrap;
+  font-family:  "ropa", sans-serif;
+  font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  .animated-word {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .animated-word {
+    font-size: 2rem;
+    margin-left: 14rem;
+  margin-bottom: 2rem;
+  }
 }
 
 .animated-word::after {
@@ -722,4 +752,8 @@ button:focus-visible {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.copy {
+  color: #000;
 }

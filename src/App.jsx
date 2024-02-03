@@ -12,6 +12,7 @@ import AboutUs from "./components/AboutUs";
 import CarritoModal from "./components/CarritoModal";
 import { FiShoppingCart } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
+import VENICEEXPERIENCE from "../src/assets/img/VENICEEXPERIENCE.png";
 
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
@@ -94,8 +95,8 @@ function App() {
           </div>
 
           <div className="onSale">
-            <h1>California dreaming, California dressing</h1>
-            <h3 style={{ marginTop: "-2rem" }}>
+            {/* <h1>California dreaming, California dressing</h1> */}
+            <h3>
               <AnimatedWord word="Ropa original de marca" />
             </h3>
           </div>
@@ -115,8 +116,7 @@ function App() {
       <br />
 
       <div className="camisasContainer">
-        <img src={VENICEIND} alt="camisas" className="camisasImg" />
-        <img src={experience} alt="experience" className="camisasImg" />
+        <img src={VENICEEXPERIENCE} alt="camisas" className="camisasImg" />
       </div>
 
       <Footer handleMostrarModalAbout={handleMostrarModalAbout} />
@@ -130,7 +130,7 @@ function App() {
       )}
 
       <span className="copy">
-        Copyright © 2024 | Eleganza Shirts Todos los derechos reservados
+        Copyright © 2024 | Venice Indumentaria Todos los derechos reservados
       </span>
     </div>
   );

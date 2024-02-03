@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { AiOutlineHome } from "react-icons/ai";
 
 export default function NavBar({ onSelectMarca, onInicio }) {
   const handleMarcaClick = (marca) => {
@@ -9,9 +10,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
   return (
     <div className="navbar">
       <button className="marca" onClick={() => onInicio()}>
-        <a className="marca " href="#">
-          Inicio
-        </a>
+        <AiOutlineHome />
       </button>
 
       <button className="marca">
