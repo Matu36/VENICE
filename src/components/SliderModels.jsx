@@ -2,14 +2,14 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import remera1 from "../assets/img/remera1.jpg";
-import remera2 from "../assets/img/remera2.jpg";
-import remera3 from "../assets/img/remera3.jpg";
-import remera4 from "../assets/img/remera4.jpg";
-import remera5 from "../assets/img/remera5.jpg";
-import remera6 from "../assets/img/remera6.jpg";
-import remera7 from "../assets/img/remera7.jpg";
-import remera8 from "../assets/img/remera8.jpg";
+import remera1 from "../assets/img/urbana1.jpg";
+import remera2 from "../assets/img/urbana2.jpg";
+import remera3 from "../assets/img/urbana3.jpg";
+import remera4 from "../assets/img/urbana4.jpg";
+import remera5 from "../assets/img/urbana5.jpg";
+import remera6 from "../assets/img/urbana6.jpg";
+import remera7 from "../assets/img/urbana7.jpg";
+import remera8 from "../assets/img/urbana8.jpg";
 
 export default function SliderModels() {
   const settings = {

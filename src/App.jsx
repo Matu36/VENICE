@@ -74,22 +74,21 @@ function App() {
         <FiShoppingCart />
         {carritoCount > 0 && <span className="badge">{carritoCount}</span>}
       </button>
+      <div className="eleganzaImgContainer">
+        <img src={VENICE} alt="VENICE" />
+      </div>
       <div className="eleganzaContainer">
         <div className="navBarDiv">
+          {/* <div className="onSale">
+            <h3>
+              <AnimatedWord word="Ropa original de marca" />
+            </h3>
+          </div> */}
+
           <NavBar
             onSelectMarca={setSelectedMarca}
             onInicio={handleInicioClick}
           />
-
-          <div className="eleganzaImgContainer">
-            <img src={VENICE} alt="VENICE" />
-          </div>
-
-          <div className="onSale">
-            <h3>
-              <AnimatedWord word="Ropa original de marca" />
-            </h3>
-          </div>
         </div>
       </div>
       <div className="cards-container" id="cards">
