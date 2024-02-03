@@ -10,7 +10,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
   return (
     <div className="navbar">
       <button className="marca" onClick={() => onInicio()}>
-        <AiOutlineHome />
+        <AiOutlineHome className="casa" />
       </button>
 
       <button className="marca">

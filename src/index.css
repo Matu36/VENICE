@@ -86,9 +86,10 @@ button:focus-visible {
   
 }
 
-@media (max-width:600px) {
+@media (max-width:645px) {
   .marca {
-  display: block;
+  display: inline;
+  justify-content: center;
   margin: auto;
   }
   
@@ -242,6 +243,7 @@ button:focus-visible {
   padding: 1rem;
   margin-bottom: 2rem;
   background-color: #34495e;
+  border-radius: 10px;
 }
 
 .eleganzaImgContainer > img {
@@ -757,4 +759,8 @@ button:focus-visible {
  display: flex;
  justify-content: flex-end;
  align-items: flex-end;
+}
+
+.casa {
+  font-size: 25px;
 }
