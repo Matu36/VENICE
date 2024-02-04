@@ -88,8 +88,9 @@ button:focus-visible {
 @media (max-width:645px) {
   .marca {
   display: inline;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
+  flex-wrap: wrap;
   }
   
 }
@@ -112,8 +113,9 @@ button:focus-visible {
 
 @media (max-width: 769px) {
   .card {
-    max-width: 100px;
-    margin-bottom: 5rem;
+    max-width: 90px;
+    margin-bottom: 1rem;
+    padding: 10px;
 
   }
 
@@ -491,7 +493,7 @@ button:focus-visible {
     height: 500px;
   }
   .about-image {
-    width: 50%;
+    width: 60%;
     height: 50px;
     margin-left: 1rem;
   }
@@ -546,6 +548,68 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    height: 500px;
+  }
+  .contact-image {
+    width: 250px;
+    height: 40px;
+    margin-left: 1rem;
+  }
+
+  .contact-content span {
+   
+    font-size: 10px;
+    text-align: justify;
+    color: #333;
+  
+  }
+}
+
+@media (max-width: 445px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    height: 500px;
+  }
+}
+
+.contact-image {
+  max-width: 100%;
+  height: 400px;
+  margin-right: 20px;
+}
+
+.contact-content {
+  flex-grow: 1;
+}
+
+.contact-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-content span {
+  font-size: 12px;
+  text-align: justify;
+  color: #333;
 }
 
 .close-button {
@@ -686,14 +750,15 @@ button:focus-visible {
 /* Estilos del botón de compras */
 .shoppingButton {
   position: fixed;
-  top: 50px;
-  right: 10px;
+  top: 30px;
+  right: 0;
   font-size: 24px;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   background: none;
   color: black;
+  z-index: 1000;
 }
 
 /* Estilos cuando se realiza scroll */
@@ -752,6 +817,13 @@ button:focus-visible {
  align-items: flex-end;
  color: black;
 }
+
+.contact-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: black;
+ }
 
 .casa {
   font-size: 25px;

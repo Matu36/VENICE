@@ -7,10 +7,10 @@ import marca from "../assets/img/marca4.png";
 
 export default function Contact({ handleCerrarModalContact }) {
   return (
-    <div className="about-container">
-      <img src={marca} alt="" className="about-image" />
+    <div className="contact-container">
+      <img src={marca} alt="" className="contact-image" />
 
-      <div className="about-content">
+      <div className="contact-content">
         <h2>Contactános</h2>
         <div>
           <div className="contacto">
@@ -35,7 +35,7 @@ export default function Contact({ handleCerrarModalContact }) {
           </div>
         </div>
       </div>
-      <div className="about-button">
+      <div className="contact-button">
         <button onClick={handleCerrarModalContact}>
           <GrClose />
         </button>

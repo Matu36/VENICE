@@ -31,15 +31,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
           Tommy
         </a>
       </button>
-      <button className="marca">
-        <a
-          href="#cards"
-          className="marca"
-          onClick={() => handleMarcaClick("GAP")}
-        >
-          GAP
-        </a>
-      </button>
+
       <button className="marca">
         <a
           href="#cards"
@@ -56,6 +48,15 @@ export default function NavBar({ onSelectMarca, onInicio }) {
           onClick={() => handleMarcaClick("Kevingston")}
         >
           Kevingston
+        </a>
+      </button>
+      <button className="marca">
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("GAP")}
+        >
+          GAP
         </a>
       </button>
     </div>

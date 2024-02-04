@@ -78,6 +78,10 @@ function App() {
     setContact(false);
   };
 
+  useEffect(() => {
+    actualizarContadorCarrito();
+  }, []);
+
   return (
     <div className={`container ${scrolled ? "scrolled" : ""}`}>
       {modalCarrito && (
