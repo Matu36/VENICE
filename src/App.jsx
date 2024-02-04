@@ -93,7 +93,7 @@ function App() {
         <FiShoppingCart />
         {carritoC > 0 && <span className="badge">{carritoC}</span>}
       </button>
-      {/* <Toper /> */}
+      <Toper />
       <div className="eleganzaImgContainer">
         <img src={VENICE} alt="VENICE" />
       </div>
