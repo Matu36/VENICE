@@ -252,13 +252,6 @@ button:focus-visible {
 
 
 
-@media (max-width: 476px) {
-  .eleganzaContainer {
-    margin-left: -3rem;
-  }
-}
-
-
 .navbar marca.button {
   display: flex;
   justify-content: space-between;
@@ -414,15 +407,6 @@ button:focus-visible {
 @media (max-width: 764px) {
   .custom-slider {
   margin-left: -0.5em;
-  }
-}
-
-@media (max-width: 570px) {
-  .eleganzaImgContainer {
-    margin-left: -25px;
-  }
-  .onSale {
-    margin-left: -180px;
   }
 }
 
