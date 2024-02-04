@@ -543,15 +543,14 @@ button:focus-visible {
     display: flex;
     flex-direction: column;
     width: 78%;
-    height: 650px;
+  
   }
   .about-image {
     max-width: 100%;
-    height: 350px;
+    height: 150px;
     
   }
 }
-
 
 
 .about-content {
