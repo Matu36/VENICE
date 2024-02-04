@@ -493,9 +493,9 @@ button:focus-visible {
     height: 500px;
   }
   .about-image {
-    width: 60%;
-    height: 50px;
-    margin-left: 1rem;
+    width: 100%;
+    height: 200px;
+   
   }
 
   .about-content span {
@@ -514,12 +514,12 @@ button:focus-visible {
     width: 78%;
     height: 500px;
   }
-}
-
-.about-image {
-  max-width: 100%;
-  height: 350px;
-  margin-right: 20px;
+  .about-image {
+    max-width: 100%;
+    width: 250px;
+    height: 200px;
+   
+  }
 }
 
 .about-content {
@@ -538,20 +538,21 @@ button:focus-visible {
   color: #333;
 }
 
-@media (max-width: 248px) {
+@media (max-width: 454px) {
   .about-container {
     display: flex;
     flex-direction: column;
     width: 78%;
     height: 650px;
   }
+  .about-image {
+    max-width: 100%;
+    height: 350px;
+    
+  }
 }
 
-.about-image {
-  max-width: 100%;
-  height: 350px;
-  margin-right: 20px;
-}
+
 
 .about-content {
   flex-grow: 1;
@@ -579,6 +580,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1500;
 }
 
 .contact-container {
