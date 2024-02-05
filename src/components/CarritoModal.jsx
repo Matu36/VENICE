@@ -12,13 +12,19 @@ export default function CarritoModal({
 
   const removeFromCart = (productId) => {
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    const nuevoCarrito = carrito.filter(
-      (producto) => producto.id !== productId
+
+    const indexToRemove = carrito.findIndex(
+      (producto) => producto.id === productId
     );
 
-    localStorage.setItem("carrito", JSON.stringify(nuevoCarrito));
+    if (indexToRemove !== -1) {
+      carrito.splice(indexToRemove, 1);
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
     actualizarContadorCarrito();
   };
+
   const removeAllItemsFromCart = () => {
     localStorage.removeItem("carrito");
     actualizarContadorCarrito();
