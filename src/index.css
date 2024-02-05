@@ -879,11 +879,11 @@ font-weight: bold;
   top: 0;
   left: 0;
   width: 100%;
-  height: 15vh; /* Ajusta la altura según sea necesario */
+  height: 15vh; 
   box-sizing: border-box;
   background: url('assets/img/atardecercortado.jpg') center/cover no-repeat rgba(52, 73, 94, 0.7); /* Imagen de fondo con transparencia */
-  overflow: hidden; /* Para asegurarse de que la imagen no se desborde si es más grande */
-  color: white; /* Color del texto */
+  overflow: hidden; 
+  color: white; 
   font-family: inherit;
   font-size: small;
   font-weight: inherit;

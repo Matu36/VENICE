@@ -66,10 +66,7 @@ export default function CarritoModal({
 
   return (
     <div className="carrito">
-      <button
-        className="close-button-carrito"
-        onClick={handleCerrarModalCarrito}
-      >
+      <button className="button-cerrar" onClick={handleCerrarModalCarrito}>
         <GrClose />
       </button>
       {carrito.length === 0 ? (
