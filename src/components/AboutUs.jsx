@@ -19,7 +19,7 @@ export default function AboutUs({ handleCerrarModalAbout }) {
         </span>
       </div>
       <div className="about-button">
-        <button onClick={handleCerrarModalAbout}>
+        <button onClick={handleCerrarModalAbout} className="button-cerrar">
           <GrClose />
         </button>
       </div>

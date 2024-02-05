@@ -890,3 +890,8 @@ font-weight: bold;
   font-style: inherit;
   opacity: 0.7;
 }
+
+.button-cerrar{
+  color: #000;
+  background:none
+}

@@ -36,7 +36,7 @@ export default function Contact({ handleCerrarModalContact }) {
         </div>
       </div>
       <div className="contact-button">
-        <button onClick={handleCerrarModalContact}>
+        <button onClick={handleCerrarModalContact} className="button-cerrar">
           <GrClose />
         </button>
       </div>
