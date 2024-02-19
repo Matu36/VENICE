@@ -898,17 +898,14 @@ font-weight: bold;
 
 /* Landing.css */
 
-/* Landing.css */
-
 .landing {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100vh; 
-  background-color: black; 
+  background-color: white;
+  
 }
-
-
 
 .button-image {
   width: 100%;

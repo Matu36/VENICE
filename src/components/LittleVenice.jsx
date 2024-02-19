@@ -3,7 +3,7 @@ import NavBar from "./Navbar";
 import Contact from "./Contact";
 import { camisas } from "../utils/Camisas";
 import Card from "./Card";
-import Footer from "../pages/Footer";
+import FooterLittle from "../pages/FotterLittle";
 import VENICE from "../assets/img/LITTLE VENICE/osito2.jpg";
 import SliderModelsLittleVenice from "./SliderModelsLittleVenice";
 import AboutUs from "./AboutUs";
@@ -129,7 +129,7 @@ export default function LittleVenice() {
         <img src={VENICEEXPERIENCE} alt="camisas" className="camisasImg" />
       </div>
 
-      <Footer
+      <FooterLittle
         handleMostrarModalAbout={handleMostrarModalAbout}
         handleMostrarModalContact={handleMostrarModalContact}
       />
