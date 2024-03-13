@@ -382,8 +382,8 @@ button:focus-visible {
 
 .sliderContainer {
   margin: auto;
-  /* max-width: 86%; */
-  width: 100%;
+  max-width: 86%;
+
 }
 
 .custom-slider {

@@ -47,15 +47,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
           <img src={calvin} alt="" />
         </a>
       </button>
-      <button className="marca">
-        <a
-          href="#cards"
-          className="marca"
-          onClick={() => handleMarcaClick("GAP")}
-        >
-          <img src={gap} alt="" />
-        </a>
-      </button>
+
       <button className="marca">
         <a
           href="#cards"
