@@ -42,7 +42,7 @@ export default function CarritoModal({
     setPrecioTotal(total);
   }, [carrito]);
 
-  const phoneNumber = "2215704647";
+  const phoneNumber = "2215991213";
 
   const generateWhatsAppMessage = () => {
     const message = carrito.reduce((acc, item) => {

@@ -92,7 +92,6 @@ function App() {
           />
         </div>
       )}
-
       <button className="shoppingButton" onClick={handleMostrarModalCarrito}>
         <FiShoppingCart />
         {carritoC > 0 && <span className="badge">{carritoC}</span>}
@@ -101,6 +100,9 @@ function App() {
       <div className="eleganzaImgContainer">
         <img src={VENICE} alt="VENICE" />
       </div>
+      <br />
+      <br />
+      <br />
       <div className="eleganzaContainer">
         <div className="navBarDiv">
           <NavBar
@@ -123,12 +125,12 @@ function App() {
       </div>
       <br />
       <br />
-
+      <br />
+      <br />
       <div className="frase">California dreaming, California dressing</div>
       <div className="camisasContainer">
         <img src={VENICEEXPERIENCE} alt="camisas" className="camisasImg" />
       </div>
-
       <Footer
         handleMostrarModalAbout={handleMostrarModalAbout}
         handleMostrarModalContact={handleMostrarModalContact}
@@ -148,7 +150,6 @@ function App() {
           {/* </div> */}
         </div>
       )}
-
       <span className="copy">
         Copyright © 2024 | Venice Indumentaria Todos los derechos reservados
       </span>

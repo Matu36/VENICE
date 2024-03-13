@@ -5,18 +5,18 @@ import Landing from "../components/Landing";
 import LittleVenice from "../components/LittleVenice";
 
 const router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <Landing />,
+  // },
   {
     path: "/",
-    element: <Landing />,
-  },
-  {
-    path: "/venice",
     element: <App />,
   },
-  {
-    path: "/littleVenice",
-    element: <LittleVenice />,
-  },
+  // {
+  //   path: "/littleVenice",
+  //   element: <LittleVenice />,
+  // },
 ]);
 
 export default router;

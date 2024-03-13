@@ -70,29 +70,29 @@ button:focus-visible {
 }
 
 .marca {
-  background-color: white;
-  color: black;
-  margin-right: 3rem;
-  margin-bottom: 1rem;
-  font-family: "perma", sans-serif;
-  font-size: 20px;
-}
-
-@media (max-width:732px) {
-  .marca {
-  font-size: 15px;
-  }
-  
-}
-
-@media (max-width:645px) {
-  .marca {
-  display: inline;
-  justify-content: space-between;
-  margin: auto;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.marca img {
+  width: 100px;
+  height: auto;
+}
+
+@media (max-width: 732px) {
+  .marca {
+    font-size: 15px;
   }
-  
+}
+
+@media (max-width: 645px) {
+  .marca {
+    display: inline;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+  }
 }
 
 /* Card.css */
@@ -101,10 +101,10 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* Ajusté el padding */
+  padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajusté el sombreado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 150px;
   width: 120px;
   margin: 10px;
@@ -168,7 +168,9 @@ button:focus-visible {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -176,7 +178,6 @@ button:focus-visible {
   background-color: #2980b9; /* Cambié el color del botón al pasar el ratón */
   color: #bdc3c7;
 }
-
 
 .footer {
   display: flex;
@@ -193,7 +194,6 @@ button:focus-visible {
   width: 500px;
   margin: auto;
   height: 250px;
- 
 }
 
 @media (max-width: 900px) {
@@ -239,7 +239,7 @@ button:focus-visible {
 .eleganzaImgContainer {
   display: flex;
   justify-content: center;
-  max-width: 100%;
+  width: 100%;
   margin-top: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -254,8 +254,6 @@ button:focus-visible {
   z-index: 1000;
 }
 
-
-
 .navbar marca.button {
   display: flex;
   justify-content: space-between;
@@ -266,7 +264,6 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 .camisasImg {
@@ -279,7 +276,6 @@ button:focus-visible {
     height: 250px;
   }
 }
-
 
 .spantitle {
   font-size: large;
@@ -306,7 +302,6 @@ button:focus-visible {
 }
 
 .onSale {
-  
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
@@ -316,8 +311,7 @@ button:focus-visible {
   margin-top: 1rem;
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
-  /*  */ 
-
+  /*  */
 }
 
 @keyframes fadeIn {
@@ -369,7 +363,6 @@ button:focus-visible {
 @media (max-width: 574px) {
   .onSale {
     font-size: 1rem;
-    
   }
 }
 
@@ -392,8 +385,9 @@ button:focus-visible {
 /* SliderModels.css */
 
 .sliderContainer {
- margin: auto;
-  max-width: 86%;
+  margin: auto;
+  /* max-width: 86%; */
+  width: 100%;
 }
 
 .custom-slider {
@@ -410,7 +404,7 @@ button:focus-visible {
 
 @media (max-width: 764px) {
   .custom-slider {
-  margin-left: -0.5em;
+    margin-left: -0.5em;
   }
 }
 
@@ -432,7 +426,7 @@ button:focus-visible {
   justify-content: center;
   overflow: hidden;
   white-space: nowrap;
-  font-family:  "ropa", sans-serif;
+  font-family: "ropa", sans-serif;
   font-size: 3rem;
 }
 
@@ -446,7 +440,7 @@ button:focus-visible {
   .animated-word {
     font-size: 2rem;
     margin-left: 14rem;
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -518,21 +512,17 @@ button:focus-visible {
   .about-image {
     width: 100%;
     height: 200px;
-   
   }
 
-  .about-content{
+  .about-content {
     margin-left: -0.5rem;
   }
 
   .about-content span {
-   
     font-size: 10px;
     text-align: justify;
     color: #333;
-    
   }
-
 }
 
 @media (max-width: 445px) {
@@ -540,16 +530,13 @@ button:focus-visible {
     display: flex;
     flex-direction: column;
     width: 78%;
-  
   }
   .about-image {
     max-width: 100%;
     width: 250px;
     height: 200px;
-   
   }
 }
-
 
 .modal {
   position: fixed;
@@ -587,11 +574,9 @@ button:focus-visible {
   }
 
   .contact-content span {
-   
     font-size: 10px;
     text-align: justify;
     color: #333;
-  
   }
 }
 
@@ -630,7 +615,7 @@ button:focus-visible {
   position: absolute;
   top: 10px;
   left: 80px;
- color: black;
+  color: black;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -826,10 +811,10 @@ button:focus-visible {
 }
 
 .about-button {
- display: flex;
- justify-content: flex-end;
- align-items: flex-end;
- color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: black;
 }
 
 .contact-button {
@@ -837,7 +822,7 @@ button:focus-visible {
   justify-content: flex-end;
   align-items: flex-end;
   color: black;
- }
+}
 
 .casa {
   font-size: 25px;
@@ -846,17 +831,15 @@ button:focus-visible {
 .iconoContacto {
   font-size: 16px;
   padding-right: 10px;
- 
-  
 }
 
-.contacto{
+.contacto {
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.letracontacto{
-font-weight: bold;
+.letracontacto {
+  font-weight: bold;
 }
 
 .frase {
@@ -865,10 +848,9 @@ font-weight: bold;
   font-family: "indie";
   font-weight: bold;
   font-size: xx-large;
-
 }
 
-@media (max-width:760px) {
+@media (max-width: 760px) {
   .frase {
     font-size: large;
   }
@@ -879,11 +861,12 @@ font-weight: bold;
   top: 0;
   left: 0;
   width: 100%;
-  height: 15vh; 
+  height: 15vh;
   box-sizing: border-box;
-  background: url('assets/img/atardecercortado.jpg') center/cover no-repeat rgba(52, 73, 94, 0.7); /* Imagen de fondo con transparencia */
-  overflow: hidden; 
-  color: white; 
+  background: url("assets/img/atardecercortado.jpg") center/cover no-repeat
+    rgba(52, 73, 94, 0.7); /* Imagen de fondo con transparencia */
+  overflow: hidden;
+  color: white;
   font-family: inherit;
   font-size: small;
   font-weight: inherit;
@@ -891,9 +874,9 @@ font-weight: bold;
   opacity: 0.7;
 }
 
-.button-cerrar{
+.button-cerrar {
   color: #000;
-  background:none
+  background: none;
 }
 
 /* Landing.css */
@@ -902,30 +885,23 @@ font-weight: bold;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
   background-color: white;
-  
 }
 
 .button-image {
   width: 100%;
   height: auto;
-  border-radius: 5px; 
-  transition: transform 0.3s ease-in-out; 
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .button-image:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
   .landing {
     flex-direction: column;
   }
-
-  
 }
-
-
-
-

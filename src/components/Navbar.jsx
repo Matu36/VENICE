@@ -1,6 +1,12 @@
 import React from "react";
 import "../App.css";
 import { AiOutlineHome } from "react-icons/ai";
+import nike from "../assets/img/logos/nike.jpg";
+import adidas from "../assets/img/logos/adidas.png";
+import calvin from "../assets/img/logos/calvin.jpg";
+import columbia from "../assets/img/logos/columbia.png";
+import hollister from "../assets/img/logos/hollister.png";
+import gap from "../assets/img/logos/gap.png";
 
 export default function NavBar({ onSelectMarca, onInicio }) {
   const handleMarcaClick = (marca) => {
@@ -9,11 +15,11 @@ export default function NavBar({ onSelectMarca, onInicio }) {
 
   return (
     <div className="navbar">
-      <button className="marca" onClick={() => onInicio()}>
+      {/* <button className="marca" onClick={() => onInicio()}>
         <AiOutlineHome className="casa" />
-      </button>
+      </button> */}
 
-      <button className="marca">
+      {/* <button className="marca">
         <a
           href="#cards"
           className="marca"
@@ -21,16 +27,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         >
           Todas
         </a>
-      </button>
-      <button className="marca">
-        <a
-          href="#cards"
-          className="marca"
-          onClick={() => handleMarcaClick("Tommy")}
-        >
-          Tommy
-        </a>
-      </button>
+      </button> */}
 
       <button className="marca">
         <a
@@ -38,7 +35,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
           className="marca"
           onClick={() => handleMarcaClick("POLO")}
         >
-          Polo
+          <img src={adidas} alt="" />
         </a>
       </button>
       <button className="marca">
@@ -47,7 +44,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
           className="marca"
           onClick={() => handleMarcaClick("Kevingston")}
         >
-          Kevingston
+          <img src={calvin} alt="" />
         </a>
       </button>
       <button className="marca">
@@ -56,7 +53,34 @@ export default function NavBar({ onSelectMarca, onInicio }) {
           className="marca"
           onClick={() => handleMarcaClick("GAP")}
         >
-          GAP
+          <img src={gap} alt="" />
+        </a>
+      </button>
+      <button className="marca">
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("hollister")}
+        >
+          <img src={hollister} alt="" />
+        </a>
+      </button>
+      <button className="marca">
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("columbia")}
+        >
+          <img src={columbia} alt="" />
+        </a>
+      </button>
+      <button className="marca">
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("Tommy")}
+        >
+          <img src={nike} alt="" />
         </a>
       </button>
     </div>
