@@ -103,16 +103,30 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 150px;
-  width: 120px;
+  max-width: 200px;
+  width: 180px;
   margin: 10px;
-  background-color: #f0e4d7;
+  background-color: transparent; /* Cambiado a transparente */
   transition: transform 0.3s ease-in-out;
 }
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: black;
+  text-align: center;
+  margin-top: 0;
+}
+
+
 
 @media (max-width: 769px) {
   .card {
@@ -120,6 +134,10 @@ button:focus-visible {
     max-width: 120px;
     margin-bottom: 1rem;
     padding: 10px;
+  }
+
+  .card-topper {
+    border: solid 5px black;
   }
 
   .card-image {
@@ -156,9 +174,20 @@ button:focus-visible {
 
 .cards-container {
   display: flex;
-  justify-content: space-around; /* Cambié space-between a space-around */
+  justify-content: space-around; /* Mantengo esta propiedad */
   flex-wrap: wrap;
+  align-items: flex-start; /* Para evitar que el contenido se centre verticalmente */
 }
+
+.cards-container > div {
+  width: 100%; /* Para que ocupe todo el ancho */
+}
+
+.cards-container h3 {
+  text-align: center; /* Centrar horizontalmente el texto */
+  margin-top: 2; /* Eliminar cualquier margen superior por defecto */
+}
+
 
 /* Estilos del botón "Comprar" */
 

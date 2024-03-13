@@ -112,6 +112,9 @@ function App() {
         </div>
       </div>
       <div className="cards-container" id="cards">
+        <div>
+          <h3 style={{ color: "black" }}>VENICE INDUMENTARIA</h3>
+        </div>
         {filteredCamisas.map((camisa) => (
           <Card
             key={camisa.id}
