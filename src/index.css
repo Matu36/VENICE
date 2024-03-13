@@ -75,23 +75,25 @@ button:focus-visible {
   padding: 2rem;
 }
 
+
 .marca img {
   width: 100px;
   height: auto;
 }
 
 @media (max-width: 732px) {
-  .marca {
-    font-size: 15px;
+  .marca img {
+   padding: 0;
+    width: 70px;
   }
 }
 
 @media (max-width: 645px) {
-  .marca {
-    display: inline;
+  .marca img {
+   width: 50px;
     justify-content: space-between;
     margin: auto;
-    flex-wrap: wrap;
+    
   }
 }
 
@@ -239,7 +241,7 @@ button:focus-visible {
 .eleganzaImgContainer {
   display: flex;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   margin-top: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -252,12 +254,6 @@ button:focus-visible {
   max-width: 100%;
   border-radius: 10px;
   z-index: 1000;
-}
-
-.navbar marca.button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .camisasContainer {
