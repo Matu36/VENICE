@@ -231,6 +231,8 @@ button:focus-visible {
 }
 
 
+/* Footer */
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -271,6 +273,8 @@ button:focus-visible {
     margin-top: 2rem;
   }
 }
+
+/* Landing Page para ropa de niños */
 
 .landing {
   background-color: black;
@@ -352,12 +356,6 @@ button:focus-visible {
   justify-content: center;
   padding-bottom: 2rem;
   color: black;
-  /* font-family: "indie", sans-serif;
-  font-size: 30px;
-  margin-top: 1rem;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-  /*  */
 }
 
 @keyframes fadeIn {
@@ -389,22 +387,6 @@ button:focus-visible {
   }
 }
 
-/* .onSale {
-  h1,
-  h6 {
-    @media (max-width: 827px) {
-      margin-left: calc((100% - 2rem) * -1);
-      padding-top: 2rem;
-    }
-  }
-} */
-
-/* @media (max-width: 764px) {
-  .onSale {
-    margin-top: 25rem;
-    margin-left: -10rem;
-  }
-} */
 
 @media (max-width: 574px) {
   .onSale {
@@ -418,7 +400,6 @@ button:focus-visible {
   bottom: 0;
   left: 0;
   width: 100%;
-  /* border-bottom: 2px solid #007bff; */
   transform: scaleX(0);
   transform-origin: 100% 50%;
   transition: transform 0.3s ease;
@@ -965,7 +946,7 @@ button:focus-visible {
   left: 0;
   right: 0;
   z-index: 1500;
-  font-family: ;
+ 
 }
 
 .top-bar button {
@@ -976,6 +957,9 @@ button:focus-visible {
   background: none;
 }
 
+.buttonclose {
+  color: black;
+}
 
 
 

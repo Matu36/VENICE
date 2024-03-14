@@ -21,6 +21,14 @@ const Card = ({
     setCurrentImage(imagen);
   };
 
+  const handleTouchStart = () => {
+    setCurrentImage(imagen2);
+  };
+
+  const handleTouchEnd = () => {
+    setCurrentImage(imagen);
+  };
+
   const handleComprarClick = () => {
     const productoComprado = {
       id,
@@ -51,6 +59,8 @@ const Card = ({
       id={id}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       <img src={currentImage} alt="" className="card-image" />
       <div className="card-content">

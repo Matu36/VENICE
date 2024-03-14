@@ -119,7 +119,9 @@ function App() {
               <h3>VENICE INDUMENTARIA</h3>
             </div>
             <div>
-              <button onClick={handleInicioClick}>X</button>
+              <button className="buttonclose" onClick={handleInicioClick}>
+                X
+              </button>
             </div>
           </div>
         )}
