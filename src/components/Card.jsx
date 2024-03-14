@@ -6,10 +6,20 @@ const Card = ({
   talle,
   precio,
   imagen,
+  imagen2,
   codigo,
   actualizarContadorCarrito,
 }) => {
   const [showAlert, setShowAlert] = useState(false);
+  const [currentImage, setCurrentImage] = useState(imagen);
+
+  const handleMouseOver = () => {
+    setCurrentImage(imagen2);
+  };
+
+  const handleMouseOut = () => {
+    setCurrentImage(imagen);
+  };
 
   const handleComprarClick = () => {
     const productoComprado = {
@@ -36,10 +46,14 @@ const Card = ({
   };
 
   return (
-    <div className="card" id={id}>
-      <img src={imagen} alt="" className="card-image" />
+    <div
+      className="card"
+      id={id}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+    >
+      <img src={currentImage} alt="" className="card-image" />
       <div className="card-content">
-        <h2>{marca}</h2>
         <p>Talle: {talle}</p>
         <p>Precio: $ {precio}</p>
         <p style={{ color: "grey", fontSize: "10px", marginTop: "10px" }}>
@@ -50,7 +64,7 @@ const Card = ({
       <div>
         <button className="comprar" onClick={handleComprarClick}>
           {" "}
-          Comprar{" "}
+          Añadir al Carrito{" "}
         </button>
       </div>
       {showAlert && (

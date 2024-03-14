@@ -101,27 +101,39 @@ function App() {
         <img src={VENICE} alt="VENICE" />
       </div>
       <br />
-      <br />
-      <br />
+
       <div className="eleganzaContainer">
         <div className="navBarDiv">
-          <NavBar
-            onSelectMarca={setSelectedMarca}
-            onInicio={handleInicioClick}
-          />
+          {!filteredCamisas.length > 0 && (
+            <NavBar
+              onSelectMarca={setSelectedMarca}
+              onInicio={handleInicioClick}
+            />
+          )}
         </div>
       </div>
-      <div className="cards-container" id="cards">
-        <div>
-          <h3 style={{ color: "black" }}>VENICE INDUMENTARIA</h3>
+      <div>
+        {filteredCamisas.length > 0 && (
+          <div className="top-bar">
+            <div>
+              <h3>VENICE INDUMENTARIA</h3>
+            </div>
+            <div>
+              <button onClick={handleInicioClick}>X</button>
+            </div>
+          </div>
+        )}
+
+        <div className="cards-container">
+          {filteredCamisas.map((camisa) => (
+            <Card
+              id="cards"
+              key={camisa.id}
+              {...camisa}
+              actualizarContadorCarrito={actualizarContadorCarrito}
+            />
+          ))}
         </div>
-        {filteredCamisas.map((camisa) => (
-          <Card
-            key={camisa.id}
-            {...camisa}
-            actualizarContadorCarrito={actualizarContadorCarrito}
-          />
-        ))}
       </div>
       <div className="sliderContainer">
         <SliderModels />

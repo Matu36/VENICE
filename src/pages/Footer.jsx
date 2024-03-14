@@ -9,8 +9,8 @@ export default function Footer({
     <div className="footer">
       <div className="footerSpan">
         <span className="spantitle">Colección</span>
-        <button className="spanbody">Camisas</button>
-        <button className="spanbody">Remeras</button>
+
+        <button className="spanbody">Edición Limitada</button>
       </div>
       <div className="footerSpan">
         <span className="spantitle">Atención al cliente</span>

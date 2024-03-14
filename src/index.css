@@ -72,7 +72,16 @@ button:focus-visible {
 .marca {
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  padding: 5px;
   padding: 2rem;
+}
+
+.marca button,
+.marca a {
+  margin: 0.5rem;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 
@@ -83,19 +92,28 @@ button:focus-visible {
 
 @media (max-width: 732px) {
   .marca img {
-   padding: 0;
+    width: 70px;
+  }
+}
+
+@media (max-width: 732px) {
+  .marca {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 732px) {
+  .marca img {
     width: 70px;
   }
 }
 
 @media (max-width: 645px) {
   .marca img {
-   width: 50px;
-    justify-content: space-between;
-    margin: auto;
-    
+    width: 50px;
   }
 }
+
 
 /* Card.css */
 
@@ -103,19 +121,21 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 10px 40px; 
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 200px;
   width: 180px;
   margin: 10px;
-  background-color: transparent; /* Cambiado a transparente */
+  background-color: #f5f5f5;
   transition: transform 0.3s ease-in-out;
 }
 
+
 .card img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -130,10 +150,10 @@ button:focus-visible {
 
 @media (max-width: 769px) {
   .card {
-    width: 120px;
-    max-width: 120px;
+    width: 150px;
+    max-width: 150px;
     margin-bottom: 1rem;
-    padding: 10px;
+   
   }
 
   .card-topper {
@@ -174,25 +194,25 @@ button:focus-visible {
 
 .cards-container {
   display: flex;
-  justify-content: space-around; /* Mantengo esta propiedad */
+  justify-content: space-around; 
   flex-wrap: wrap;
-  align-items: flex-start; /* Para evitar que el contenido se centre verticalmente */
+  align-items: flex-start; 
 }
 
 .cards-container > div {
-  width: 100%; /* Para que ocupe todo el ancho */
+  width: 100%; 
 }
 
 .cards-container h3 {
-  text-align: center; /* Centrar horizontalmente el texto */
-  margin-top: 2; /* Eliminar cualquier margen superior por defecto */
+  text-align: center; 
+  margin-top: 2; 
 }
 
 
 /* Estilos del botón "Comprar" */
 
 .comprar {
-  background-color: #3498db; /* Cambié el color del botón */
+  background-color: black;
   color: #ecf0f1;
   padding: 10px 20px;
   font-size: 16px;
@@ -206,9 +226,10 @@ button:focus-visible {
 }
 
 .comprar:hover {
-  background-color: #2980b9; /* Cambié el color del botón al pasar el ratón */
-  color: #bdc3c7;
+  color: #777; 
+  transition: none; 
 }
+
 
 .footer {
   display: flex;
@@ -222,7 +243,7 @@ button:focus-visible {
 
 .footerImage {
   display: flex;
-  width: 500px;
+  width: 50%;
   margin: auto;
   height: 250px;
 }
@@ -535,8 +556,8 @@ button:focus-visible {
     max-height: 100%;
   }
   .about-image {
-    width: 100%;
-    height: 200px;
+    width: 70%;
+    height: 250px;
   }
 
   .about-content {
@@ -930,3 +951,33 @@ button:focus-visible {
     flex-direction: column;
   }
 }
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1500;
+  font-family: ;
+}
+
+.top-bar button {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  right: 10px; 
+  background: none;
+}
+
+
+
+
+
+
