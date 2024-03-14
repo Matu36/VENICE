@@ -121,13 +121,11 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 40px; 
+  padding: 10px 20px; 
   border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 200px;
   width: 180px;
-  margin: 10px;
+  margin: 2px;
   background-color: #f5f5f5;
   transition: transform 0.3s ease-in-out;
 }
@@ -135,7 +133,7 @@ button:focus-visible {
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 300px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -146,7 +144,7 @@ button:focus-visible {
   margin-top: 0;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 833px) {
   .card {
     width: 150px;
     max-width: 150px;
@@ -154,13 +152,18 @@ button:focus-visible {
    
   }
 
+  
+
   .card-topper {
     border: solid 5px black;
   }
 }
 
+
+
 .card:hover {
   transform: scale(1.05);
+  border: solid 1px black;
 }
 
 
@@ -171,14 +174,23 @@ button:focus-visible {
 
 .card-content h2,
 .card-content p {
-  color: #34495e; /* Cambié el color del texto */
+  color: #34495e; 
   font-weight: bold;
   margin: 0;
 }
 
+@media (max-width: 683px) {
+  .card {
+    width: 190px;
+    max-width: 190px;
+    margin-bottom: 1rem;
+   
+  }
+}
+
 .cards-container {
   display: flex;
-  justify-content: space-around; 
+  justify-content: center; 
   flex-wrap: wrap;
   align-items: flex-start; 
   padding: 0;
@@ -213,6 +225,13 @@ button:focus-visible {
 .comprar:hover {
   color: #777; 
   transition: none; 
+}
+
+@media (max-width: 769px) {
+  .comprar {
+    padding: 8px 16px; 
+    font-size: 14px; 
+  }
 }
 
 
