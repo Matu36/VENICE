@@ -793,7 +793,7 @@ button:focus-visible {
   transition: transform 0.3s ease-in-out;
   background: none;
   color: black;
-  z-index: 2000;
+  z-index: 1000;
 }
 
 /* Estilos cuando se realiza scroll */
