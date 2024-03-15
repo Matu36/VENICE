@@ -688,7 +688,7 @@ button:focus-visible {
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 2000;
+  z-index: 2500;
 }
 
 @media (max-width: 676px) {
@@ -785,7 +785,7 @@ button:focus-visible {
 /* Estilos del botón de compras */
 .shoppingButton {
   position: fixed;
-  top: 30px;
+  top: 120px;
   right: 0;
   font-size: 24px;
   border: none;
@@ -793,7 +793,7 @@ button:focus-visible {
   transition: transform 0.3s ease-in-out;
   background: none;
   color: black;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 /* Estilos cuando se realiza scroll */
@@ -959,10 +959,7 @@ button:focus-visible {
 }
 
 .top-bar button {
-  /* position: absolute;
-  top: 50%; 
-  transform: translateY(-50%);
-  right: 10px;  */
+
   background: none;
 }
 
