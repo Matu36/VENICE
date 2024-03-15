@@ -785,7 +785,7 @@ button:focus-visible {
 /* Estilos del botón de compras */
 .shoppingButton {
   position: fixed;
-  top: 120px;
+  top: 30px;
   right: 0;
   font-size: 24px;
   border: none;
