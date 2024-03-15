@@ -19,20 +19,6 @@ export default function NavBar({ onSelectMarca, onInicio }) {
 
   return (
     <div className="navbar">
-      {/* <button className="marca" onClick={() => onInicio()}>
-        <AiOutlineHome className="casa" />
-      </button> */}
-
-      {/* <button className="marca">
-        <a
-          href="#cards"
-          className="marca"
-          onClick={() => handleMarcaClick("Todas las marcas")}
-        >
-          Todas
-        </a>
-      </button> */}
-
       <button className="marca">
         <a
           href="#cards"

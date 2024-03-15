@@ -10,7 +10,7 @@ export const calvin = [
     talle: "XL",
     imagen: tomy,
     imagen2: calvink,
-    precio: 9000,
+    precio: 8000,
     codigo: "ABC123",
   },
   {
@@ -27,7 +27,7 @@ export const calvin = [
     marca: "calvin",
     talle: "XL",
     imagen: tomy,
-    precio: 9000,
+    precio: 7000,
     codigo: "ABC123",
   },
 ];
