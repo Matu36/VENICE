@@ -185,6 +185,7 @@ function App() {
         <SliderModels />
       </div>
       <br />
+      <br />
 
       <div className="frase">California dreaming, California dressing</div>
       <div className="camisasContainer">

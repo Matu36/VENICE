@@ -974,7 +974,7 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   position: relative; 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .frasemarcas::after {
