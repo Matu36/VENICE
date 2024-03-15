@@ -332,7 +332,8 @@ button:focus-visible {
 
 @media (max-width: 480px) {
   .camisasImg {
-    height: 350px;
+    height: 300px;
+    
   }
 }
 
@@ -1031,8 +1032,8 @@ button:focus-visible {
   text-align: center;
   border: 5px solid #ff0000;
   border-width: 5px 0;
-  padding: 5px;
-  max-width: 50%;
+  padding: 0px;
+  max-width: 70%;
   margin: 0 auto;
   transition: background-color 0.3s, color 0.3s;
 }
