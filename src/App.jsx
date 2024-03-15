@@ -191,6 +191,12 @@ function App() {
       <div className="camisasContainer">
         <img src={VENICEEXPERIENCE} alt="camisas" className="camisasImg" />
       </div>
+      <br />
+      <br />
+      <br />
+      <div className="quality">
+        <h2>QUALITY DRESS</h2>
+      </div>
       <Footer
         handleMostrarModalAbout={handleMostrarModalAbout}
         handleMostrarModalContact={handleMostrarModalContact}

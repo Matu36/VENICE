@@ -246,7 +246,7 @@ button:focus-visible {
   display: flex;
   justify-content: space-between;
   bottom: 0;
-  margin-top: 5rem;
+  margin-top: 4rem;
   background-color: white;
   height: 300px;
   border: solid 1px black;
@@ -1027,6 +1027,33 @@ button:focus-visible {
   display: none; 
 }
 
+.quality {
+  text-align: center;
+  border: 5px solid #ff0000;
+  border-width: 5px 0;
+  padding: 5px;
+  max-width: 50%;
+  margin: 0 auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.quality:hover {
+  background-color: #ff0000; 
+}
+
+.quality:hover h2 {
+  color: #fff; 
+}
+
+.quality h2 {
+  color: red; 
+}
+
+@media (max-width: 476px) {
+  .quality {
+    margin-bottom: 4rem; /* Agregar margen inferior a partir de 476px */
+  }
+}
 
 
 
