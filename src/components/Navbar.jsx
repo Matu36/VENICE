@@ -135,7 +135,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         </a>
       </button>
       <div className="quality">
-        <button>
+        <button onClick={() => handleMarcaClick("Variadas")}>
           <h2>Edición Limitada</h2>
         </button>
       </div>

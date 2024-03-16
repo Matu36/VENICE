@@ -80,7 +80,8 @@ export default function CarritoModal({
               <img src={item.imagen} alt={`imagen-${item.id}`} />
             </div>
             <div className="cart-item-details">
-              <h3>{item.marca}</h3>
+              <h3>{item.nombre ? item.nombre : item.marca}</h3>
+
               <p>Talle: {item.talle}</p>
               <p>Precio: ${item.precio}</p>
             </div>

@@ -1,7 +1,8 @@
 export const variadas = [
   {
     id: 1,
-    marca: "Champions",
+    marca: "Variadas",
+    nombre: "Champions",
     talle: "XL",
     imagen: "",
     imagen2: "",
@@ -11,7 +12,8 @@ export const variadas = [
   },
   {
     id: 2,
-    marca: "Champions",
+    marca: "Variadas",
+    nombre: "Champions",
     talle: "L",
     imagen: "",
     imagen2: "",
@@ -21,7 +23,8 @@ export const variadas = [
   },
   {
     id: 3,
-    marca: "Vans",
+    marca: "Variadas",
+    nombre: "Vans",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -31,7 +34,8 @@ export const variadas = [
   },
   {
     id: 4,
-    marca: "Vans",
+    marca: "Variadas",
+    nombre: "Vans",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -41,7 +45,8 @@ export const variadas = [
   },
   {
     id: 5,
-    marca: "Converse",
+    marca: "Variadas",
+    nombre: "Converse",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -51,7 +56,8 @@ export const variadas = [
   },
   {
     id: 6,
-    marca: "Converse",
+    marca: "Variadas",
+    nombre: "Converse",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -61,7 +67,8 @@ export const variadas = [
   },
   {
     id: 7,
-    marca: "Under Armour",
+    marca: "Variadas",
+    nombre: "Under Armour",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -71,7 +78,8 @@ export const variadas = [
   },
   {
     id: 8,
-    marca: "Under Armour",
+    marca: "Variadas",
+    nombre: "Under Armour",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -81,7 +89,8 @@ export const variadas = [
   },
   {
     id: 9,
-    marca: "Under Armour",
+    marca: "Variadas",
+    nombre: "Under Armour",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -91,7 +100,8 @@ export const variadas = [
   },
   {
     id: 10,
-    marca: "Vans",
+    marca: "Variadas",
+    nombre: "Vans",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -101,7 +111,8 @@ export const variadas = [
   },
   {
     id: 11,
-    marca: "Vans",
+    marca: "Variadas",
+    nombre: "Vans",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -111,7 +122,8 @@ export const variadas = [
   },
   {
     id: 12,
-    marca: "Vans",
+    marca: "Variadas",
+    nombre: "Vans",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -121,7 +133,8 @@ export const variadas = [
   },
   {
     id: 13,
-    marca: "Vans",
+    marca: "Variadas",
+    nombre: "Vans",
     talle: "M",
     imagen: "",
     imagen2: "",

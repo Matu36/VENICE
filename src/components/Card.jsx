@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Card = ({
   id,
   marca,
+  nombre,
   talle,
   precio,
   imagen,
@@ -33,6 +34,7 @@ const Card = ({
     const productoComprado = {
       id,
       marca,
+      nombre,
       talle,
       precio,
       imagen,
@@ -64,6 +66,7 @@ const Card = ({
     >
       <img src={currentImage} alt="" className="card-image" />
       <div className="card-content">
+        <p>{nombre ? nombre : null} </p>
         <p>Talle: {talle}</p>
         <p>Precio: $ {precio}</p>
         <p style={{ color: "grey", fontSize: "10px", marginTop: "10px" }}>
