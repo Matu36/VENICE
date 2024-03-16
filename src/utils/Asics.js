@@ -1,7 +1,7 @@
-export const columbia = [
+export const asics = [
   {
     id: 1,
-    marca: "Columbia",
+    marca: "Asics",
     talle: "XL",
     imagen: "",
     imagen2: "",
@@ -11,7 +11,7 @@ export const columbia = [
   },
   {
     id: 2,
-    marca: "Columbia",
+    marca: "Asics",
     talle: "L",
     imagen: "",
     imagen2: "",
@@ -21,7 +21,7 @@ export const columbia = [
   },
   {
     id: 3,
-    marca: "Columbia",
+    marca: "Asics",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -31,7 +31,7 @@ export const columbia = [
   },
   {
     id: 4,
-    marca: "Columbia",
+    marca: "Asics",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -41,7 +41,7 @@ export const columbia = [
   },
   {
     id: 5,
-    marca: "Columbia",
+    marca: "Asics",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -51,7 +51,7 @@ export const columbia = [
   },
   {
     id: 6,
-    marca: "Columbia",
+    marca: "Asics",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -61,7 +61,7 @@ export const columbia = [
   },
   {
     id: 7,
-    marca: "Columbia",
+    marca: "Asics",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -71,37 +71,7 @@ export const columbia = [
   },
   {
     id: 8,
-    marca: "Columbia",
-    talle: "M",
-    imagen: "",
-    imagen2: "",
-    Cantidad: "",
-    precio: 7000,
-    codigo: "GHI789",
-  },
-  {
-    id: 9,
-    marca: "Columbia",
-    talle: "M",
-    imagen: "",
-    imagen2: "",
-    Cantidad: "",
-    precio: 7000,
-    codigo: "GHI789",
-  },
-  {
-    id: 10,
-    marca: "Columbia",
-    talle: "M",
-    imagen: "",
-    imagen2: "",
-    Cantidad: "",
-    precio: 7000,
-    codigo: "GHI789",
-  },
-  {
-    id: 11,
-    marca: "Columbia",
+    marca: "Asics",
     talle: "M",
     imagen: "",
     imagen2: "",

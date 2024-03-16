@@ -6,11 +6,14 @@ import adidas from "../assets/img/logos/adidas.png";
 import calvin from "../assets/img/logos/calvin.jpg";
 import columbia from "../assets/img/logos/columbia.png";
 import hollister from "../assets/img/logos/hollister.png";
-import originals from "../assets/img/logos/originalsadidas.jpg";
 import jordan from "../assets/img/logos/jordanm.jpg";
 import timberland from "../assets/img/logos/timberland.png";
-import asics from "../assets/img/logos/asics.jpg";
+import asics from "../assets/img/logos/asics.png";
 import reebok from "../assets/img/logos/reebok.png";
+import levis from "../assets/img/logos/levis.png";
+import puma from "../assets/img/logos/puma.jpg";
+import tommy from "../assets/img/logos/tommy.png";
+import edicion from "../assets/img/logos/edicionLimitada.png";
 
 export default function NavBar({ onSelectMarca, onInicio }) {
   const handleMarcaClick = (marca) => {
@@ -23,7 +26,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         <a
           href="#cards"
           className="marca"
-          onClick={() => handleMarcaClick("adidas")}
+          onClick={() => handleMarcaClick("Adidas")}
         >
           <img src={adidas} alt="" />
         </a>
@@ -32,7 +35,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         <a
           href="#cards"
           className="marca"
-          onClick={() => handleMarcaClick("hollister")}
+          onClick={() => handleMarcaClick("Hollister")}
         >
           <img src={hollister} alt="" />
         </a>
@@ -41,7 +44,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         <a
           href="#cards"
           className="marca"
-          onClick={() => handleMarcaClick("calvin")}
+          onClick={() => handleMarcaClick("Calvin")}
         >
           <img src={calvin} alt="" />
         </a>
@@ -51,7 +54,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         <a
           href="#cards"
           className="marca"
-          onClick={() => handleMarcaClick("columbia")}
+          onClick={() => handleMarcaClick("Columbia")}
         >
           <img src={columbia} alt="" />
         </a>
@@ -60,18 +63,9 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         <a
           href="#cards"
           className="marca"
-          onClick={() => handleMarcaClick("nike")}
+          onClick={() => handleMarcaClick("Nike")}
         >
           <img src={nike} alt="" />
-        </a>
-      </button>
-      <button className="marca">
-        <a
-          href="#cards"
-          className="marca"
-          onClick={() => handleMarcaClick("originals")}
-        >
-          <img src={originals} alt="" />
         </a>
       </button>
 
@@ -79,16 +73,17 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         <a
           href="#cards"
           className="marca"
-          onClick={() => handleMarcaClick("jordan")}
+          onClick={() => handleMarcaClick("Jordan")}
         >
           <img src={jordan} alt="" />
         </a>
       </button>
+
       <button className="marca">
         <a
           href="#cards"
           className="marca"
-          onClick={() => handleMarcaClick("reebok")}
+          onClick={() => handleMarcaClick("Reebok")}
         >
           <img src={reebok} alt="" />
         </a>
@@ -97,7 +92,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         <a
           href="#cards"
           className="marca"
-          onClick={() => handleMarcaClick("asics")}
+          onClick={() => handleMarcaClick("Asics")}
         >
           <img src={asics} alt="" />
         </a>
@@ -107,11 +102,43 @@ export default function NavBar({ onSelectMarca, onInicio }) {
         <a
           href="#cards"
           className="marca"
-          onClick={() => handleMarcaClick("timberland")}
+          onClick={() => handleMarcaClick("Timberland")}
         >
           <img src={timberland} alt="" />
         </a>
       </button>
+      <button className="marca">
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("Levis")}
+        >
+          <img src={levis} alt="" />
+        </a>
+      </button>
+      <button className="marca">
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("Puma")}
+        >
+          <img src={puma} alt="" />
+        </a>
+      </button>
+      <button className="marca">
+        <a
+          href="#cards"
+          className="marca"
+          onClick={() => handleMarcaClick("Tommy")}
+        >
+          <img src={tommy} alt="" />
+        </a>
+      </button>
+      <div className="quality">
+        <button>
+          <h2>Edición Limitada</h2>
+        </button>
+      </div>
     </div>
   );
 }

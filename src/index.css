@@ -95,6 +95,7 @@ button:focus-visible {
   height: auto;
 }
 
+
 @media (max-width: 732px) {
   .marca img {
     width: 90px;
@@ -1058,6 +1059,10 @@ button:focus-visible {
 
 .quality h2 {
   color: red; 
+}
+
+.quality button {
+  background: none;
 }
 
 @media (max-width: 476px) {

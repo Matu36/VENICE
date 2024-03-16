@@ -1,7 +1,7 @@
-export const columbia = [
+export const reebok = [
   {
     id: 1,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "XL",
     imagen: "",
     imagen2: "",
@@ -11,7 +11,7 @@ export const columbia = [
   },
   {
     id: 2,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "L",
     imagen: "",
     imagen2: "",
@@ -21,7 +21,7 @@ export const columbia = [
   },
   {
     id: 3,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -31,7 +31,7 @@ export const columbia = [
   },
   {
     id: 4,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -41,7 +41,7 @@ export const columbia = [
   },
   {
     id: 5,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -51,7 +51,7 @@ export const columbia = [
   },
   {
     id: 6,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -61,7 +61,7 @@ export const columbia = [
   },
   {
     id: 7,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -71,7 +71,7 @@ export const columbia = [
   },
   {
     id: 8,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -81,7 +81,7 @@ export const columbia = [
   },
   {
     id: 9,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -91,7 +91,7 @@ export const columbia = [
   },
   {
     id: 10,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "M",
     imagen: "",
     imagen2: "",
@@ -101,7 +101,7 @@ export const columbia = [
   },
   {
     id: 11,
-    marca: "Columbia",
+    marca: "Reebok",
     talle: "M",
     imagen: "",
     imagen2: "",
