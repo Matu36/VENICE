@@ -12,6 +12,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import VENICEEXPERIENCE from "../src/assets/img/VENICEEXPERIENCE.png";
 import Toper from "./pages/Toper";
 import Filtros from "./components/Filtros";
+import FooterAlternativo from "./pages/FooterAlternativo";
 
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
@@ -197,11 +198,15 @@ function App() {
       <div className="quality">
         <h2>QUALITY DRESS</h2>
       </div>
-      <Footer
+      {/* <Footer
         handleMostrarModalAbout={handleMostrarModalAbout}
         handleMostrarModalContact={handleMostrarModalContact}
+      /> */}
+      <FooterAlternativo
+        handleMostrarModalContact={handleMostrarModalContact}
+        handleMostrarModalAbout={handleMostrarModalAbout}
       />
-      <br />
+
       {contact && (
         <div className="modal">
           {/* <div className="modal-content"> */}

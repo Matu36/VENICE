@@ -147,8 +147,6 @@ button:focus-visible {
   }
 }
 
-
-
 .card img {
   width: 80%;
   height: 200px;
@@ -1069,9 +1067,92 @@ button:focus-visible {
 
 @media (max-width: 476px) {
   .quality {
-    margin-bottom: 4rem; /* Agregar margen inferior a partir de 476px */
+    margin-bottom: 4rem; 
   }
 }
+
+
+.footerAlternativo {
+    display: block;
+    position: relative;
+    z-index: 100;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: #F2F2F2;
+    margin-top: 40px;
+    
+}
+
+.footerAlternativo h2{
+  color: black;
+  font-size: 40px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.faSpan {
+  font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.25px;
+    font-family: "Klein Web Regular", sans-serif;
+    max-width: 21.875rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333333;
+    margin-bottom: 80px;
+}
+
+.faSpan p {
+  font-size: 15px;
+}
+
+.footaltbespace  {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 40px;
+  padding-left: 0;
+  border: none;
+  width: 40%; 
+  margin: 0 auto; 
+  margin-top: 50px;
+  font-size: 20px;
+  background: none;
+  margin-bottom: 140px;
+  
+}
+
+
+.footaltbespace button {
+  background: none;
+  border-bottom: 1px solid #999999;
+  color: #666666;
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width: 550px) {
+  .footaltbespace {
+    width: 60%; 
+  }
+}
+
+
+.informacion {
+  display: inline-block;
+  padding-left: 1.5em;
+  color: inherit;
+  font-family: "Klein Web Regular", sans-serif;
+  font-weight: 300;
+  max-width: 30rem;
+  color: gray;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: left; 
+  font-size: 15px;
+  font-weight: 300;
+}
+
 
 
 
