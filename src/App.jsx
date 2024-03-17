@@ -195,7 +195,7 @@ function App() {
       <br />
       <br />
       <br />
-      <div className="quality">
+      <div className="qualityDress">
         <h2>QUALITY DRESS</h2>
       </div>
       {/* <Footer

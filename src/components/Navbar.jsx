@@ -134,6 +134,9 @@ export default function NavBar({ onSelectMarca, onInicio }) {
           <img src={tommy} alt="" />
         </a>
       </button>
+      <h3 style={{ color: "black" }}>
+        No te pierdas nuestra colección especial de T-shirts!
+      </h3>
       <div className="quality">
         <button onClick={() => handleMarcaClick("Variadas")}>
           <h2>Edición Limitada</h2>

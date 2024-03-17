@@ -1057,6 +1057,7 @@ button:focus-visible {
   color: #fff; 
 }
 
+
 .quality h2 {
   color: red; 
 }
@@ -1070,6 +1071,21 @@ button:focus-visible {
     margin-bottom: 4rem; 
   }
 }
+
+.qualityDress {
+  background-color: #ff0000; 
+  text-align: center;
+  border: 5px solid #ff0000;
+  border-width: 5px 0;
+  padding: 0px;
+  max-width: 70%;
+  margin: 0 auto;
+  transition: background-color 0.3s, color 0.3s;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+
 
 
 .footerAlternativo {
