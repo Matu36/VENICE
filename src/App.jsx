@@ -222,6 +222,7 @@ function App() {
           {/* </div> */}
         </div>
       )}
+      <hr style={{ color: "grey", maxWidth: "100%" }} />
       <span className="copy">
         Copyright © 2024 | Venice Indumentaria Todos los derechos reservados
       </span>
