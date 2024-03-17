@@ -330,20 +330,41 @@ button:focus-visible {
   z-index: 1000;
 }
 
+
 .camisasContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px; 
 }
 
+
 .camisasImg {
-  opacity: 0.9;
   max-width: 100%;
+  border-radius: 8px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  transition: opacity 0.3s, transform 0.3s; 
 }
+
+
+.camisasImg:hover {
+  opacity: 1; 
+  transform: scale(1.05); 
+}
+
+@media (max-width: 480px) {
+  .camisasContainer {
+    height: 300px;
+    width: 400px;
+    max-width: 100%;
+    padding: 0;
+    
+  }}
 
 @media (max-width: 480px) {
   .camisasImg {
     height: 300px;
+    width: 600px;
     
   }
 }
@@ -435,11 +456,17 @@ button:focus-visible {
 .sliderContainer {
   margin: auto;
   max-width: 86%;
-
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); 
+  border: 2px solid #ccc; 
+  border-radius: 15px; 
+  overflow: hidden; 
+  transition: box-shadow 0.3s; 
+  margin-bottom: 1rem;
 }
 
 .custom-slider {
   margin: 0 -50px;
+  
  
 }
 
@@ -890,19 +917,31 @@ button:focus-visible {
   font-weight: bold;
 }
 
+
 .frase {
-  color: black;
-  margin-bottom: 10px;
-  font-family: "indie";
+  color: #46637f; 
+  margin-bottom: 20px;
+  font-family: "Indie Flower", cursive; 
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 2rem; 
+  text-align: center; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  letter-spacing: 1px; 
+  transition: font-size 0.3s; 
 }
+
+
+
+
 
 @media (max-width: 760px) {
   .frase {
-    font-size: large;
+    font-size: 1.5rem; 
   }
 }
+
+
+
 
 .Toper {
   position: absolute;
@@ -1040,39 +1079,6 @@ button:focus-visible {
 }
 
 .quality {
-  text-align: center;
-  border: 5px solid #ff0000;
-  border-width: 5px 0;
-  padding: 0px;
-  max-width: 70%;
-  margin: 0 auto;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.quality:hover {
-  background-color: #ff0000; 
-}
-
-.quality:hover h2 {
-  color: #fff; 
-}
-
-
-.quality h2 {
-  color: red; 
-}
-
-.quality button {
-  background: none;
-}
-
-@media (max-width: 476px) {
-  .quality {
-    margin-bottom: 4rem; 
-  }
-}
-
-.qualityDress {
   background-color: #ff0000; 
   text-align: center;
   border: 5px solid #ff0000;
@@ -1082,10 +1088,40 @@ button:focus-visible {
   margin: 0 auto;
   transition: background-color 0.3s, color 0.3s;
   color: white;
-  margin-bottom: 4rem;
+
+}
+
+.quality:hover {
+  background-color: #cc0000; 
+  color: #ffffff; 
 }
 
 
+.quality button {
+  background: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+
+@media (max-width: 476px) {
+  .qualityDress {
+    margin-bottom: 3rem; 
+  }
+}
+
+.qualityDress {
+  background-color: white; 
+  text-align: center;
+  border: 5px solid #ff0000;
+  border-width: 5px 0;
+  padding: 0px;
+  max-width: 70%;
+  margin: 0 auto;
+  transition: background-color 0.3s, color 0.3s;
+  color: red;
+  margin-bottom: 3rem;
+}
 
 
 .footerAlternativo {

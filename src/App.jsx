@@ -3,13 +3,12 @@ import NavBar from "./components/Navbar";
 import Contact from "./components/Contact";
 import { camisas } from "../src/utils/Camisas";
 import Card from "./components/Card";
-import Footer from "./pages/Footer";
 import VENICE from "../src/assets/img/marca6.png";
 import SliderModels from "./components/SliderModels";
 import AboutUs from "./components/AboutUs";
 import CarritoModal from "./components/CarritoModal";
 import { FiShoppingCart } from "react-icons/fi";
-import VENICEEXPERIENCE from "../src/assets/img/VENICEEXPERIENCE.png";
+import VENICEEXPERIENCE from "../src/assets/img/beauty.png";
 import Toper from "./pages/Toper";
 import Filtros from "./components/Filtros";
 import FooterAlternativo from "./pages/FooterAlternativo";
@@ -146,6 +145,7 @@ function App() {
           )}
         </div>
       </div>
+      <br />
       <div>
         {filteredCamisas.length > 0 && (
           <div className="top-bar">
@@ -181,19 +181,21 @@ function App() {
         </div>
       </div>
       <br />
-
+      <br />
+      <br />
       <div className="sliderContainer">
         <SliderModels />
       </div>
       <br />
       <br />
 
-      <div className="frase">California dreaming, California dressing</div>
+      <div className="frase">California dressing</div>
+
       <div className="camisasContainer">
         <img src={VENICEEXPERIENCE} alt="camisas" className="camisasImg" />
       </div>
       <br />
-      <br />
+
       <br />
       <div className="qualityDress">
         <h2>QUALITY DRESS</h2>
