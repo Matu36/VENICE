@@ -457,7 +457,7 @@ button:focus-visible {
   margin: auto;
   max-width: 86%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); 
-  border: 2px solid #ccc; 
+  border: 2px solid #46637f; 
   border-radius: 15px; 
   overflow: hidden; 
   transition: box-shadow 0.3s; 
@@ -718,9 +718,9 @@ button:focus-visible {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f0e4d7;
+  background-color: #46637f;
   padding: 20px;
-  border: 2px solid #ccc;
+  border: 2px solid #484176;
   border-radius: 8px;
   max-width: 600px;
   width: 100%;
@@ -732,8 +732,8 @@ button:focus-visible {
 
 @media (max-width: 676px) {
   .carrito {
-    width: 70%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 80%;
   }
 }
 
@@ -750,6 +750,7 @@ button:focus-visible {
   max-height: 100px;
   object-fit: contain;
   margin-right: 20px;
+  margin-top: 1rem;
 }
 
 .cart-item-details {
@@ -775,7 +776,7 @@ button:focus-visible {
 
 .cart-item-actions button {
   color: #fff;
-  background-color: #333;
+  background-color: #46637f;
   border: 2px solid #333;
   padding: 10px 20px;
   cursor: pointer;
@@ -795,6 +796,12 @@ button:focus-visible {
   border: 2px solid #333;
 }
 
+@media (max-width: 500px) {
+  .cart-item-actions button {
+    font-size: 10px;
+  }
+}
+
 .close-button-carrito {
   display: flex;
   justify-content: flex-end;
@@ -802,6 +809,8 @@ button:focus-visible {
   background-color: none;
   background: none;
 }
+
+
 
 @media (max-width: 1200px) {
   .close-button-carrito {
@@ -920,7 +929,7 @@ button:focus-visible {
 
 .frase {
   color: #46637f; 
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-family: "Indie Flower", cursive; 
   font-weight: bold;
   font-size: 2rem; 
@@ -928,6 +937,13 @@ button:focus-visible {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
   letter-spacing: 1px; 
   transition: font-size 0.3s; 
+}
+
+@media (max-width: 481px) {
+  .frase {
+    margin-bottom: 15px;
+  }
+  
 }
 
 
@@ -1083,6 +1099,7 @@ button:focus-visible {
   text-align: center;
   border: 5px solid #ff0000;
   border-width: 5px 0;
+  border-radius: 5px;
   padding: 0px;
   max-width: 70%;
   margin: 0 auto;
@@ -1113,7 +1130,7 @@ button:focus-visible {
 .qualityDress {
   background-color: white; 
   text-align: center;
-  border: 5px solid #ff0000;
+  border: 5px solid #46637f;
   border-width: 5px 0;
   padding: 0px;
   max-width: 70%;

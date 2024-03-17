@@ -70,7 +70,7 @@ export default function CarritoModal({
         <GrClose />
       </button>
       {carrito.length === 0 ? (
-        <p style={{ fontWeight: "bold", color: "gray" }}>
+        <p style={{ fontWeight: "bold", color: "white" }}>
           El carrito esta vacío
         </p>
       ) : (
@@ -93,7 +93,7 @@ export default function CarritoModal({
       )}
       {carrito.length > 0 ? (
         <>
-          <p style={{ fontWeight: "bold", color: "gray" }}>
+          <p style={{ fontWeight: "bold", color: "white" }}>
             Precio Total: $ {precioTotal}
           </p>
           <div className="cart-item-actions">

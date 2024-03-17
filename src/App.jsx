@@ -113,7 +113,7 @@ function App() {
       <div className="eleganzaImgContainer">
         <img src={VENICE} alt="VENICE" />
       </div>
-      <br />
+
       {!filteredCamisas.length > 0 && (
         <div className="frasemarcas">
           <h2>NUESTRAS MARCAS DESTACADAS</h2>
@@ -181,8 +181,7 @@ function App() {
         </div>
       </div>
       <br />
-      <br />
-      <br />
+
       <div className="sliderContainer">
         <SliderModels />
       </div>
