@@ -155,4 +155,17 @@ export const variadas = [
     precio: 28000,
     codigo: "CH064",
   },
+  {
+    id: 13,
+    marca: "Variadas",
+    nombre: "IMPERMEABLE",
+    talle: "xL",
+    imagen:
+      "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798017/VENICE/camperafront_seje0k.jpg",
+    imagen2:
+      "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798000/VENICE/camperaback_mtndtj.jpg",
+    Cantidad: 1,
+    precio: 59990,
+    codigo: "IMP102",
+  },
 ];
