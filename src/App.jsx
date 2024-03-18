@@ -12,6 +12,7 @@ import VENICEEXPERIENCE from "../src/assets/img/beauty.png";
 import Toper from "./pages/Toper";
 import Filtros from "./components/Filtros";
 import FooterAlternativo from "./pages/FooterAlternativo";
+import CargandoStock from "./components/CargandoStock";
 
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
@@ -95,6 +96,12 @@ function App() {
     actualizarContadorCarrito();
   }, []);
 
+  const [showLoading, setShowLoading] = useState(true);
+
+  const closeLoading = () => {
+    setShowLoading(false);
+  };
+
   return (
     <div className={`container ${scrolled ? "scrolled" : ""}`}>
       {modalCarrito && (
@@ -110,6 +117,7 @@ function App() {
         {carritoC > 0 && <span className="badge">{carritoC}</span>}
       </button>
       <Toper />
+      {showLoading && <CargandoStock onClose={closeLoading} />}
       <div className="eleganzaImgContainer">
         <img src={VENICE} alt="VENICE" />
       </div>
