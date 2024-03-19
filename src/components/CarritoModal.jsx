@@ -48,7 +48,7 @@ export default function CarritoModal({
     const message = carrito.reduce((acc, item) => {
       return (
         acc +
-        `✅ ${item.marca} - Talle: ${item.talle} - Precio: $${item.precio}\n`
+        `✅ ${item.marca} - Código: ${item.codigo} - Talle: ${item.talle} - Precio: $${item.precio}\n`
       );
     }, "👋 ¡Hola! ¿Cómo estás?\n\nQuiero encargar:");
 
