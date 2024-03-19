@@ -74,7 +74,13 @@ const Card = ({
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {showModal && (
+      <img
+        src={currentImage}
+        alt=""
+        className="card-image"
+        onClick={handleImageClick}
+      />
+      {/* {showModal && (
         <div className="modal1">
           <div className="modal-content1">
             <CardAmpliada
@@ -86,14 +92,7 @@ const Card = ({
             />
           </div>
         </div>
-      )}
-      <img
-        src={currentImage}
-        alt=""
-        className="card-image"
-        onClick={handleImageClick}
-      />
-
+      )} */}
       <div className="card-content">
         <p>{nombre ? nombre : null} </p>
         <p>Talle: {talle}</p>
