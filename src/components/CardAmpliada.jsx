@@ -1,10 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function CardAmpliada({ imagen, precio }) {
+export default function CardAmpliada({
+  imagen,
+  imagen2,
+  precio,
+  talle,
+  onClose,
+}) {
+  const [currentImage, setCurrentImage] = useState(imagen);
+
+  const handleMouseOver = () => {
+    setCurrentImage(imagen2);
+  };
+
+  const handleMouseOut = () => {
+    setCurrentImage(imagen);
+  };
+
+  const handleTouchStart = () => {
+    setCurrentImage(imagen2);
+  };
+
+  const handleTouchEnd = () => {
+    setCurrentImage(imagen);
+  };
+
   return (
-    <div className="CardAmpliada">
-      <img src={imagen} alt="Imagen ampliada" />
-      <span style={{ color: "black" }}>${precio}</span>
+    <div
+      className="CardAmpliada"
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
+      <button onClick={onClose}>X</button>
+      <img src={currentImage} alt="Imagen ampliada" />
+      <div>
+        <span style={{ color: "black", fontWeight: "bold" }}>
+          Precio: $ {precio}
+        </span>
+      </div>
+      <span style={{ color: "black", fontWeight: "bold" }}>Talle: {talle}</span>
     </div>
   );
 }
