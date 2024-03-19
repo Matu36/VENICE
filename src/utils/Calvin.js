@@ -8,7 +8,7 @@ export const calvin = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630144/VENICE/CALVINBACKBLANCA_ewbku2.jpg",
     Cantidad: 1,
-    precio: 42000,
+    precio: 45000,
     codigo: "CK041",
   },
   {
@@ -20,7 +20,7 @@ export const calvin = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630148/VENICE/CALVINBLACKBACK_sv4wiv.jpg",
     Cantidad: 1,
-    precio: 40000,
+    precio: 45000,
     codigo: "CK042",
   },
   {
@@ -32,7 +32,7 @@ export const calvin = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630148/VENICE/CALVINBLACKBACK_sv4wiv.jpg",
     Cantidad: 1,
-    precio: 40000,
+    precio: 45000,
     codigo: "CK043",
   },
   {
@@ -44,7 +44,7 @@ export const calvin = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630152/VENICE/CALVINBLANCABACKLOGO_xcpqv2.jpg",
     Cantidad: 1,
-    precio: 40000,
+    precio: 45000,
     codigo: "CK044",
   },
   {
@@ -56,7 +56,7 @@ export const calvin = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630154/VENICE/CALVINBORDADABACK_kzbtol.jpg",
     Cantidad: 1,
-    precio: 40000,
+    precio: 45000,
     codigo: "CK045",
   },
   {
@@ -68,7 +68,7 @@ export const calvin = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630147/VENICE/CALVINBACKROJA_nhbbbq.jpg",
     Cantidad: 1,
-    precio: 40000,
+    precio: 45000,
     codigo: "CK046",
   },
 ];

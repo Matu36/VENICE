@@ -117,7 +117,7 @@ function App() {
         {carritoC > 0 && <span className="badge">{carritoC}</span>}
       </button>
       <Toper />
-      {showLoading && <CargandoStock onClose={closeLoading} />}
+      {/* {showLoading && <CargandoStock onClose={closeLoading} />} */}
       <div className="eleganzaImgContainer">
         <img src={VENICE} alt="VENICE" />
       </div>

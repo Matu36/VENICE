@@ -48,7 +48,7 @@ export const variadas = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628507/VENICE/UA060BACK_q5cdat.jpg",
     Cantidad: 1,
-    precio: 40000,
+    precio: 39990,
     codigo: "UA060",
   },
   {
@@ -74,7 +74,7 @@ export const variadas = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628512/VENICE/VS063BACK_s3k5d6.jpg",
     Cantidad: 1,
-    precio: 28000,
+    precio: 30000,
     codigo: "VS063",
   },
   {
@@ -87,7 +87,7 @@ export const variadas = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628500/VENICE/NB029BACK_fk85px.jpg",
     Cantidad: 1,
-    precio: 40000,
+    precio: 36990,
     codigo: "NB069",
   },
   {
@@ -100,7 +100,7 @@ export const variadas = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628497/VENICE/NB028BACK_ju0uoj.jpg",
     Cantidad: 1,
-    precio: 40000,
+    precio: 36990,
     codigo: "NB028",
   },
   {
@@ -113,7 +113,7 @@ export const variadas = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628492/VENICE/CNV003BACK_cimdwq.jpg",
     Cantidad: 1,
-    precio: 35000,
+    precio: 35990,
     codigo: "CNV003",
   },
   {
@@ -126,7 +126,7 @@ export const variadas = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628495/VENICE/CNV004BACK_ghbiop.jpg",
     Cantidad: 1,
-    precio: 35000,
+    precio: 35990,
     codigo: "CNV004",
   },
   {
@@ -139,7 +139,7 @@ export const variadas = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628502/VENICE/NF001BACK_ijq7pi.jpg",
     Cantidad: 2,
-    precio: 40000,
+    precio: 39990,
     codigo: "NF001",
   },
   {

@@ -11,8 +11,8 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795752/VENICE/JORDAN/NIKE/LIMABACK_ct2ibn.jpg",
     Cantidad: 2,
-    precio: 32000,
-    codigo: "NK039",
+    precio: 35000,
+    codigo: "NK093",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795517/VENICE/JORDAN/NIKE/PIPANEGRAREMERABLANCABACK_heccx7.jpg",
     Cantidad: 2,
-    precio: 32000,
+    precio: 35000,
     codigo: "NK097",
   },
   {
@@ -35,7 +35,7 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795514/VENICE/JORDAN/NIKE/PIPAGRISBACK_nfwtnb.jpg",
     Cantidad: 1,
-    precio: 32000,
+    precio: 35000,
     codigo: "NK095",
   },
   {
@@ -47,7 +47,7 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795511/VENICE/JORDAN/NIKE/NIKENARANJABACK_k3omaa.jpg",
     Cantidad: 4,
-    precio: 32000,
+    precio: 35000,
     codigo: "NK091",
   },
   {
@@ -71,7 +71,7 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795504/VENICE/JORDAN/NIKE/NIKECOLORIDOBACKNEGRA_cykkiy.jpg",
     Cantidad: 1,
-    precio: 32000,
+    precio: 35000,
     codigo: "NK079",
   },
   {
@@ -83,7 +83,7 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795501/VENICE/JORDAN/NIKE/NIKEAIRROJABACK_szd5gc.jpg",
     Cantidad: 2,
-    precio: 32000,
+    precio: 35000,
     codigo: "NK089",
   },
   {
@@ -95,7 +95,7 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795497/VENICE/JORDAN/NIKE/DICENIKEBLANCABACK_lo94qn.jpg",
     Cantidad: 1,
-    precio: 32000,
+    precio: 35000,
     codigo: "NK080",
   },
   {
@@ -107,7 +107,7 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795491/VENICE/JORDAN/NIKE/BLANCABACK3PIPAS_bocygv.jpg",
     Cantidad: 2,
-    precio: 32000,
+    precio: 35000,
     codigo: "NK083",
   },
   {
@@ -119,7 +119,7 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795489/VENICE/JORDAN/NIKE/3PIPASNEGRABACK_ut0jy6.jpg",
     Cantidad: 1,
-    precio: 32000,
+    precio: 35000,
     codigo: "NK084",
   },
   {
@@ -131,7 +131,7 @@ export const nike = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710796607/VENICE/JORDAN/NIKE/PIPAROJABACK_jyiasd.jpg",
     Cantidad: 1,
-    precio: 32000,
+    precio: 35000,
     codigo: "NK086",
   },
 ];

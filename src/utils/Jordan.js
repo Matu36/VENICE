@@ -8,7 +8,7 @@ export const jordan = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794289/VENICE/JORDAN/JORDANROJABACKCLASICA_rbodvs.jpg",
     Cantidad: 2,
-    precio: 44990,
+    precio: 39990,
     codigo: "JN072",
   },
   {
@@ -44,7 +44,7 @@ export const jordan = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794288/VENICE/JORDAN/JORDANJUMPBACK_lvnpdx.jpg",
     Cantidad: 4,
-    precio: 44990,
+    precio: 39990,
     codigo: "JN074",
   },
 ];

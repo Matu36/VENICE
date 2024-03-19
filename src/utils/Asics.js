@@ -8,7 +8,7 @@ export const asics = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798356/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.23_r5mjpp.jpg",
     Cantidad: 1,
-    precio: 29900,
+    precio: 24990,
     codigo: "AS023",
   },
   {
@@ -20,7 +20,7 @@ export const asics = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798360/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.24_1_kazb0g.jpg",
     Cantidad: 1,
-    precio: 29900,
+    precio: 24990,
     codigo: "AS023",
   },
   {
@@ -32,7 +32,7 @@ export const asics = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798376/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.27_1_yp3c2v.jpg",
     Cantidad: 2,
-    precio: 29900,
+    precio: 24990,
     codigo: "AS022",
   },
   {
@@ -44,7 +44,7 @@ export const asics = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798386/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.27_3_shdxm2.jpg",
     Cantidad: 1,
-    precio: 29900,
+    precio: 24990,
     codigo: "AS021",
   },
   {
@@ -56,7 +56,7 @@ export const asics = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798402/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.29_ztsxjf.jpg",
     Cantidad: 1,
-    precio: 29900,
+    precio: 24990,
     codigo: "AS021",
   },
   {
@@ -68,7 +68,7 @@ export const asics = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798406/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.30_crmkxf.jpg",
     Cantidad: 1,
-    precio: 7000,
+    precio: 24990,
     codigo: "AS021",
   },
   {
@@ -80,7 +80,7 @@ export const asics = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798369/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.25_1_h2suml.jpg",
     Cantidad: 1,
-    precio: 29900,
-    codigo: "GHI789",
+    precio: 24990,
+    codigo: "AS020",
   },
 ];

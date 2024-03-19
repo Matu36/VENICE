@@ -56,7 +56,7 @@ export const reebok = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630844/VENICE/RBNARANJABACK_tc6jai.jpg",
     Cantidad: 1,
-    precio: 25000,
+    precio: 28000,
     codigo: "RBK024",
   },
   {
@@ -68,7 +68,7 @@ export const reebok = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630818/VENICE/RBAZULBACK_rclmhm.jpg",
     Cantidad: 1,
-    precio: 25000,
+    precio: 28000,
     codigo: "RBK024",
   },
   {
@@ -80,7 +80,7 @@ export const reebok = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630821/VENICE/RBCELESTEBACK_mv9ynn.jpg",
     Cantidad: 1,
-    precio: 25000,
+    precio: 28000,
     codigo: "RBK025",
   },
 ];

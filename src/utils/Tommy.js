@@ -56,7 +56,7 @@ export const tommy = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797457/VENICE/TOMMY/TOMMYGRISBACK_vt8pp8.jpg",
     Cantidad: 1,
-    precio: 17000,
+    precio: 19990,
     codigo: "TH032",
   },
   {
@@ -68,7 +68,7 @@ export const tommy = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797450/VENICE/TOMMY/TOMMYBLANCALISABACK_fd5xul.jpg",
     Cantidad: 1,
-    precio: 17000,
+    precio: 19990,
     codigo: "TH032",
   },
 ];

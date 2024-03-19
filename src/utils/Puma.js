@@ -8,7 +8,7 @@ export const puma = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631937/VENICE/PUMADANIMADOBACK_ysvbnv.jpg",
     Cantidad: 6,
-    precio: 32000,
+    precio: 35000,
     codigo: "PM012",
   },
   {
@@ -20,7 +20,7 @@ export const puma = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631931/VENICE/PUMACUADRADONARANJABACK_ovtcem.jpg",
     Cantidad: 2,
-    precio: 32000,
+    precio: 35000,
     codigo: "PM018",
   },
   {
@@ -32,7 +32,7 @@ export const puma = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631929/VENICE/PUMAATHLETICSNARANJABACK_digsnr.jpg",
     Cantidad: 1,
-    precio: 32000,
+    precio: 35000,
     codigo: "PM016",
   },
   {
@@ -44,7 +44,7 @@ export const puma = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631921/VENICE/PUMAATHLETICSBACK_nghdiw.jpg",
     Cantidad: 1,
-    precio: 32000,
+    precio: 35000,
     codigo: "PM014",
   },
 ];

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import CardAmpliada from "./CardAmpliada";
 
 const Card = ({
   id,
@@ -13,6 +14,15 @@ const Card = ({
 }) => {
   const [showAlert, setShowAlert] = useState(false);
   const [currentImage, setCurrentImage] = useState(imagen);
+  // const [showModal, setShowModal] = useState(false);
+
+  // const handleImageClick = () => {
+  //   setShowModal(true);
+  // };
+
+  // const closeModal = () => {
+  //   setShowModal(false);
+  // };
 
   const handleMouseOver = () => {
     setCurrentImage(imagen2);
@@ -64,7 +74,13 @@ const Card = ({
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      <img src={currentImage} alt="" className="card-image" />
+      <img
+        src={currentImage}
+        alt=""
+        className="card-image"
+        // onClick={handleImageClick}
+      />
+
       <div className="card-content">
         <p>{nombre ? nombre : null} </p>
         <p>Talle: {talle}</p>
@@ -87,8 +103,22 @@ const Card = ({
           </div>
         </div>
       )}
+      {/* {showModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}></span>
+            <CardAmpliada
+              marca={marca}
+              nombre={nombre}
+              talle={talle}
+              precio={precio}
+              imagen={imagen}
+              codigo={codigo}
+            />
+          </div>
+        </div> */}
+      {/* )} */}
     </div>
   );
 };
-
 export default Card;

@@ -8,7 +8,7 @@ export const timberland = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710626588/VENICE/TM068BACK_lvbtxy.jpg",
     Cantidad: 2,
-    precio: 40000,
+    precio: 39990,
     codigo: "TM068",
   },
   {
@@ -20,7 +20,7 @@ export const timberland = [
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710626587/VENICE/TM066BACK_a6iwba.jpg",
     Cantidad: 2,
-    precio: 40000,
+    precio: 39990,
     codigo: "TM066",
   },
   {
