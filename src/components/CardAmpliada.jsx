@@ -42,7 +42,10 @@ export default function CardAmpliada({
           Precio: $ {precio}
         </span>
       </div>
-      <span style={{ color: "black", fontWeight: "bold" }}>Talle: {talle}</span>
+      <span style={{ color: "black", fontWeight: "bold" }}>
+        {" "}
+        {talle && <p>Talle: {talle}</p>}
+      </span>
     </div>
   );
 }
