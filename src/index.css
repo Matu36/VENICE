@@ -1264,16 +1264,16 @@ button:focus-visible {
 
 
 .modal-content1 {
-  background-color: #fff; /* Color de fondo blanco */
-  padding: 20px;
-  border-radius: 10px; /* Aumenta el radio del borde */
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Cambia la sombra */
+  background-color: #fff; 
+  padding: 5px;
+  border-radius: 10px; 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .CardAmpliada {
   width: 250px;
-  border: 2px solid #46637f; /* Cambia el grosor del borde y el color */
-  border-radius: 10px; /* Aumenta el radio del borde */
+  border: 2px solid #46637f; 
+  border-radius: 10px; 
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -1290,20 +1290,20 @@ button:focus-visible {
 }
 
 .CardAmpliada span {
-  color: #46637f; /* Cambia el color del texto */
+  color: #46637f; 
   font-weight: bold;
 }
 
 
 @media screen and (max-width: 470px) {
   .CardAmpliada {
-    width: 200px; 
+    width: 250px; 
   }
 }
 
 @media screen and (max-width: 430px) {
   .CardAmpliada {
-    width: 150px; 
+    width: 200px; 
   }
 }
 
