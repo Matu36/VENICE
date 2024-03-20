@@ -33,7 +33,9 @@ export default function CardAmpliada({
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      <button onClick={onClose}>X</button>
+      <button onClick={onClose} style={{ color: "black" }}>
+        X
+      </button>
       <img src={currentImage} alt="Imagen ampliada" />
       <div>
         <span style={{ color: "black", fontWeight: "bold" }}>

@@ -860,9 +860,8 @@ button:focus-visible {
   width: 160px;
   transform: translateX(-50%);
   font-weight: bold;
-  color: gray;
+  color: #46637f; 
   border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   opacity: 0.9;
   transition: opacity 0.5s ease-in-out;
@@ -1248,65 +1247,36 @@ button:focus-visible {
   }
 }
 
-/* Estilos para el modal */
+
 .modal1 {
-  position: fixed;
-  top: 50%;
+  position: sticky;
+  top: 10%; 
   left: 50%;
-  transform: translate(-50%, -50%);
+  width: 40%; 
+  height: 40%; 
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 8000;
+  z-index: 5000;
+  transform: translate(-50%, 0); 
 }
+
 
 .modal-content1 {
-  background-color: white;
+  background-color: #fff; /* Color de fondo blanco */
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px; /* Aumenta el radio del borde */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Cambia la sombra */
 }
 
-
 .CardAmpliada {
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 250px;
+  border: 2px solid #46637f; /* Cambia el grosor del borde y el color */
+  border-radius: 10px; /* Aumenta el radio del borde */
   margin: 10px;
   padding: 10px;
-}
-
-.CardAmpliada-image {
-  width: 100%;
-  height: 300px;
-  cursor: pointer;
-}
-
-.CardAmpliada-content {
-  margin-top: 10px;
-}
-
-.alert-container {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: rgba(0, 123, 255, 0.8);
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
-  z-index: 9999;
-}
-
-.alert-message {
-  font-size: 14px;
-}
-
-
-.CardAmpliada {
   text-align: center;
-  width: 250px;
-  
 }
 
 .CardAmpliada img {
@@ -1315,6 +1285,27 @@ button:focus-visible {
   border-radius: 5px;
 }
 
+.CardAmpliada-content {
+  margin-top: 10px;
+}
+
+.CardAmpliada span {
+  color: #46637f; /* Cambia el color del texto */
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 470px) {
+  .CardAmpliada {
+    width: 200px; 
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .CardAmpliada {
+    width: 150px; 
+  }
+}
 
 
 
