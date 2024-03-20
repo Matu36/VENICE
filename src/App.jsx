@@ -188,6 +188,7 @@ function App() {
           ))}
         </div>
       </div>
+
       <br />
 
       <div className="sliderContainer">

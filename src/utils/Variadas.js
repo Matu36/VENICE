@@ -168,4 +168,43 @@ export const variadas = [
     precio: 59990,
     codigo: "IMP102",
   },
+  {
+    id: 14,
+    marca: "Variadas",
+    nombre: "New Balance",
+    talle: "L",
+    imagen:
+      "https://res.cloudinary.com/dmfzplfra/image/upload/v1710937706/VENICE/VARIADO/WhatsApp_Image_2024-03-19_at_19.15.36_l8loxg.jpg",
+    imagen2:
+      "https://res.cloudinary.com/dmfzplfra/image/upload/v1710937706/VENICE/VARIADO/WhatsApp_Image_2024-03-19_at_19.15.36_l8loxg.jpg",
+    Cantidad: 4,
+    precio: 10000,
+    codigo: "NB034",
+  },
+  {
+    id: 15,
+    marca: "Variadas",
+    nombre: "Billabong",
+    talle: "L",
+    imagen:
+      "https://res.cloudinary.com/dmfzplfra/image/upload/v1710937684/VENICE/VARIADO/WhatsApp_Image_2024-03-19_at_19.15.25_ur3ayc.jpg",
+    imagen2:
+      "https://res.cloudinary.com/dmfzplfra/image/upload/v1710937684/VENICE/VARIADO/WhatsApp_Image_2024-03-19_at_19.15.25_ur3ayc.jpg",
+    Cantidad: 3,
+    precio: 10000,
+    codigo: "BLB035",
+  },
+  {
+    id: 16,
+    marca: "Variadas",
+    nombre: "COLEMAN",
+    talle: "",
+    imagen:
+      "https://res.cloudinary.com/dmfzplfra/image/upload/v1710941885/VENICE/VARIADO/WhatsApp_Image_2024-03-19_at_19.34.24_co9iyj.jpg",
+    imagen2:
+      "https://res.cloudinary.com/dmfzplfra/image/upload/v1710941893/VENICE/VARIADO/WhatsApp_Image_2024-03-19_at_19.34.23_uhokxj.jpg",
+    Cantidad: 1,
+    precio: 50000,
+    codigo: "TER001",
+  },
 ];
