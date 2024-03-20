@@ -1059,6 +1059,11 @@ button:focus-visible {
   font-weight: bold;
 }
 
+.frasemarcas h3 {
+  color: black;
+  font-weight: bold;
+  font-family: "Indie", sans-serif;
+}
 
 .filtros {
   display: flex;
