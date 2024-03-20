@@ -470,7 +470,6 @@ button:focus-visible {
   
  
 }
-
 @media (max-width: 800px) {
   .custom-slider {
     width: 100%;
@@ -493,6 +492,7 @@ button:focus-visible {
 .slider-item img {
   width: 100%;
   height: auto;
+
 }
 
 /* AnimatedWord.css */
@@ -1036,6 +1036,7 @@ button:focus-visible {
 
 .frasemarcas {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative; 
   margin-bottom: 2rem;
