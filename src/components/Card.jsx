@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CardAmpliada from "./CardAmpliada";
-
+import soldout from "../assets/img/soldOut.png";
 const Card = ({
   id,
   marca,
@@ -8,6 +8,7 @@ const Card = ({
   talle,
   precio,
   imagen,
+  Cantidad,
   imagen2,
   codigo,
   actualizarContadorCarrito,
@@ -82,6 +83,7 @@ const Card = ({
               precio={precio}
               imagen={imagen}
               imagen2={imagen2}
+              cantidad={Cantidad}
               onClose={closeModal}
             />
           </div>
@@ -101,12 +103,23 @@ const Card = ({
         <p style={{ color: "grey", fontSize: "10px", marginTop: "10px" }}>
           Código: {codigo}
         </p>
+
+        {Cantidad === 0 && (
+          <div className="soldOut-container">
+            {" "}
+            <span className="soldOut">SIN STOCK</span>
+          </div>
+        )}
       </div>
+
       <br />
       <div>
-        <button className="comprar" onClick={handleComprarClick}>
-          {" "}
-          Añadir al Carrito{" "}
+        <button
+          className={`comprar ${Cantidad === 0 ? "sin-stock" : "comprar"}`}
+          onClick={handleComprarClick}
+          disabled={Cantidad === 0}
+        >
+          Añadir al Carrito
         </button>
       </div>
       {showAlert && (
