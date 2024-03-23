@@ -19,7 +19,7 @@ export const jordan = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794289/VENICE/JORDAN/JORDANFOOTBALFRONT_srymfr.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794289/VENICE/JORDAN/JORDANBACKFOOTBALL_extxgd.jpg",
-    Cantidad: 2,
+    Cantidad: 0,
     precio: 39990,
     codigo: "JN070",
   },

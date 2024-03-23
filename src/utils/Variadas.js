@@ -125,7 +125,7 @@ export const variadas = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628496/VENICE/CNV004FRONT_lee1gj.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628495/VENICE/CNV004BACK_ghbiop.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 35990,
     codigo: "CNV004",
   },
