@@ -12,6 +12,7 @@ import VENICEEXPERIENCE from "../src/assets/img/beauty.png";
 import Toper from "./pages/Toper";
 import Filtros from "./components/Filtros";
 import FooterAlternativo from "./pages/FooterAlternativo";
+import { Flip, Slide, Zoom, toast } from "react-toastify";
 import CargandoStock from "./components/CargandoStock";
 
 function App() {
@@ -34,6 +35,24 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    toast.info("Prendas 100% ORIGINALES", {
+      position: "bottom-right",
+      autoClose: 4000,
+      hideProgressBar: true,
+      newestOnTop: false,
+      closeOnClick: false,
+      rtl: false,
+      draggable: true,
+      transition: Slide,
+      pauseOnHover: true,
+      pauseOnFocusLoss: false,
+      closeButton: false,
+      icon: false,
+      theme: "dark",
+    });
   }, []);
 
   const filteredCamisas = camisas.filter((camisa) => {
