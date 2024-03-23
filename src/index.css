@@ -1326,21 +1326,31 @@ button:focus-visible {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 547px) {
+  .soldOut-container {
+    padding: px; 
+  }
+}
+
 
 .soldOut {
  color: gray;
   font-size: 15px;
 }
 
+.soldOut {
+  font-size: 12px;
+ 
+}
+
 @media (max-width: 547px) {
   .soldOut-container {
     top: 35%; 
-    padding: 5px 5px; 
+    padding: 2px 5px; 
   }
 
   .soldOut {
-    font-size: 12px;
-   
+    padding: 0;
   }
 }
 

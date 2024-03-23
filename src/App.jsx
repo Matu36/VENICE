@@ -129,21 +129,6 @@ function App() {
         </div>
       )}
 
-      {/* 
-      OPCION DE TODAS LAS MARCAS --> VER QUE SOLO FILTRA EL PRECIO DE LA MARCA SELECCIONADA Y NO DE TODAS
-      
-      <div>
-        <button className="marca">
-          <a
-            style={{ color: "black" }}
-            href="#cards"
-            className="marca"
-            onClick={() => setSelectedMarca("Todas las marcas")}
-          >
-            X
-          </a>
-        </button>
-      </div> */}
       <div className="eleganzaContainer">
         <div className="navBarDiv">
           {!filteredCamisas.length > 0 && (
@@ -209,10 +194,6 @@ function App() {
       <div className="qualityDress">
         <h2>QUALITY DRESS</h2>
       </div>
-      {/* <Footer
-        handleMostrarModalAbout={handleMostrarModalAbout}
-        handleMostrarModalContact={handleMostrarModalContact}
-      /> */}
       <FooterAlternativo
         handleMostrarModalContact={handleMostrarModalContact}
         handleMostrarModalAbout={handleMostrarModalAbout}
