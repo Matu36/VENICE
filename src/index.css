@@ -839,18 +839,15 @@ button:focus-visible {
 
 /* Estilos del botón de compras */
 .shoppingButton {
-  position: fixed;
-  top: 30px;
-  right: 0;
+ 
   font-size: 24px;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   background: none;
   color: black;
-  z-index: 1000;
+ 
 }
-
 /* Estilos cuando se realiza scroll */
 .container.scrolled .shoppingButton {
   transform: translateY(-50%);
@@ -1353,6 +1350,71 @@ button:focus-visible {
     padding: 0;
   }
 }
+
+
+
+/* PAGINA ALTERNATIVA */
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.black-bar {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.white-bar {
+  background-color: white;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+
+.white-bar img {
+  max-width: 100px; 
+  height: auto; 
+}
+
+.inputnav {
+  padding: 10px 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  font-size: 16px; 
+  color: #333; 
+  width: 80%; 
+}
+
+.inputnav::placeholder {
+  color: #999; 
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.video-group {
+  width: calc(50% - 20px); /* Ancho del 50% del contenedor, con espacio entre ellos */
+  margin: 10px; /* Espacio entre los grupos */
+}
+
+.video-element,
+.image-element {
+  width: 100%; /* Para que ocupen todo el ancho del contenedor */
+  max-width: 400px; /* Ancho máximo */
+  height: auto; /* Altura automática */
+}
+
+
 
 
 

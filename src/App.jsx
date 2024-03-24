@@ -14,28 +14,17 @@ import Filtros from "./components/Filtros";
 import FooterAlternativo from "./pages/FooterAlternativo";
 import { Flip, Slide, Zoom, toast } from "react-toastify";
 import CargandoStock from "./components/CargandoStock";
+import Videos from "./components/Videos";
+import NavBarAlternativo from "../src/components/NavBarAlternativo";
 
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
   const [filtroPrecio, setFiltroPrecio] = useState();
   const [modal, setModal] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
   const [modalCarrito, setModalCarrito] = useState(false);
   const [carritoC, setCarritoC] = useState(0);
   const [contact, setContact] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   useEffect(() => {
     toast.info("Prendas 100% ORIGINALES", {
@@ -122,7 +111,7 @@ function App() {
   };
 
   return (
-    <div className={`container ${scrolled ? "scrolled" : ""}`}>
+    <div className="container">
       {modalCarrito && (
         <div>
           <CarritoModal
@@ -131,20 +120,19 @@ function App() {
           />
         </div>
       )}
-      <button className="shoppingButton" onClick={handleMostrarModalCarrito}>
+      {/* <button className="shoppingButton" onClick={handleMostrarModalCarrito}>
         <FiShoppingCart />
         {carritoC > 0 && <span className="badge">{carritoC}</span>}
-      </button>
-      <Toper />
-      {/* {showLoading && <CargandoStock onClose={closeLoading} />} */}
-      <div className="eleganzaImgContainer">
-        <img src={VENICE} alt="VENICE" />
+      </button> */}
+      {/* <Toper /> */}
+      <NavBarAlternativo />
+      <div>
+        <Videos />
       </div>
-
+      <br />
       {!filteredCamisas.length > 0 && (
         <div className="frasemarcas">
           <h2>NUESTRAS MARCAS DESTACADAS</h2>
-          {/* <h3 style={{ color: "black" }}>Prendas Originales</h3> */}
         </div>
       )}
 
@@ -196,9 +184,9 @@ function App() {
 
       <br />
 
-      <div className="sliderContainer">
+      {/* <div className="sliderContainer">
         <SliderModels />
-      </div>
+      </div> */}
       <br />
       <br />
 
