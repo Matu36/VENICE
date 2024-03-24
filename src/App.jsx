@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import NavBar from "./components/Navbar";
 import Contact from "./components/Contact";
 import { camisas } from "../src/utils/Camisas";
@@ -21,10 +21,10 @@ function App() {
   const [selectedMarca, setSelectedMarca] = useState();
   const [filtroPrecio, setFiltroPrecio] = useState();
   const [modal, setModal] = useState(false);
-  // const [scrolled, setScrolled] = useState(false);
   const [modalCarrito, setModalCarrito] = useState(false);
   const [carritoC, setCarritoC] = useState(0);
   const [contact, setContact] = useState(false);
+  const cardsContainerRef = useRef(null);
 
   useEffect(() => {
     toast.info("Prendas 100% ORIGINALES", {
@@ -110,6 +110,13 @@ function App() {
     setShowLoading(false);
   };
 
+  const handleSearchByMarca = (marca) => {
+    setSelectedMarca(marca);
+    const firstCard = cardsContainerRef.current.querySelector(".card");
+
+    firstCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <div className="container">
       {modalCarrito && (
@@ -120,14 +127,10 @@ function App() {
           />
         </div>
       )}
-      {/* <button className="shoppingButton" onClick={handleMostrarModalCarrito}>
-        <FiShoppingCart />
-        {carritoC > 0 && <span className="badge">{carritoC}</span>}
-      </button> */}
-      {/* <Toper /> */}
       <NavBarAlternativo
         handleMostrarModalCarrito={handleMostrarModalCarrito}
         carritoC={carritoC}
+        handleSearchByMarca={handleSearchByMarca}
       />
       <div>
         <Videos />
@@ -173,7 +176,7 @@ function App() {
           </div>
         )}
 
-        <div className="cards-container">
+        <div ref={cardsContainerRef} className="cards-container" id="card">
           {filteredCamisas.map((camisa) => (
             <Card
               id="cards"
@@ -187,9 +190,6 @@ function App() {
 
       <br />
 
-      {/* <div className="sliderContainer">
-        <SliderModels />
-      </div> */}
       <br />
       <br />
 
