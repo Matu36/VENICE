@@ -888,10 +888,14 @@ button:focus-visible {
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 50%;
-  /* position: absolute;
-  top: 8px;
-  right: 8px; */
-}
+position: fixed;
+    
+  }
+ 
+
+
+
+
 
 .copy {
   color: #000;
@@ -1369,12 +1373,13 @@ button:focus-visible {
 
 .white-bar {
   background-color: white;
-  padding: 20px 0;
+  padding: 10px 0; /* Reducir el espaciado vertical */
   text-align: center;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
+
 
 
 .white-bar img {
