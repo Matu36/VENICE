@@ -1054,7 +1054,7 @@ button:focus-visible {
   bottom: 0; 
   left: 50%; 
   transform: translateX(-50%); 
-  width: 10%; 
+  width: 20%; 
   height: 6px; 
   background-color: red; 
 }

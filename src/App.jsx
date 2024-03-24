@@ -144,7 +144,7 @@ function App() {
       {!filteredCamisas.length > 0 && (
         <div className="frasemarcas">
           <h2>NUESTRAS MARCAS DESTACADAS</h2>
-          <h3 style={{ color: "black" }}>Prendas Originales</h3>
+          {/* <h3 style={{ color: "black" }}>Prendas Originales</h3> */}
         </div>
       )}
 
