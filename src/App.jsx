@@ -111,10 +111,14 @@ function App() {
   };
 
   const handleSearchByMarca = (marca) => {
-    setSelectedMarca(marca);
-    const firstCard = cardsContainerRef.current.querySelector(".card");
+    const marcaNormalized =
+      marca.charAt(0).toUpperCase() + marca.slice(1).toLowerCase();
+    setSelectedMarca(marcaNormalized);
 
-    firstCard.scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(() => {
+      const firstCard = cardsContainerRef.current.querySelector(".card");
+      firstCard.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
   };
 
   return (

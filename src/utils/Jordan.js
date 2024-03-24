@@ -26,7 +26,7 @@ export const jordan = [
   {
     id: 3,
     marca: "Jordan",
-    talle: "L, XL, 2XL",
+    talle: "L, XL",
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794289/VENICE/JORDAN/JORDANJUMPBACKFRONT_vn2nua.jpg",
     imagen2:
