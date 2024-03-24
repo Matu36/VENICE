@@ -848,12 +848,12 @@ button:focus-visible {
   color: black;
  
 }
-/* Estilos cuando se realiza scroll */
+/* Estilos cuando se realiza scroll
 .container.scrolled .shoppingButton {
   transform: translateY(-50%);
   font-size: 30px;
   z-index: 1000;
-}
+} */
 
 /* MENSAJE EL PRODUCTO HA SIDO AÑADIDO AL CARRITO */
 
@@ -888,9 +888,9 @@ button:focus-visible {
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 50%;
-  position: absolute;
+  /* position: absolute;
   top: 8px;
-  right: 8px;
+  right: 8px; */
 }
 
 .copy {
@@ -1403,8 +1403,9 @@ button:focus-visible {
 }
 
 .video-group {
-  width: calc(50% - 20px); /* Ancho del 50% del contenedor, con espacio entre ellos */
+  width: calc(50% - 80px); /* Ancho del 50% del contenedor, con espacio entre ellos */
   margin: 10px; /* Espacio entre los grupos */
+ 
 }
 
 .video-element,
@@ -1412,6 +1413,7 @@ button:focus-visible {
   width: 100%; /* Para que ocupen todo el ancho del contenedor */
   max-width: 400px; /* Ancho máximo */
   height: auto; /* Altura automática */
+ margin-bottom: 30px;
 }
 
 

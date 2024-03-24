@@ -125,7 +125,10 @@ function App() {
         {carritoC > 0 && <span className="badge">{carritoC}</span>}
       </button> */}
       {/* <Toper /> */}
-      <NavBarAlternativo />
+      <NavBarAlternativo
+        handleMostrarModalCarrito={handleMostrarModalCarrito}
+        carritoC={carritoC}
+      />
       <div>
         <Videos />
       </div>

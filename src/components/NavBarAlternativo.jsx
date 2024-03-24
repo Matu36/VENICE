@@ -2,7 +2,10 @@ import React from "react";
 import logo from "../assets/img/logos/LOGO 1.jpeg";
 import { FiShoppingCart } from "react-icons/fi";
 
-export default function NavBarAlternativo() {
+export default function NavBarAlternativo({
+  handleMostrarModalCarrito,
+  carritoC,
+}) {
   return (
     <div>
       <div className="navbar-container">
@@ -36,9 +39,10 @@ export default function NavBarAlternativo() {
           </div>
           <button
             className="shoppingButton"
-            // onClick={handleMostrarModalCarrito}
+            onClick={handleMostrarModalCarrito}
           >
             <FiShoppingCart />
+            {carritoC > 0 && <span className="badge">{carritoC}</span>}
           </button>
         </div>
       </div>

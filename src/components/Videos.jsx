@@ -25,7 +25,7 @@ export default function Videos() {
         </video>
         <img
           className="image-element"
-          src="https://res.cloudinary.com/dmfzplfra/image/upload/v1711293978/VENICE/VIDEOS/My_first_design_10_m2wrlj.png"
+          src="https://res.cloudinary.com/dmfzplfra/image/upload/v1711293801/VENICE/VIDEOS/Designer_pdgroi.png"
           alt=""
         />
       </div>
@@ -45,7 +45,7 @@ export default function Videos() {
         </video>
         <img
           className="image-element"
-          src="https://res.cloudinary.com/dmfzplfra/image/upload/v1711293801/VENICE/VIDEOS/Designer_pdgroi.png"
+          src="https://res.cloudinary.com/dmfzplfra/image/upload/v1711293978/VENICE/VIDEOS/My_first_design_10_m2wrlj.png"
           alt=""
         />
       </div>
