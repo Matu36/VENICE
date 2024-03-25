@@ -3,16 +3,12 @@ import NavBar from "./components/Navbar";
 import Contact from "./components/Contact";
 import { camisas } from "../src/utils/Camisas";
 import Card from "./components/Card";
-import VENICE from "../src/assets/img/marca6.png";
-import SliderModels from "./components/SliderModels";
 import AboutUs from "./components/AboutUs";
 import CarritoModal from "./components/CarritoModal";
-import { FiShoppingCart } from "react-icons/fi";
 import VENICEEXPERIENCE from "../src/assets/img/beauty.png";
-import Toper from "./pages/Toper";
 import Filtros from "./components/Filtros";
 import FooterAlternativo from "./pages/FooterAlternativo";
-import { Flip, Slide, Zoom, toast } from "react-toastify";
+import { Slide, toast } from "react-toastify";
 import CargandoStock from "./components/CargandoStock";
 import Videos from "./components/Videos";
 import NavBarAlternativo from "../src/components/NavBarAlternativo";
@@ -136,6 +132,7 @@ function App() {
         carritoC={carritoC}
         handleSearchByMarca={handleSearchByMarca}
       />
+      {/* {showLoading && <CargandoStock onClose={closeLoading} />} */}
       <div>
         <Videos />
       </div>
