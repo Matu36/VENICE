@@ -189,9 +189,7 @@ function App() {
         </div>
       </div>
 
-      <br />
-
-      <div className="frase">California dressing</div>
+      {/* <div className="frase">California dressing</div> */}
 
       <div className="camisasContainer">
         <img src={VENICEEXPERIENCE} alt="camisas" className="camisasImg" />

@@ -1114,30 +1114,31 @@ position: fixed;
 }
 
 .quality {
-  background-color: #ff0000; 
-  text-align: center;
-  border: 5px solid #ff0000;
-  border-width: 5px 0;
-  border-radius: 5px;
-  padding: 0px;
-  max-width: 70%;
-  margin: 0 auto;
-  transition: background-color 0.3s, color 0.3s;
-  color: white;
-
+  border: none; /* Eliminar el borde */
+  background: none; /* Eliminar el fondo */
+  padding: 0; /* Eliminar el padding */
+  max-width: 30%; /* Establecer un ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+  transition: transform 0.3s; /* Agregar transición para un efecto suave */
 }
 
 .quality:hover {
-  background-color: #cc0000; 
-  color: #ffffff; 
+  transform: scale(1.1); /* Escalar ligeramente al pasar el cursor */
 }
-
 
 .quality button {
   background: none;
-  color: white;
-  transition: color 0.3s;
+  border: none; /* Eliminar borde del botón */
+  padding: 0; /* Eliminar padding */
 }
+
+.quality img {
+  display: block; /* Asegurar que la imagen se muestre como un bloque */
+  width: 100%; /* Ajustar la imagen al ancho del contenedor */
+  height: auto; /* Permitir que la altura se ajuste automáticamente */
+}
+
+
 
 
 @media (max-width: 476px) {
@@ -1416,14 +1417,34 @@ position: fixed;
   
 }
 
+.search-bar {
+  display: flex;
+  align-items: center; 
+  border-bottom: solid 1px #595959;
+  transition: border-bottom 0.5s ease;
+  width: 45%; /* Ajustar el ancho del contenedor según sea necesario */
+}
+
 .inputnav {
-  padding: 10px 5px; 
+  padding: 5px 30px 5px 5px; 
   font-size: 16px; 
   color: #333; 
-  width: 80%; 
-  border: none; 
-  border-bottom: 1px solid black; 
+  text-overflow: ellipsis;
+  letter-spacing: inherit;
+  border: none;
+  outline: none; 
+  width: 100%; 
 }
+
+.search-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: -10px; 
+}
+
+
+
 
 
 .inputnav::placeholder {
@@ -1451,10 +1472,7 @@ position: fixed;
  
 }
 
-.search-bar {
-  display: flex;
-  align-items: center; 
-}
+
 
 
 .full-width-image {
