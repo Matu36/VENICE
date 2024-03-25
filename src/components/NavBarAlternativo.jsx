@@ -46,7 +46,7 @@ export default function NavBarAlternativo({
           <img src={logo} alt="" />
           <div className="search-bar">
             <button className="search-button" onClick={handleSearch}>
-              <FiSearch />
+              <FiSearch style={{ color: "black" }} />
             </button>
             <input
               className="inputnav"
