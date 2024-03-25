@@ -139,7 +139,7 @@ function App() {
       <div>
         <Videos />
       </div>
-      <br />
+
       {!filteredCamisas.length > 0 && (
         <div className="frasemarcas">
           <h2>NUESTRAS MARCAS DESTACADAS</h2>
@@ -192,9 +192,6 @@ function App() {
         </div>
       </div>
 
-      <br />
-
-      <br />
       <br />
 
       <div className="frase">California dressing</div>

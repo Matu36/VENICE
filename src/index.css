@@ -883,8 +883,8 @@ button:focus-visible {
 }
 
 .badge {
-  background-color: #f0e4d7;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 50%;
@@ -892,10 +892,6 @@ position: fixed;
     
   }
  
-
-
-
-
 
 .copy {
   color: #000;
@@ -1356,7 +1352,6 @@ position: fixed;
 }
 
 
-
 /* PAGINA ALTERNATIVA */
 
 .navbar-container {
@@ -1369,29 +1364,42 @@ position: fixed;
   color: white;
   padding: 10px 0;
   text-align: center;
+  position: relative;
+  z-index: 1000;
 }
 
 .white-bar {
   background-color: white;
-  padding: 10px 0; /* Reducir el espaciado vertical */
+  padding: 10px 0;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
-
+.white-bar.fixed {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 80px;
+}
 
 .white-bar img {
   max-width: 100px; 
   height: auto; 
 }
 
+@media screen and (max-width: 500px) {
+  .white-bar img {
+    max-width: 70px; 
+  }
+  
+}
+
 .inputnav {
-  padding: 10px 15px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: 10px 5px; 
   font-size: 16px; 
   color: #333; 
   width: 80%; 
@@ -1404,21 +1412,22 @@ position: fixed;
 .video-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centra los elementos horizontalmente */
+  justify-content: center; 
+  
 }
-
 .video-group {
-  width: calc(50% - 80px); /* Ancho del 50% del contenedor, con espacio entre ellos */
-  margin: 10px; /* Espacio entre los grupos */
+  width: calc(50% - 80px); 
+  margin: 10px; 
  
 }
 
 .video-element,
 .image-element {
-  width: 100%; /* Para que ocupen todo el ancho del contenedor */
-  max-width: 400px; /* Ancho máximo */
-  height: auto; /* Altura automática */
+  width: 100%; 
+  max-width: 400px; 
+  height: auto; 
  margin-bottom: 30px;
+ 
 }
 
 .search-bar {
@@ -1432,6 +1441,35 @@ position: fixed;
   border-right: none;
   border-bottom: 1px solid black; /* o el color que desees */
 }
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 700px) {
+  .full-width-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .video-element,
+  .image-element {
+    width: 100%;
+    max-width: none; /* Restablecer el ancho máximo */
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .video-group {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    margin: 10px 0; /* Eliminar los márgenes laterales */
+  }
+}
+
 
 
 

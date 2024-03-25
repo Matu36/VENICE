@@ -23,6 +23,19 @@ export default function NavBarAlternativo({
     }
   };
 
+  window.addEventListener("scroll", function () {
+    var blackBar = document.querySelector(".black-bar");
+    var whiteBar = document.querySelector(".white-bar");
+
+    if (window.pageYOffset > 0) {
+      whiteBar.classList.add("fixed");
+      blackBar.style.visibility = "hidden";
+    } else {
+      whiteBar.classList.remove("fixed");
+      blackBar.style.visibility = "visible";
+    }
+  });
+
   return (
     <div>
       <div className="navbar-container">
