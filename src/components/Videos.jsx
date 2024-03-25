@@ -1,12 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import { Player } from "video-react";
+import "video-react/dist/video-react.css";
 
 export default function Videos() {
-  const [played, setPlayed] = useState(false);
-
-  const handleVideoPlay = () => {
-    setPlayed(true);
-  };
-
   return (
     <div className="video-container">
       <img
@@ -15,27 +11,23 @@ export default function Videos() {
         alt=""
       />
       <div className="video-group">
-        <video
+        <Player
           className="video-element"
+          playsInline
+          hideControls={true}
           autoPlay
           muted
-          loop={!played}
-          onPlay={handleVideoPlay}
-        >
-          <source
-            src="https://res.cloudinary.com/dmfzplfra/video/upload/v1711290729/VENICE/VIDEOS/Designer_1_koaqbc.mp4"
-            type="video/mp4"
-          />
-          Tu navegador no soporta el elemento de vídeo.
-        </video>
-        <video
+          fluid // Hace que el video ocupe todo el espacio disponible
+          src="https://res.cloudinary.com/dmfzplfra/video/upload/v1711290729/VENICE/VIDEOS/Designer_1_koaqbc.mp4"
+        />
+        <Player
           className="video-element"
+          playsInline
+          hideControls={true}
+          autoPlay
+          muted
+          fluid // Hace que el video ocupe todo el espacio disponible
           src="https://res.cloudinary.com/dmfzplfra/video/upload/v1711328297/VENICE/VIDEOS/nike_tgxmuk.mp4"
-          alt=""
-          autoPlay
-          muted
-          loop={!played}
-          onPlay={handleVideoPlay}
         />
       </div>
       <div className="video-group">
@@ -44,14 +36,14 @@ export default function Videos() {
           src="https://res.cloudinary.com/dmfzplfra/image/upload/v1711329694/VENICE/VIDEOS/Designer_pdgroi_iuzly4.png"
           alt=""
         />
-        <video
+        <Player
           className="video-element"
-          src="https://res.cloudinary.com/dmfzplfra/video/upload/v1711328296/VENICE/VIDEOS/levis_f8yulu.mp4"
-          alt=""
+          playsInline
+          hideControls={true}
           autoPlay
           muted
-          loop={!played}
-          onPlay={handleVideoPlay}
+          fluid // Hace que el video ocupe todo el espacio disponible
+          src="https://res.cloudinary.com/dmfzplfra/video/upload/v1711328296/VENICE/VIDEOS/levis_f8yulu.mp4"
         />
       </div>
     </div>
