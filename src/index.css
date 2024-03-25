@@ -1403,6 +1403,10 @@ position: fixed;
   font-size: 16px; 
   color: #333; 
   width: 80%; 
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black; 
 }
 
 .inputnav::placeholder {
@@ -1435,12 +1439,6 @@ position: fixed;
   align-items: center; 
 }
 
-.inputnav {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid black; 
-}
 
 .full-width-image {
   width: 100%;
@@ -1461,12 +1459,13 @@ position: fixed;
     width: 100%;
     max-width: none; 
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .video-group {
     width: 100%; 
     margin: 10px 0; 
+ 
   }
 }
 
