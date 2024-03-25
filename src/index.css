@@ -1432,14 +1432,14 @@ position: fixed;
 
 .search-bar {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
+  align-items: center; 
 }
 
 .inputnav {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid black; /* o el color que desees */
+  border-bottom: 1px solid black; 
 }
 
 .full-width-image {
@@ -1459,14 +1459,14 @@ position: fixed;
   .video-element,
   .image-element {
     width: 100%;
-    max-width: none; /* Restablecer el ancho máximo */
+    max-width: none; 
     height: auto;
     margin-bottom: 30px;
   }
 
   .video-group {
-    width: 100%; /* Ocupar todo el ancho disponible */
-    margin: 10px 0; /* Eliminar los márgenes laterales */
+    width: 100%; 
+    margin: 10px 0; 
   }
 }
 
