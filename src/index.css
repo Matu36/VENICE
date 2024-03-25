@@ -839,24 +839,21 @@ button:focus-visible {
 
 /* Estilos del botón de compras */
 .shoppingButton {
-  position: fixed;
-  top: 30px;
-  right: 0;
+ 
   font-size: 24px;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   background: none;
   color: black;
-  z-index: 1000;
+ 
 }
-
-/* Estilos cuando se realiza scroll */
+/* Estilos cuando se realiza scroll
 .container.scrolled .shoppingButton {
   transform: translateY(-50%);
   font-size: 30px;
   z-index: 1000;
-}
+} */
 
 /* MENSAJE EL PRODUCTO HA SIDO AÑADIDO AL CARRITO */
 
@@ -886,15 +883,15 @@ button:focus-visible {
 }
 
 .badge {
-  background-color: #f0e4d7;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 50%;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
+position: fixed;
+    
+  }
+ 
 
 .copy {
   color: #000;
@@ -1353,6 +1350,130 @@ button:focus-visible {
     padding: 0;
   }
 }
+
+
+/* PAGINA ALTERNATIVA */
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.black-bar {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.white-bar {
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.white-bar.fixed {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 80px;
+}
+
+.white-bar img {
+  max-width: 100px; 
+  height: auto; 
+}
+
+@media screen and (max-width: 500px) {
+  .white-bar img {
+    max-width: 70px; 
+  }
+  
+}
+
+.inputnav {
+  padding: 10px 5px; 
+  font-size: 16px; 
+  color: #333; 
+  width: 80%; 
+}
+
+.inputnav::placeholder {
+  color: #999; 
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  
+}
+.video-group {
+  width: calc(50% - 80px); 
+  margin: 10px; 
+ 
+}
+
+.video-element,
+.image-element {
+  width: 100%; 
+  max-width: 400px; 
+  height: auto; 
+ margin-bottom: 30px;
+ 
+}
+
+.search-bar {
+  display: flex;
+  align-items: center; 
+}
+
+.inputnav {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black; 
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 700px) {
+  .full-width-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .video-element,
+  .image-element {
+    width: 100%;
+    max-width: none; 
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .video-group {
+    width: 100%; 
+    margin: 10px 0; 
+  }
+}
+
+
+
+
+
 
 
 

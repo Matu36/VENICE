@@ -1,41 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import NavBar from "./components/Navbar";
 import Contact from "./components/Contact";
 import { camisas } from "../src/utils/Camisas";
 import Card from "./components/Card";
-import VENICE from "../src/assets/img/marca6.png";
-import SliderModels from "./components/SliderModels";
 import AboutUs from "./components/AboutUs";
 import CarritoModal from "./components/CarritoModal";
-import { FiShoppingCart } from "react-icons/fi";
 import VENICEEXPERIENCE from "../src/assets/img/beauty.png";
-import Toper from "./pages/Toper";
 import Filtros from "./components/Filtros";
 import FooterAlternativo from "./pages/FooterAlternativo";
-import { Flip, Slide, Zoom, toast } from "react-toastify";
+import { Slide, toast } from "react-toastify";
 import CargandoStock from "./components/CargandoStock";
+import Videos from "./components/Videos";
+import NavBarAlternativo from "../src/components/NavBarAlternativo";
 
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
   const [filtroPrecio, setFiltroPrecio] = useState();
   const [modal, setModal] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [modalCarrito, setModalCarrito] = useState(false);
   const [carritoC, setCarritoC] = useState(0);
   const [contact, setContact] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const cardsContainerRef = useRef(null);
 
   useEffect(() => {
     toast.info("Prendas 100% ORIGINALES", {
@@ -121,8 +106,19 @@ function App() {
     setShowLoading(false);
   };
 
+  const handleSearchByMarca = (marca) => {
+    const marcaNormalized =
+      marca.charAt(0).toUpperCase() + marca.slice(1).toLowerCase();
+    setSelectedMarca(marcaNormalized);
+
+    setTimeout(() => {
+      const firstCard = cardsContainerRef.current.querySelector(".card");
+      firstCard.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
+  };
+
   return (
-    <div className={`container ${scrolled ? "scrolled" : ""}`}>
+    <div className="container">
       {modalCarrito && (
         <div>
           <CarritoModal
@@ -131,20 +127,19 @@ function App() {
           />
         </div>
       )}
-      <button className="shoppingButton" onClick={handleMostrarModalCarrito}>
-        <FiShoppingCart />
-        {carritoC > 0 && <span className="badge">{carritoC}</span>}
-      </button>
-      <Toper />
+      <NavBarAlternativo
+        handleMostrarModalCarrito={handleMostrarModalCarrito}
+        carritoC={carritoC}
+        handleSearchByMarca={handleSearchByMarca}
+      />
       {/* {showLoading && <CargandoStock onClose={closeLoading} />} */}
-      <div className="eleganzaImgContainer">
-        <img src={VENICE} alt="VENICE" />
+      <div>
+        <Videos />
       </div>
 
       {!filteredCamisas.length > 0 && (
         <div className="frasemarcas">
           <h2>NUESTRAS MARCAS DESTACADAS</h2>
-          {/* <h3 style={{ color: "black" }}>Prendas Originales</h3> */}
         </div>
       )}
 
@@ -182,7 +177,7 @@ function App() {
           </div>
         )}
 
-        <div className="cards-container">
+        <div ref={cardsContainerRef} className="cards-container" id="card">
           {filteredCamisas.map((camisa) => (
             <Card
               id="cards"
@@ -194,12 +189,6 @@ function App() {
         </div>
       </div>
 
-      <br />
-
-      <div className="sliderContainer">
-        <SliderModels />
-      </div>
-      <br />
       <br />
 
       <div className="frase">California dressing</div>

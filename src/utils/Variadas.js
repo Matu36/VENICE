@@ -158,7 +158,8 @@ export const variadas = [
   {
     id: 13,
     marca: "Variadas",
-    nombre: "AEROPOSTALE",
+    nombre: "AEROPORTABLE",
+
     talle: "xL",
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798017/VENICE/camperafront_seje0k.jpg",
