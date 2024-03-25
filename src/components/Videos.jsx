@@ -18,7 +18,7 @@ export default function Videos() {
           autoPlay
           muted
           fluid // Hace que el video ocupe todo el espacio disponible
-          src="https://res.cloudinary.com/dmfzplfra/video/upload/v1711290729/VENICE/VIDEOS/Designer_1_koaqbc.mp4"
+          src="https://res.cloudinary.com/dmfzplfra/video/upload/v1711328297/VENICE/VIDEOS/nike_tgxmuk.mp4"
         />
         <Player
           className="video-element"
@@ -27,7 +27,7 @@ export default function Videos() {
           autoPlay
           muted
           fluid // Hace que el video ocupe todo el espacio disponible
-          src="https://res.cloudinary.com/dmfzplfra/video/upload/v1711328297/VENICE/VIDEOS/nike_tgxmuk.mp4"
+          src="https://res.cloudinary.com/dmfzplfra/video/upload/v1711290729/VENICE/VIDEOS/Designer_1_koaqbc.mp4"
         />
       </div>
       <div className="video-group">
