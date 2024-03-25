@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-import { AiOutlineHome } from "react-icons/ai";
 import nike from "../assets/img/logos/nike.jpg";
 import adidas from "../assets/img/logos/adidas.png";
 import calvin from "../assets/img/logos/calvin.jpg";
@@ -13,7 +12,7 @@ import reebok from "../assets/img/logos/reebok.png";
 import levis from "../assets/img/logos/levis.png";
 import puma from "../assets/img/logos/puma.jpg";
 import tommy from "../assets/img/logos/tommy.png";
-import edicion from "../assets/img/logos/edicionLimitada.png";
+import edicion from "../assets/img/limitada.jpg";
 
 export default function NavBar({ onSelectMarca, onInicio }) {
   const handleMarcaClick = (marca) => {
@@ -139,7 +138,7 @@ export default function NavBar({ onSelectMarca, onInicio }) {
       </h3>
       <div className="quality">
         <button onClick={() => handleMarcaClick("Variadas")}>
-          <h2>Edición Limitada</h2>
+          <img src={edicion} alt="" />
         </button>
       </div>
     </div>
