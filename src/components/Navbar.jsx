@@ -12,7 +12,7 @@ import reebok from "../assets/img/logos/reebok.png";
 import levis from "../assets/img/logos/levis.png";
 import puma from "../assets/img/logos/puma.jpg";
 import tommy from "../assets/img/logos/tommy.png";
-import edicion from "../assets/img/limitada.jpg";
+import edicion from "../assets/img/edicionlimitada.jpg";
 
 export default function NavBar({ onSelectMarca, onInicio }) {
   const handleMarcaClick = (marca) => {
@@ -133,14 +133,16 @@ export default function NavBar({ onSelectMarca, onInicio }) {
           <img src={tommy} alt="" />
         </a>
       </button>
-      <h3 style={{ color: "black" }}>
-        No te pierdas nuestra colección especial de T-shirts!
-      </h3>
-      <div className="quality">
-        <button onClick={() => handleMarcaClick("Variadas")}>
+
+      <button className="marca">
+        <a
+          className="marca"
+          onClick={() => handleMarcaClick("Variadas")}
+          href="#cards"
+        >
           <img src={edicion} alt="" />
-        </button>
-      </div>
+        </a>
+      </button>
     </div>
   );
 }

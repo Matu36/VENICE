@@ -1,8 +1,8 @@
 export const puma = [
   {
-    id: 1,
+    id: 64,
     marca: "Puma",
-    talle: "L, XL",
+    talle: ["L", "XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631940/VENICE/PUMALODANIMADOFRONT_m4y8ez.jpg",
     imagen2:
@@ -12,9 +12,9 @@ export const puma = [
     codigo: "PM012",
   },
   {
-    id: 2,
+    id: 65,
     marca: "Puma",
-    talle: "L, XL",
+    talle: ["L", "XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631935/VENICE/PUMACUADRADONARANJAFRONT_ouyhcn.jpg",
     imagen2:
@@ -24,9 +24,9 @@ export const puma = [
     codigo: "PM018",
   },
   {
-    id: 3,
+    id: 66,
     marca: "Puma",
-    talle: "L, XL",
+    talle: ["L", "XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631926/VENICE/PUMAATHLETICSNARANJA_xifhkf.jpg",
     imagen2:
@@ -36,9 +36,9 @@ export const puma = [
     codigo: "PM016",
   },
   {
-    id: 4,
+    id: 67,
     marca: "Puma",
-    talle: "L, XL",
+    talle: ["L", "XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631923/VENICE/PUMAATHLETICSFRONT_ja57gd.jpg",
     imagen2:

@@ -1,8 +1,8 @@
 export const hollister = [
   {
-    id: 1,
+    id: 32,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876205/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.14_xakc8b.jpg",
     imagen2:
@@ -12,9 +12,9 @@ export const hollister = [
     codigo: "HOL100",
   },
   {
-    id: 2,
+    id: 33,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876193/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.14_2_jswuij.jpg",
     imagen2:
@@ -24,9 +24,9 @@ export const hollister = [
     codigo: "HOL100",
   },
   {
-    id: 3,
+    id: 34,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876182/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.12_ontpck.jpg",
     imagen2:
@@ -36,9 +36,9 @@ export const hollister = [
     codigo: "HOL100",
   },
   {
-    id: 4,
+    id: 35,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876158/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.11_1_qlbhhu.jpg",
     imagen2:
@@ -48,9 +48,9 @@ export const hollister = [
     codigo: "HOL096",
   },
   {
-    id: 5,
+    id: 36,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876146/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.10_2_zxci6j.jpg",
     imagen2:
@@ -60,9 +60,9 @@ export const hollister = [
     codigo: "HOL098",
   },
   {
-    id: 6,
+    id: 37,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876152/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.10_ivtbsu.jpg",
     imagen2:
@@ -72,9 +72,9 @@ export const hollister = [
     codigo: "HOL098",
   },
   {
-    id: 7,
+    id: 38,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876123/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.08_1_qin2o1.jpg",
     imagen2:
@@ -84,9 +84,9 @@ export const hollister = [
     codigo: "HOL098",
   },
   {
-    id: 8,
+    id: 39,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876111/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.06_2_npi2yv.jpg",
     imagen2:
@@ -96,9 +96,9 @@ export const hollister = [
     codigo: "HOL098",
   },
   {
-    id: 9,
+    id: 40,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876117/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.06_hqqhxf.jpg",
     imagen2:
@@ -108,9 +108,9 @@ export const hollister = [
     codigo: "HOL098",
   },
   {
-    id: 10,
+    id: 41,
     marca: "Hollister",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876094/VENICE/HOLLISTER/WhatsApp_Image_2024-03-17_at_15.34.03_klwvth.jpg",
     imagen2:

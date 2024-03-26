@@ -1,8 +1,8 @@
 export const tommy = [
   {
-    id: 1,
+    id: 81,
     marca: "Tommy",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797481/VENICE/TOMMY/TOMMYVERDEFRONT_lifaa2.jpg",
     imagen2:
@@ -12,9 +12,9 @@ export const tommy = [
     codigo: "TH031",
   },
   {
-    id: 2,
+    id: 82,
     marca: "Tommy",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797474/VENICE/TOMMY/TOMMYROSFRONT_npyhow.jpg",
     imagen2:
@@ -24,9 +24,9 @@ export const tommy = [
     codigo: "TH031",
   },
   {
-    id: 3,
+    id: 83,
     marca: "Tommy",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797467/VENICE/TOMMY/TOMMYNEGRARAYASBLANCASFRONT_lmrcij.jpg",
     imagen2:
@@ -36,9 +36,9 @@ export const tommy = [
     codigo: "TH030",
   },
   {
-    id: 4,
+    id: 84,
     marca: "Tommy",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797447/VENICE/TOMMY/TOMMYBLANCAFRONT_ojhxbb.jpg",
     imagen2:
@@ -48,9 +48,9 @@ export const tommy = [
     codigo: "TH031",
   },
   {
-    id: 5,
+    id: 85,
     marca: "Tommy",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797460/VENICE/TOMMY/TOMMYGRISFRONT_icnwsk.jpg",
     imagen2:
@@ -60,9 +60,9 @@ export const tommy = [
     codigo: "TH032",
   },
   {
-    id: 6,
+    id: 86,
     marca: "Tommy",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797453/VENICE/TOMMY/TOMMYBLANCALISAFRONT_b1qcci.jpg",
     imagen2:

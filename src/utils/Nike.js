@@ -3,9 +3,9 @@ import jordan from "../assets/img/jordan/frente.jpg";
 
 export const nike = [
   {
-    id: 1,
+    id: 53,
     marca: "Nike",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795521/VENICE/JORDAN/NIKE/WhatsApp_Image_2024-03-17_at_15.28.23_1_g85qol.jpg",
     imagen2:
@@ -15,9 +15,9 @@ export const nike = [
     codigo: "NK093",
   },
   {
-    id: 2,
+    id: 54,
     marca: "Nike",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795519/VENICE/JORDAN/NIKE/PIPANEGRAREMERABLANCAFRONT_bkni8r.jpg",
     imagen2:
@@ -27,9 +27,9 @@ export const nike = [
     codigo: "NK097",
   },
   {
-    id: 3,
+    id: 55,
     marca: "Nike",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795516/VENICE/JORDAN/NIKE/PIPAGRISFRONT_avmtqs.jpg",
     imagen2:
@@ -39,9 +39,9 @@ export const nike = [
     codigo: "NK095",
   },
   {
-    id: 4,
+    id: 56,
     marca: "Nike",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795512/VENICE/JORDAN/NIKE/NIKENARANJAFRONT_qaonro.jpg",
     imagen2:
@@ -51,9 +51,9 @@ export const nike = [
     codigo: "NK091",
   },
   {
-    id: 5,
+    id: 57,
     marca: "Nike",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795509/VENICE/JORDAN/NIKE/NIKEDAYFRONT_x1kfsa.jpg",
     imagen2:
@@ -63,9 +63,9 @@ export const nike = [
     codigo: "NK081",
   },
   {
-    id: 6,
+    id: 58,
     marca: "Nike",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795506/VENICE/JORDAN/NIKE/NIKECOLORIDOFRONTNEGRA_milrwi.jpg",
     imagen2:
@@ -75,9 +75,9 @@ export const nike = [
     codigo: "NK079",
   },
   {
-    id: 7,
+    id: 59,
     marca: "Nike",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795502/VENICE/JORDAN/NIKE/NIKEAIRROJAFRONT_ix5n2y.jpg",
     imagen2:
@@ -87,9 +87,9 @@ export const nike = [
     codigo: "NK089",
   },
   {
-    id: 8,
+    id: 60,
     marca: "Nike",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795499/VENICE/JORDAN/NIKE/DICENIKEBLANCAFRENTE_oe79vy.jpg",
     imagen2:
@@ -99,9 +99,9 @@ export const nike = [
     codigo: "NK080",
   },
   {
-    id: 9,
+    id: 61,
     marca: "Nike",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795494/VENICE/JORDAN/NIKE/BLANCAFRENTE3PIPAS_qyynkp.jpg",
     imagen2:
@@ -111,9 +111,9 @@ export const nike = [
     codigo: "NK083",
   },
   {
-    id: 10,
+    id: 62,
     marca: "Nike",
-    talle: "M",
+    talle: ["M"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795490/VENICE/JORDAN/NIKE/3PIPASNEGRAFRONT_vhpr94.jpg",
     imagen2:
@@ -123,9 +123,9 @@ export const nike = [
     codigo: "NK084",
   },
   {
-    id: 11,
+    id: 63,
     marca: "Nike",
-    talle: "XXL",
+    talle: ["XXL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710796610/VENICE/JORDAN/NIKE/PIPAROJAFRENTE_ackzkp.jpg",
     imagen2:

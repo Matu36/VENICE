@@ -1,8 +1,8 @@
 export const asics = [
   {
-    id: 1,
+    id: 8,
     marca: "Asics",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798353/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.21_rumgaf.jpg",
     imagen2:
@@ -12,9 +12,9 @@ export const asics = [
     codigo: "AS023",
   },
   {
-    id: 2,
+    id: 9,
     marca: "Asics",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798364/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.24_kad0g8.jpg",
     imagen2:
@@ -24,9 +24,9 @@ export const asics = [
     codigo: "AS023",
   },
   {
-    id: 3,
+    id: 10,
     marca: "Asics",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798390/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.27_ut0wqs.jpg",
     imagen2:
@@ -36,9 +36,9 @@ export const asics = [
     codigo: "AS022",
   },
   {
-    id: 4,
+    id: 11,
     marca: "Asics",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798382/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.27_2_kybk9t.jpg",
     imagen2:
@@ -48,9 +48,9 @@ export const asics = [
     codigo: "AS021",
   },
   {
-    id: 5,
+    id: 12,
     marca: "Asics",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798395/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.28_wi2awc.jpg",
     imagen2:
@@ -60,9 +60,9 @@ export const asics = [
     codigo: "AS021",
   },
   {
-    id: 6,
+    id: 13,
     marca: "Asics",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798399/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.29_1_hp7umx.jpg",
     imagen2:
@@ -72,9 +72,9 @@ export const asics = [
     codigo: "AS021",
   },
   {
-    id: 7,
+    id: 14,
     marca: "Asics",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798372/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.25_f34qzw.jpg",
     imagen2:

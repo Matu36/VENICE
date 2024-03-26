@@ -1,8 +1,8 @@
 export const levis = [
   {
-    id: 1,
+    id: 46,
     marca: "Levis",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875593/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.46_k3ljch.jpg",
     imagen2:
@@ -12,9 +12,9 @@ export const levis = [
     codigo: "LVS011",
   },
   {
-    id: 2,
+    id: 47,
     marca: "Levis",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875596/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.47_1_pc7d3s.jpg",
     imagen2:
@@ -24,9 +24,9 @@ export const levis = [
     codigo: "LVS009",
   },
   {
-    id: 3,
+    id: 48,
     marca: "Levis",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875626/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.50_3_jnqhyn.jpg",
     imagen2:
@@ -37,9 +37,9 @@ export const levis = [
     codigo: "LVS010",
   },
   {
-    id: 4,
+    id: 49,
     marca: "Levis",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875606/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.48_1_cgnkcp.jpg",
     imagen2:
@@ -49,9 +49,9 @@ export const levis = [
     codigo: "LVS008",
   },
   {
-    id: 5,
+    id: 50,
     marca: "Levis",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875616/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.50_1_q8tep8.jpg",
     imagen2:
@@ -61,9 +61,9 @@ export const levis = [
     codigo: "LVS007",
   },
   {
-    id: 6,
+    id: 51,
     marca: "Levis",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875636/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.51_1_j5jof9.jpg",
     imagen2:
@@ -73,9 +73,9 @@ export const levis = [
     codigo: "LVS005",
   },
   {
-    id: 7,
+    id: 52,
     marca: "Levis",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875656/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.53_o1azhl.jpg",
     imagen2:

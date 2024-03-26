@@ -16,6 +16,8 @@ import NavBarAlternativo from "../src/components/NavBarAlternativo";
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
   const [filtroPrecio, setFiltroPrecio] = useState();
+  const [filtroPrecioTodos, setFiltroPrecioTodos] = useState(null);
+  const [filtroTalle, setFiltroTalle] = useState("");
   const [modal, setModal] = useState(false);
   const [modalCarrito, setModalCarrito] = useState(false);
   const [carritoC, setCarritoC] = useState(0);
@@ -39,6 +41,48 @@ function App() {
       theme: "dark",
     });
   }, []);
+
+  const filtrarPorTalleYPrecio = () => {
+    let camisasFiltradas = camisas;
+
+    // Aplicar filtro por talle
+    if (filtroTalle) {
+      camisasFiltradas = camisasFiltradas.filter((camisa) =>
+        camisa.talle.includes(filtroTalle)
+      );
+    }
+
+    // Aplicar filtro por precio si está definido
+    if (filtroPrecioTodos) {
+      camisasFiltradas = camisasFiltradas.filter((camisa) => {
+        if (filtroPrecioTodos === "menorPrecio" && camisa.precio >= 0) {
+          return true;
+        } else if (filtroPrecioTodos === "mayorPrecio" && camisa.precio > 0) {
+          return true;
+        }
+        return false;
+      });
+    }
+
+    // Ordenar todas las camisas filtradas por precio
+    camisasFiltradas.sort((a, b) => {
+      if (filtroPrecioTodos === "menorPrecio") {
+        return a.precio - b.precio;
+      } else if (filtroPrecioTodos === "mayorPrecio") {
+        return b.precio - a.precio;
+      } else {
+        return 0;
+      }
+    });
+
+    return filtroTalle || filtroPrecioTodos ? camisasFiltradas : [];
+  };
+
+  const talle = filtrarPorTalleYPrecio();
+  const limpiarFiltros = () => {
+    setFiltroTalle("");
+    setFiltroPrecioTodos("");
+  };
 
   const filteredCamisas = camisas.filter((camisa) => {
     if (selectedMarca === "Todas las marcas") {
@@ -142,10 +186,39 @@ function App() {
           <h2>NUESTRAS MARCAS DESTACADAS</h2>
         </div>
       )}
-
+      {!filteredCamisas.length > 0 && (
+        <div className="filtrosTodos">
+          <h4>Filtrá por talle o precio</h4>
+          <select
+            value={filtroTalle}
+            onChange={(e) => setFiltroTalle(e.target.value)}
+          >
+            <option value="">Por Talle</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <select
+            value={filtroPrecioTodos}
+            onChange={(e) => setFiltroPrecioTodos(e.target.value)}
+          >
+            <option value="">Por Precio</option>
+            <option value="menorPrecio">Menor Precio</option>
+            <option value="mayorPrecio">Mayor Precio</option>
+          </select>
+          <button value="limpiarTodo" onClick={() => limpiarFiltros()}>
+            Omitir Filtros
+          </button>
+        </div>
+      )}
       <div className="eleganzaContainer">
         <div className="navBarDiv">
-          {!filteredCamisas.length > 0 && (
+          {!filteredCamisas.length > 0 && !talle.length > 0 && (
+            <h3 style={{ color: "black" }}>
+              <span>Seleccioná alguna de nuestras Marcas</span>
+            </h3>
+          )}
+          {!filteredCamisas.length > 0 && !talle.length > 0 && (
             <NavBar
               onSelectMarca={setSelectedMarca}
               onInicio={handleInicioClick}
@@ -153,7 +226,7 @@ function App() {
           )}
         </div>
       </div>
-      <br />
+
       <div>
         {filteredCamisas.length > 0 && (
           <div className="top-bar">
@@ -187,6 +260,18 @@ function App() {
             />
           ))}
         </div>
+        {!filteredCamisas.length > 0 && (
+          <div ref={cardsContainerRef} className="cards-container" id="card">
+            {talle.map((camisa) => (
+              <Card
+                id="cards"
+                key={camisa.id}
+                {...camisa}
+                actualizarContadorCarrito={actualizarContadorCarrito}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       {/* <div className="frase">California dressing</div> */}

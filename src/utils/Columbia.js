@@ -1,8 +1,8 @@
 export const columbia = [
   {
-    id: 1,
+    id: 21,
     marca: "Columbia",
-    talle: "M, L, XL",
+    talle: ["M, L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710876005/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.57_1_yexxir.jpg",
     imagen2:
@@ -12,9 +12,9 @@ export const columbia = [
     codigo: "CL037",
   },
   {
-    id: 2,
+    id: 22,
     marca: "Columbia",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875910/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.48_qyypmz.jpg",
     imagen2:
@@ -24,9 +24,9 @@ export const columbia = [
     codigo: "CL037",
   },
   {
-    id: 3,
+    id: 23,
     marca: "Columbia",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875939/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.51_pfyjhq.jpg",
     imagen2:
@@ -36,9 +36,9 @@ export const columbia = [
     codigo: "CL037",
   },
   {
-    id: 4,
+    id: 24,
     marca: "Columbia",
-    talle: "M",
+    talle: ["M"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875927/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.51_2_gz4o1v.jpg",
     imagen2:
@@ -48,9 +48,9 @@ export const columbia = [
     codigo: "CL036",
   },
   {
-    id: 5,
+    id: 25,
     marca: "Columbia",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875944/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.52_ybulbz.jpg",
     imagen2:
@@ -60,9 +60,9 @@ export const columbia = [
     codigo: "CL037",
   },
   {
-    id: 6,
+    id: 26,
     marca: "Columbia",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875971/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.54_sivi1z.jpg",
     imagen2:
@@ -72,9 +72,9 @@ export const columbia = [
     codigo: "CL037",
   },
   {
-    id: 7,
+    id: 27,
     marca: "Columbia",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875988/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.55_fbzrns.jpg",
     imagen2:
@@ -84,9 +84,9 @@ export const columbia = [
     codigo: "CL037",
   },
   {
-    id: 8,
+    id: 28,
     marca: "Columbia",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875993/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.56_1_mdpgul.jpg",
     imagen2:
@@ -96,9 +96,9 @@ export const columbia = [
     codigo: "CL037",
   },
   {
-    id: 9,
+    id: 29,
     marca: "Columbia",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710877262/VENICE/COLUMBIA/HDP_pjmgjv.jpg",
     imagen2:
@@ -108,9 +108,9 @@ export const columbia = [
     codigo: "CL037",
   },
   {
-    id: 10,
+    id: 30,
     marca: "Columbia",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875993/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.56_1_mdpgul.jpg",
     imagen2:
@@ -120,9 +120,9 @@ export const columbia = [
     codigo: "CL037",
   },
   {
-    id: 11,
+    id: 31,
     marca: "Columbia",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875944/VENICE/COLUMBIA/WhatsApp_Image_2024-03-17_at_15.30.52_ybulbz.jpg",
     imagen2:
