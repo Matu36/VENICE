@@ -78,7 +78,7 @@ button:focus-visible {
 }
 
 .marca:not(:last-child) {
-  border-right: 1px solid #ddd; 
+  border-right: 1px solid #ddd;
 }
 
 .marca button,
@@ -89,12 +89,10 @@ button:focus-visible {
   background: none;
 }
 
-
 .marca img {
   width: 100px;
   height: auto;
 }
-
 
 @media (max-width: 732px) {
   .marca img {
@@ -125,10 +123,7 @@ button:focus-visible {
     width: 100px;
     padding: 3px;
   }
-  
-
 }
-
 
 /* Card.css */
 
@@ -136,7 +131,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   border: 1px solid #ddd;
   max-width: 180px;
   width: 180px;
@@ -148,12 +143,12 @@ button:focus-visible {
 
 @media (max-width: 547px) {
   .card {
-   margin-top: 1rem;
-   margin-bottom: 1rem;
-   padding-left: 0;
-   padding-right: 0;
-   width: 150px;
-   max-width: 150px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    width: 150px;
+    max-width: 150px;
   }
 }
 
@@ -166,11 +161,9 @@ button:focus-visible {
 
 @media (max-width: 547px) {
   .card img {
-  height: 150px;
-  
+    height: 150px;
   }
 }
-
 
 .card h3 {
   color: black;
@@ -187,32 +180,29 @@ button:focus-visible {
   border: solid 1px black;
 }
 
-
 .card-content {
   text-align: center;
 }
 
 .card-content h2,
 .card-content p {
-  color: #34495e; 
+  color: #34495e;
   font-weight: bold;
   margin: 0;
 }
 
-
 @media (max-width: 683px) {
   .card-content h2,
   .card-content p {
-  font-size: 10px;
-}
-
+    font-size: 10px;
+  }
 }
 
 .cards-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-start; 
+  align-items: flex-start;
   padding: 0;
 }
 
@@ -222,17 +212,14 @@ button:focus-visible {
   }
 }
 
-
-
 .cards-container > div {
-  width: 100%; 
+  width: 100%;
 }
 
 .cards-container h3 {
-  text-align: center; 
-  margin-top: 2; 
+  text-align: center;
+  margin-top: 2;
 }
-
 
 /* Estilos del botón "Comprar" */
 
@@ -248,25 +235,23 @@ button:focus-visible {
     background-color 0.3s,
     color 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
 }
 
 .comprar:hover {
-  color: #777; 
-  transition: none; 
+  color: #777;
+  transition: none;
 }
 
 @media (max-width: 769px) {
   .comprar {
-    padding: 5px 10px; 
-    font-size: 14px; 
+    padding: 5px 10px;
+    font-size: 14px;
   }
 }
 
 .sin-stock {
   display: none;
 }
-
 
 /* Footer */
 
@@ -347,26 +332,25 @@ button:focus-visible {
   z-index: 1000;
 }
 
-
 .camisasContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px; 
+  padding: 20px;
 }
-
 
 .camisasImg {
   max-width: 100%;
-  border-radius: 8px; 
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
-  transition: opacity 0.3s, transform 0.3s; 
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
 }
 
-
 .camisasImg:hover {
-  opacity: 1; 
-  transform: scale(1.05); 
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 @media (max-width: 480px) {
@@ -375,14 +359,13 @@ button:focus-visible {
     width: 400px;
     max-width: 100%;
     padding: 0;
-    
-  }}
+  }
+}
 
 @media (max-width: 480px) {
   .camisasImg {
     height: 300px;
     width: 600px;
-    
   }
 }
 
@@ -446,7 +429,6 @@ button:focus-visible {
   }
 }
 
-
 @media (max-width: 574px) {
   .onSale {
     font-size: 1rem;
@@ -473,18 +455,16 @@ button:focus-visible {
 .sliderContainer {
   margin: auto;
   max-width: 86%;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); 
-  border: 2px solid #46637f; 
-  border-radius: 15px; 
-  overflow: hidden; 
-  transition: box-shadow 0.3s; 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  border: 2px solid #46637f;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
   margin-bottom: 1rem;
 }
 
 .custom-slider {
   margin: 0 -50px;
-  
- 
 }
 @media (max-width: 800px) {
   .custom-slider {
@@ -508,7 +488,6 @@ button:focus-visible {
 .slider-item img {
   width: 100%;
   height: auto;
-
 }
 
 /* AnimatedWord.css */
@@ -827,8 +806,6 @@ button:focus-visible {
   background: none;
 }
 
-
-
 @media (max-width: 1200px) {
   .close-button-carrito {
     left: 180px;
@@ -849,14 +826,12 @@ button:focus-visible {
 
 /* Estilos del botón de compras */
 .shoppingButton {
- 
   font-size: 24px;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   background: none;
   color: black;
- 
 }
 /* Estilos cuando se realiza scroll
 .container.scrolled .shoppingButton {
@@ -873,7 +848,7 @@ button:focus-visible {
   width: 160px;
   transform: translateX(-50%);
   font-weight: bold;
-  color: #46637f; 
+  color: #46637f;
   border-radius: 5px;
   z-index: 1000;
   opacity: 0.9;
@@ -898,10 +873,8 @@ button:focus-visible {
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 50%;
-position: fixed;
-    
-  }
- 
+  position: fixed;
+}
 
 .copy {
   color: #000;
@@ -939,38 +912,29 @@ position: fixed;
   font-weight: bold;
 }
 
-
 .frase {
-  color: #46637f; 
+  color: #46637f;
   margin-bottom: 5px;
-  font-family: "Indie Flower", cursive; 
+  font-family: "Indie Flower", cursive;
   font-weight: bold;
-  font-size: 2rem; 
-  text-align: center; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-  letter-spacing: 1px; 
-  transition: font-size 0.3s; 
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  transition: font-size 0.3s;
 }
 
 @media (max-width: 481px) {
   .frase {
     margin-bottom: 15px;
   }
-  
 }
-
-
-
-
 
 @media (max-width: 760px) {
   .frase {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 }
-
-
-
 
 .Toper {
   position: absolute;
@@ -1035,11 +999,9 @@ position: fixed;
   left: 0;
   right: 0;
   z-index: 1500;
- 
 }
 
 .top-bar button {
-
   background: none;
 }
 
@@ -1051,21 +1013,20 @@ position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative; 
+  position: relative;
   margin-bottom: 1rem;
 }
 
 .frasemarcas::after {
-  content: ""; 
-  position: absolute; 
-  bottom: 0; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  width: 20%; 
-  height: 6px; 
-  background-color: red; 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 6px;
+  background-color: red;
 }
-
 
 .frasemarcas h2 {
   color: black;
@@ -1080,56 +1041,53 @@ position: fixed;
 
 .filtros {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
   border: 1px solid #ccc;
-  
+
   background-color: #f9f9f9;
 }
 
 .filtros span {
   font-weight: bold;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 .filtros select {
-  padding: 4px; 
+  padding: 4px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #fff;
   font-size: 14px;
-  width: 130px; 
+  width: 130px;
 }
-
-
 
 .filtros select option[disabled] {
-  display: none; 
+  display: none;
 }
 
-
 .filtros select option[hidden] {
-  display: none; 
+  display: none;
 }
 
 .quality {
-  border: none; /* Eliminar el borde */
-  background: none; /* Eliminar el fondo */
-  padding: 0; /* Eliminar el padding */
-  max-width: 30%; /* Establecer un ancho máximo */
-  margin: 0 auto; /* Centrar horizontalmente */
-  transition: transform 0.3s; /* Agregar transición para un efecto suave */
+  border: none;
+  background: none;
+  padding: 0;
+  max-width: 30%;
+  margin: 0 auto;
+  transition: transform 0.3s;
 }
 
 .quality:hover {
-  transform: scale(1.1); /* Escalar ligeramente al pasar el cursor */
+  transform: scale(1.1);
 }
 
 .quality button {
   background: none;
-  border: none; /* Eliminar borde del botón */
-  padding: 0; /* Eliminar padding */
+  border: none;
+  padding: 0;
 }
 
 .quality img {
@@ -1138,78 +1096,80 @@ position: fixed;
   height: auto; /* Permitir que la altura se ajuste automáticamente */
 }
 
-
-
-
 @media (max-width: 476px) {
   .qualityDress {
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
   }
 }
 
 .qualityDress {
-  background-color: white; 
+  background-color: white;
   text-align: center;
-  border: 5px solid #46637f;
+  border: 5px solid grey;
   border-width: 5px 0;
   padding: 0px;
   max-width: 70%;
   margin: 0 auto;
-  transition: background-color 0.3s, color 0.3s;
-  color: red;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  color: black;
   margin-bottom: 3rem;
 }
 
-
 .footerAlternativo {
-    display: block;
-    position: relative;
-    z-index: 100;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    background-color: #F2F2F2;
-    margin-top: 40px;
-    
+  display: block;
+  position: relative;
+  z-index: 100;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #f2f2f2;
+  margin-top: 40px;
 }
 
-.footerAlternativo h2{
+.footerAlternativo h2 {
   color: black;
   font-size: 40px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 550px) {
+  .footerAlternativo h2 {
+    font-size: 30px;
+  }
 }
 
 .faSpan {
   font-size: 0.875rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.25px;
-    font-family: "Klein Web Regular", sans-serif;
-    max-width: 21.875rem;
-    margin-left: auto;
-    margin-right: auto;
-    color: #333333;
-    margin-bottom: 80px;
+  line-height: 1.25rem;
+  letter-spacing: 0.25px;
+  font-family: "Klein Web Regular", sans-serif;
+  max-width: 21.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  margin-bottom: 80px;
 }
 
 .faSpan p {
   font-size: 15px;
 }
 
-.footaltbespace  {
+.footaltbespace {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   height: 40px;
   padding-left: 0;
   border: none;
-  width: 40%; 
-  margin: 0 auto; 
+  width: 40%;
+  margin: 0 auto;
   margin-top: 50px;
   font-size: 20px;
   background: none;
   margin-bottom: 140px;
-  
 }
-
 
 .footaltbespace button {
   background: none;
@@ -1219,13 +1179,11 @@ position: fixed;
   margin-top: 50px;
 }
 
-
 @media screen and (max-width: 550px) {
   .footaltbespace {
-    width: 60%; 
+    width: 60%;
   }
 }
-
 
 .informacion {
   display: inline-block;
@@ -1237,11 +1195,10 @@ position: fixed;
   color: gray;
   margin-top: 50px;
   margin-bottom: 50px;
-  text-align: left; 
+  text-align: left;
   font-size: 15px;
   font-weight: 300;
 }
-
 
 .cargando {
   position: fixed;
@@ -1249,12 +1206,12 @@ position: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.8); 
-  color: white; 
-  border-radius: 20px; 
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); 
-  animation: fadeIn 0.5s ease-in; 
-  font-size: 24px; 
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.5s ease-in;
+  font-size: 24px;
   z-index: 4000;
 }
 
@@ -1267,33 +1224,31 @@ position: fixed;
   }
 }
 
-
 .modal1 {
   position: sticky;
-  top: 10%; 
+  top: 10%;
   left: 50%;
-  width: 40%; 
-  height: 40%; 
+  width: 40%;
+  height: 40%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 5000;
-  transform: translate(-50%, 0); 
+  transform: translate(-50%, 0);
 }
 
-
 .modal-content1 {
-  background-color: #fff; 
+  background-color: #fff;
   padding: 5px;
-  border-radius: 10px; 
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 .CardAmpliada {
   width: 250px;
-  border: 2px solid #46637f; 
-  border-radius: 10px; 
+  border: 2px solid #46637f;
+  border-radius: 10px;
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -1310,58 +1265,53 @@ position: fixed;
 }
 
 .CardAmpliada span {
-  color: #46637f; 
+  color: #46637f;
   font-weight: bold;
 }
 
-
 @media screen and (max-width: 470px) {
   .CardAmpliada {
-    width: 250px; 
+    width: 250px;
   }
 }
 
 @media screen and (max-width: 430px) {
   .CardAmpliada {
-    width: 200px; 
+    width: 200px;
   }
 }
 
 .soldOut-container {
-  
-  padding: 2px ;
+  padding: 2px;
   z-index: 3000;
   border-radius: 20px;
 }
 
 @media screen and (max-width: 547px) {
   .soldOut-container {
-    padding: px; 
+    padding: px;
   }
 }
 
-
 .soldOut {
- color: gray;
+  color: gray;
   font-size: 15px;
 }
 
 .soldOut {
   font-size: 12px;
- 
 }
 
 @media (max-width: 547px) {
   .soldOut-container {
-    top: 35%; 
-    padding: 2px 5px; 
+    top: 35%;
+    padding: 2px 5px;
   }
 
   .soldOut {
     padding: 0;
   }
 }
-
 
 /* PAGINA ALTERNATIVA */
 
@@ -1375,17 +1325,22 @@ position: fixed;
   color: white;
   padding: 10px 0;
   text-align: center;
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 80px;
   z-index: 1000;
-  height: 20px; 
-  line-height: 1px;
-  width: 100%; 
+  height: 20px;
+
+  width: 100%;
 }
 
+.black-bar p {
+  margin: 0;
+  text-align: center;
+  line-height: inherit;
+}
 
 .white-bar {
   background-color: white;
@@ -1398,49 +1353,48 @@ position: fixed;
 }
 
 .white-bar.fixed {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 80px;
 }
 
 .white-bar img {
-  max-width: 100px; 
-  height: auto; 
+  max-width: 100px;
+  height: auto;
 }
 
 @media screen and (max-width: 500px) {
   .white-bar img {
-    max-width: 70px; 
+    max-width: 70px;
   }
-  
 }
 
 .search-bar {
   display: flex;
-  align-items: center; 
+  align-items: center;
   border-bottom: solid 1px #595959;
   transition: border-bottom 0.5s ease;
   width: 45%; /* Ajustar el ancho del contenedor según sea necesario */
 }
 
 .inputnav {
-  padding: 5px 30px 5px 5px; 
-  font-size: 16px; 
-  color: #333; 
+  padding: 5px 30px 5px 5px;
+  font-size: 16px;
+  color: #333;
   text-overflow: ellipsis;
   letter-spacing: inherit;
   border: none;
-  outline: none; 
-  width: 100%; 
+  outline: none;
+  width: 100%;
 }
 
 .search-button {
   border: none;
   background: none;
   cursor: pointer;
-  margin-left: -10px; 
+  margin-left: -10px;
 }
 
 .filtrosTodos {
@@ -1448,68 +1402,71 @@ position: fixed;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  
 }
 
 .filtrosTodos h4 {
   font-size: 14px;
   margin-bottom: 10px;
-  color: black; 
+  color: grey;
   text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .filtrosTodos select {
-  width: 200px;
+  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc; 
+  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f8f8f8; 
-  color: #333; 
+  background-color: #f8f8f8;
+  color: #333;
 }
 
 .filtrosTodos button {
-display: flex;
   font-size: 12px;
-  background-color: #f8f8f8; 
-  color: #333; 
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border-color 0.3s;
+}
+
+.filtrosTodos button:hover {
+  background-color: #f0f0f0;
+  border-color: #aaa;
 }
 
 .filtrosTodos select:focus {
   outline: none;
-  border-color: #666; 
+  border-color: #666;
 }
 
-
-
 .inputnav::placeholder {
-  color: #999; 
+  color: #999;
 }
 
 .video-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
-  
+  justify-content: center;
 }
 .video-group {
-  width: calc(50% - 80px); 
-  margin: 10px; 
- 
+  width: calc(50% - 80px);
+  margin: 10px;
 }
 
 .video-element,
 .image-element {
-  width: 100%; 
-  max-width: 400px; 
-  height: auto; 
- margin-bottom: 30px;
- 
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 30px;
 }
-
-
-
 
 .full-width-image {
   width: 100%;
@@ -1528,18 +1485,16 @@ display: flex;
   .video-element,
   .image-element {
     width: 100%;
-    max-width: none; 
+    max-width: none;
     height: auto;
     margin-bottom: 30px;
   }
 
   .video-group {
-    width: 100%; 
-    margin: 10px 0; 
- 
+    width: 100%;
+    margin: 10px 0;
   }
 }
-
 
 .video-element {
   width: 100%;
@@ -1549,19 +1504,3 @@ display: flex;
 .video-react .video-react-control-bar {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
