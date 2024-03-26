@@ -261,7 +261,7 @@ function App() {
           ))}
         </div>
         {!filteredCamisas.length > 0 && (
-          <div ref={cardsContainerRef} className="cards-container" id="card">
+          <div className="cards-container" id="card">
             {talle.map((camisa) => (
               <Card
                 id="cards"

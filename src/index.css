@@ -1459,7 +1459,7 @@ position: fixed;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.filtrosTodos select, .filtrosTodos button {
+.filtrosTodos select {
   width: 200px;
   padding: 10px;
   margin-bottom: 10px;
@@ -1471,7 +1471,9 @@ position: fixed;
 
 .filtrosTodos button {
 display: flex;
-  font-size: 14px;
+  font-size: 12px;
+  background-color: #f8f8f8; 
+  color: #333; 
 }
 
 .filtrosTodos select:focus {
