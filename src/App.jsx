@@ -5,7 +5,7 @@ import { camisas } from "../src/utils/Camisas";
 import Card from "./components/Card";
 import AboutUs from "./components/AboutUs";
 import CarritoModal from "./components/CarritoModal";
-import VENICEEXPERIENCE from "../src/assets/img/beauty.png";
+import VENICEEXPERIENCE from "../src/assets/img/rubiofrase.png";
 import Filtros from "./components/Filtros";
 import FooterAlternativo from "./pages/FooterAlternativo";
 import { Slide, toast } from "react-toastify";
@@ -279,12 +279,7 @@ function App() {
       <div className="camisasContainer">
         <img src={VENICEEXPERIENCE} alt="camisas" className="camisasImg" />
       </div>
-      <br />
 
-      <br />
-      <div className="qualityDress">
-        <h2>QUALITY DRESS</h2>
-      </div>
       <FooterAlternativo
         handleMostrarModalContact={handleMostrarModalContact}
         handleMostrarModalAbout={handleMostrarModalAbout}
