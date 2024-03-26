@@ -16,7 +16,7 @@ import NavBarAlternativo from "../src/components/NavBarAlternativo";
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
   const [filtroPrecio, setFiltroPrecio] = useState();
-  const [filtroPrecioTodos, setFiltroPrecioTodos] = useState(null);
+  const [filtroPrecioTodos, setFiltroPrecioTodos] = useState("");
   const [filtroTalle, setFiltroTalle] = useState("");
   const [modal, setModal] = useState(false);
   const [modalCarrito, setModalCarrito] = useState(false);

@@ -97,6 +97,7 @@ const Card = ({
       />
 
       <div className="card-content">
+        <p>{marca ? marca : null} </p>
         <p>{nombre ? nombre : null} </p>
         {Array.isArray(talle) && <p>Talle: {talle.join(", ")}</p>}
 

@@ -1052,7 +1052,7 @@ position: fixed;
   flex-direction: column;
   justify-content: center;
   position: relative; 
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .frasemarcas::after {
