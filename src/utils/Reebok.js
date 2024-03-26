@@ -1,8 +1,8 @@
 export const reebok = [
   {
-    id: 1,
+    id: 68,
     marca: "Reebok",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630842/VENICE/RBMARRONFRONT_h23ikb.jpg",
     imagen2:
@@ -12,9 +12,9 @@ export const reebok = [
     codigo: "RBK026",
   },
   {
-    id: 2,
+    id: 69,
     marca: "Reebok",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630837/VENICE/RBLOGOCELESTEFRONT_viikzg.jpg",
     imagen2:
@@ -24,9 +24,9 @@ export const reebok = [
     codigo: "RBK026",
   },
   {
-    id: 3,
+    id: 70,
     marca: "Reebok",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630832/VENICE/RBLOGOBLANCOFRONT_p1hqac.jpg",
     imagen2:
@@ -36,9 +36,9 @@ export const reebok = [
     codigo: "RBK026",
   },
   {
-    id: 4,
+    id: 71,
     marca: "Reebok",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630828/VENICE/RBLOGOAZULROJOFRONT_aorw0e.jpg",
     imagen2:
@@ -48,9 +48,9 @@ export const reebok = [
     codigo: "RBK026",
   },
   {
-    id: 5,
+    id: 72,
     marca: "Reebok",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630800/VENICE/RBANARANJAFRONT_ohn4xb.jpg",
     imagen2:
@@ -60,9 +60,9 @@ export const reebok = [
     codigo: "RBK024",
   },
   {
-    id: 5,
+    id: 73,
     marca: "Reebok",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630817/VENICE/RBAZILFRONT_aymjgs.jpg",
     imagen2:
@@ -72,9 +72,9 @@ export const reebok = [
     codigo: "RBK024",
   },
   {
-    id: 6,
+    id: 74,
     marca: "Reebok",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630823/VENICE/RBCELESTEFRONT_bb4vfe.jpg",
     imagen2:

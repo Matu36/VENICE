@@ -2,7 +2,7 @@ export const adidas = [
   {
     id: 1,
     marca: "Adidas",
-    talle: "M, L, XL",
+    talle: ["M, L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875867/VENICE/ADIDAS/WhatsApp_Image_2024-03-19_at_16.13.22_jskj6p.jpg",
     imagen2:
@@ -14,7 +14,7 @@ export const adidas = [
   {
     id: 2,
     marca: "Adidas",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875789/VENICE/ADIDAS/WhatsApp_Image_2024-03-17_at_15.32.53_qtxu7x.jpg",
     imagen2:
@@ -26,7 +26,7 @@ export const adidas = [
   {
     id: 3,
     marca: "Adidas",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875769/VENICE/ADIDAS/WhatsApp_Image_2024-03-17_at_15.32.52_1_e10xvk.jpg",
     imagen2:
@@ -38,7 +38,7 @@ export const adidas = [
   {
     id: 4,
     marca: "Adidas",
-    talle: "M, L",
+    talle: ["M, L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875733/VENICE/ADIDAS/WhatsApp_Image_2024-03-17_at_15.32.47_rzbumg.jpg",
     imagen2:
@@ -50,7 +50,7 @@ export const adidas = [
   {
     id: 5,
     marca: "Adidas",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875738/VENICE/ADIDAS/WhatsApp_Image_2024-03-17_at_15.32.48_1_wnyyfv.jpg",
     imagen2:
@@ -62,7 +62,7 @@ export const adidas = [
   {
     id: 6,
     marca: "Adidas",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875764/VENICE/ADIDAS/WhatsApp_Image_2024-03-17_at_15.32.50_jpmmnf.jpg",
     imagen2:
@@ -74,7 +74,7 @@ export const adidas = [
   {
     id: 7,
     marca: "Adidas",
-    talle: "M, L",
+    talle: ["M, L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875758/VENICE/ADIDAS/WhatsApp_Image_2024-03-17_at_15.32.50_2_hjnu61.jpg",
     imagen2:

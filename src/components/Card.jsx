@@ -98,7 +98,8 @@ const Card = ({
 
       <div className="card-content">
         <p>{nombre ? nombre : null} </p>
-        {talle && <p>Talle: {talle}</p>}
+        {Array.isArray(talle) && <p>Talle: {talle.join(", ")}</p>}
+
         <p>Precio: $ {precio}</p>
         <p style={{ color: "grey", fontSize: "10px", marginTop: "10px" }}>
           Código: {codigo}

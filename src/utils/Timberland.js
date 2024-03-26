@@ -1,8 +1,8 @@
 export const timberland = [
   {
-    id: 1,
+    id: 75,
     marca: "Timberland",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710626589/VENICE/TM068FRONT_o76wcl.jpg",
     imagen2:
@@ -12,9 +12,9 @@ export const timberland = [
     codigo: "TM068",
   },
   {
-    id: 2,
+    id: 76,
     marca: "Timberland",
-    talle: "L, XL",
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710626587/VENICE/TM066FRONT_prxdmm.jpg",
     imagen2:
@@ -24,9 +24,9 @@ export const timberland = [
     codigo: "TM066",
   },
   {
-    id: 3,
+    id: 77,
     marca: "Timberland",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710626586/VENICE/TM065WHITEFRONT_p2kz1k.jpg",
     imagen2:
@@ -36,9 +36,9 @@ export const timberland = [
     codigo: "TM065",
   },
   {
-    id: 4,
+    id: 78,
     marca: "Timberland",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710626584/VENICE/TM065FRONTBLACK_quy8qz.jpg",
     imagen2:
@@ -48,9 +48,9 @@ export const timberland = [
     codigo: "TM065",
   },
   {
-    id: 5,
+    id: 79,
     marca: "Timberland",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628485/VENICE/CAQUI_vwp3lm.jpg",
     imagen2:
@@ -60,9 +60,9 @@ export const timberland = [
     codigo: "TM065",
   },
   {
-    id: 6,
+    id: 80,
     marca: "Timberland",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710626583/VENICE/TM065BLUFRONT_yry7qq.jpg",
     imagen2:

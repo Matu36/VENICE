@@ -1443,7 +1443,41 @@ position: fixed;
   margin-left: -10px; 
 }
 
+.filtrosTodos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
 
+.filtrosTodos h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: black; 
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.filtrosTodos select, .filtrosTodos button {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  background-color: #f8f8f8; 
+  color: #333; 
+}
+
+.filtrosTodos button {
+display: flex;
+  font-size: 14px;
+}
+
+.filtrosTodos select:focus {
+  outline: none;
+  border-color: #666; 
+}
 
 
 

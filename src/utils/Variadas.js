@@ -1,9 +1,9 @@
 export const variadas = [
   {
-    id: 1,
+    id: 87,
     marca: "Variadas",
     nombre: "BOB",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628484/VENICE/BOBFRONT_dxiobu.jpg",
     imagen2:
@@ -13,10 +13,10 @@ export const variadas = [
     codigo: "BOB040",
   },
   {
-    id: 2,
+    id: 88,
     marca: "Variadas",
     nombre: "FISH SPORTSWEAR",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628506/VENICE/PEZ061FRONT_rk4fje.jpg",
     imagen2:
@@ -26,10 +26,10 @@ export const variadas = [
     codigo: "PEZ061",
   },
   {
-    id: 3,
+    id: 89,
     marca: "Variadas",
     nombre: "CHAMPION",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628489/VENICE/CH064FRONT_byq84d.jpg",
     imagen2:
@@ -39,10 +39,10 @@ export const variadas = [
     codigo: "CH064",
   },
   {
-    id: 4,
+    id: 90,
     marca: "Variadas",
     nombre: "UNDER ARMOUR",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628508/VENICE/UA060FRONT_oio2wd.jpg",
     imagen2:
@@ -52,10 +52,10 @@ export const variadas = [
     codigo: "UA060",
   },
   {
-    id: 5,
+    id: 91,
     marca: "Variadas",
     nombre: "VANS",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628511/VENICE/VS062FRONT_fg3qmy.jpg",
     imagen2:
@@ -65,10 +65,10 @@ export const variadas = [
     codigo: "VS062",
   },
   {
-    id: 6,
+    id: 92,
     marca: "Variadas",
     nombre: "VANS",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628513/VENICE/VS063FRONT_egz8wh.jpg",
     imagen2:
@@ -78,10 +78,10 @@ export const variadas = [
     codigo: "VS063",
   },
   {
-    id: 7,
+    id: 93,
     marca: "Variadas",
     nombre: "NEW BALANCE",
-    talle: "L pequeño",
+    talle: ["L pequeño"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628501/VENICE/NB029FRONT_rnkji0.jpg",
     imagen2:
@@ -91,10 +91,10 @@ export const variadas = [
     codigo: "NB069",
   },
   {
-    id: 8,
+    id: 94,
     marca: "Variadas",
     nombre: "NEW BALANCE",
-    talle: "XXL",
+    talle: ["XXL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628499/VENICE/NB028FRONT_cx14st.jpg",
     imagen2:
@@ -104,10 +104,10 @@ export const variadas = [
     codigo: "NB028",
   },
   {
-    id: 9,
+    id: 95,
     marca: "Variadas",
     nombre: "Converse",
-    talle: "XL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628494/VENICE/CNV003FRONT_pcx6oi.jpg",
     imagen2:
@@ -117,10 +117,10 @@ export const variadas = [
     codigo: "CNV003",
   },
   {
-    id: 10,
+    id: 96,
     marca: "Variadas",
     nombre: "Converse",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628496/VENICE/CNV004FRONT_lee1gj.jpg",
     imagen2:
@@ -130,10 +130,10 @@ export const variadas = [
     codigo: "CNV004",
   },
   {
-    id: 11,
+    id: 97,
     marca: "Variadas",
     nombre: "NORTH FACE",
-    talle: "M, L",
+    talle: ["M, L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628503/VENICE/NF001FRONT_ztjun9.jpg",
     imagen2:
@@ -143,10 +143,10 @@ export const variadas = [
     codigo: "NF001",
   },
   {
-    id: 12,
+    id: 98,
     marca: "Variadas",
     nombre: "CHAMPION",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628491/VENICE/CHGRISFRONT_jtxuvt.jpg",
     imagen2:
@@ -156,11 +156,11 @@ export const variadas = [
     codigo: "CH064",
   },
   {
-    id: 13,
+    id: 99,
     marca: "Variadas",
     nombre: "AEROPORTABLE",
 
-    talle: "xL",
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798017/VENICE/camperafront_seje0k.jpg",
     imagen2:
@@ -170,10 +170,10 @@ export const variadas = [
     codigo: "IMP102",
   },
   {
-    id: 14,
+    id: 100,
     marca: "Variadas",
     nombre: "New Balance",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710937706/VENICE/VARIADO/WhatsApp_Image_2024-03-19_at_19.15.36_l8loxg.jpg",
     imagen2:
@@ -183,10 +183,10 @@ export const variadas = [
     codigo: "NB034",
   },
   {
-    id: 15,
+    id: 101,
     marca: "Variadas",
     nombre: "Billabong",
-    talle: "L",
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710937684/VENICE/VARIADO/WhatsApp_Image_2024-03-19_at_19.15.25_ur3ayc.jpg",
     imagen2:
@@ -196,7 +196,7 @@ export const variadas = [
     codigo: "BLB035",
   },
   {
-    id: 16,
+    id: 102,
     marca: "Variadas",
     nombre: "COLEMAN",
     talle: "",
