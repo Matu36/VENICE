@@ -1473,6 +1473,7 @@ button:focus-visible {
   height: auto;
   display: block;
   margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 700px) {
@@ -1504,3 +1505,8 @@ button:focus-visible {
 .video-react .video-react-control-bar {
   display: none;
 }
+
+.paused {
+  animation-play-state: paused !important;
+}
+
