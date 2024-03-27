@@ -23,6 +23,15 @@ export default function NavBar({ onSelectMarca, onInicio }) {
     <div className="navbar">
       <button className="marca">
         <a
+          className="marca"
+          onClick={() => handleMarcaClick("Variadas")}
+          href="#cards"
+        >
+          <img src={edicion} alt="" />
+        </a>
+      </button>
+      <button className="marca">
+        <a
           href="#cards"
           className="marca"
           onClick={() => handleMarcaClick("Adidas")}
@@ -131,16 +140,6 @@ export default function NavBar({ onSelectMarca, onInicio }) {
           onClick={() => handleMarcaClick("Tommy")}
         >
           <img src={tommy} alt="" />
-        </a>
-      </button>
-
-      <button className="marca">
-        <a
-          className="marca"
-          onClick={() => handleMarcaClick("Variadas")}
-          href="#cards"
-        >
-          <img src={edicion} alt="" />
         </a>
       </button>
     </div>
