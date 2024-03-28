@@ -10,16 +10,19 @@ const newUser = (props) => {
         box-sizing: border-box;
       }
       img {
-        max-width: 50%;
-      }
+        max-width: 40%;
+        display: block; 
+        margin: 0 auto; 
+    }
       h1, h2, h3 {
         font-weight: bold;
       }
-      h1 {
-        font-size: 2.5em;
-        color: #F77F00;
+      h2 {
+        text-align: center;
+        font-size: 2.5em; 
+        color: #555; 
         margin-bottom: 0.5em;
-      }
+    }
       p {
         margin-bottom: 1.5em;
       }
@@ -33,17 +36,17 @@ const newUser = (props) => {
     </style>
   </head>
   <body>
-      <img src="https://mangiare.vercel.app/static/media/LandingTitle.e92b7fdb33ac266bc895.png" alt="mangiare logo"/>
-      <h1>Welcome to Mangiare - Bring your ingredients to life!</h1>
-      <p><b>Hello ${props.email},</b></p>
-      <p>Welcome to Mangiare! We're thrilled to have you in our community of food lovers. We know that cooking can be a daunting task, especially when you lack inspiration or don't know what to make with the ingredients you have at home. That's why we created Mangiare, to help you cook delicious recipes with the ingredients you already have in your kitchen.</p>
-      <p>Have you ever had the feeling that you have a bunch of ingredients in your pantry and don't know how to combine them to create something tasty? Mangiare is here to solve that problem. Simply enter the ingredients you have at home, and our app will show you a list of delicious recipes you can make with them. It's that easy!</p>
-      <p>In addition, we make sure that our recipes are simple and easy to follow, even if you're a beginner cook. And if you're looking for something specific, you can use our advanced search tools to find the perfect recipe.</p>
-      <p>We want you to enjoy cooking, so we've made Mangiare as easy as possible. Plus, we're constantly working to improve our app and add new features. And the best part is, Mangiare is completely free.</p>
-      <p>Are you ready to get started? <a href="https://mangiare.vercel.app/">Log in</a> now and start cooking with your ingredients today!</p>
-      <p>Best regards,</p>
-      <p>The Mangiare Team</p>
-      <p>P.S. Be sure to follow us on our <a href="#">social media</a> for cooking tips, recipes, and much more. We love sharing our creations with the Mangiare community!</p>
+      <img src="https://res.cloudinary.com/dmfzplfra/image/upload/v1711588278/VENICE/LOGO_1_k79btn.jpg" alt="venice logo"/>
+      <h2>Bienvenido a Venice Indumentaria - La moda sos vos!</h2>
+      <p><b>Hola ${props.email},</b></p>
+      <p>¡Bienvenido a Venice! Estamos emocionados de tenerte en nuestra comunidad de amantes de las remeras originales. Sabemos que encontrar prendas únicas y de calidad puede ser todo un desafío, especialmente cuando buscas algo que refleje tu estilo personal. Es por eso que creamos Venice, para ofrecerte una amplia selección de remeras originales y de excelente calidad..</p>
+      <p>¿Alguna vez has sentido que quieres destacarte con una remera única pero no sabes dónde encontrarla? Venice está aquí para resolver ese problema. Simplemente explora nuestra colección y encontrarás una variedad de remeras originales que se adaptan a tu estilo y personalidad.</p>
+      <p>Además, nos aseguramos de que nuestras remeras sean de la mejor calidad, para que te sientas cómodo y seguro luciéndolas. Y si estás buscando algo específico, nuestro equipo está aquí para ayudarte a encontrar la remera perfecta para ti.</p>
+      <p>Queremos que disfrutes vistiendo remeras originales, por eso hemos hecho Venice lo más fácil posible para ti. Además, estamos constantemente agregando nuevas colecciones y diseños para mantenerte actualizado con las últimas tendencias en moda.</p>
+      <p>¿Estás listo para explorar nuestra colección?  ¡Visita nuestro sitio web <a href="https://venice-nine.vercel.app/">Ingresar</a> y encuentra la remera original perfecta para ti hoy mismo!</p>
+      <p>Saludos cordiales,</p>
+      <p>Experiencia VENICE</p>
+      <p>P.D. No te pierdas nuestras novedades y promociones especiales. ¡Síguenos en nuestras redes sociales para estar al tanto de todo lo que tenemos para ofrecerte!</p>
     </body>
   </html>`;
 };
