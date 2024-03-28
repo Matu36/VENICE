@@ -2,7 +2,7 @@ const transporter = require("../mailer/mailer");
 const { NODEMAILER_USER } = process.env;
 
 const sendEmail = (to, subject, html) => {
-  console.log("Sending email...");
+  console.log("Enviando Email...");
   let emailOptions = {
     from: NODEMAILER_USER,
     to,
@@ -16,7 +16,7 @@ const sendEmail = (to, subject, html) => {
     if (error) {
       console.log("Email error: ", error.message);
     } else {
-      console.log("Email sent succesfully 📧");
+      console.log("Email enviado satisfactoriamente 📧");
     }
   });
 };

@@ -3,7 +3,7 @@ const newUser = require("./templates/newUser");
 const { NODEMAILER_USER } = process.env;
 
 const sendEmailWithTemplate = (to, template) => {
-  console.log("Sending email...");
+  console.log("Enviando Email...");
   let emailOptions;
 
   switch (template) {
@@ -30,7 +30,7 @@ const sendEmailWithTemplate = (to, template) => {
     if (error) {
       console.log("Email error: ", error.message);
     } else {
-      console.log("Email sent succesfully 📧");
+      console.log("Email enviado satisfactoriamente 📧");
     }
   });
 };
