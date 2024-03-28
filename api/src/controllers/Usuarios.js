@@ -1,7 +1,6 @@
 const { Usuarios } = require("../db.js");
 const bcrypt = require("bcrypt");
-
-// const sendEmailWithTemplate = require("../mailer/sendEmailWithTemplate");
+const sendEmailWithTemplate = require("../mailer/sendEmailWithTemplate");
 
 const getUsers = async (req, res) => {
   try {
@@ -59,7 +58,7 @@ const postUser = async (req, res) => {
 
     if (created) {
       console.log("Usuario Creado");
-      // sendEmailWithTemplate(instance.email, "newUser");
+      sendEmailWithTemplate(instance.email, "newUser");
     }
 
     res.send(instance);
