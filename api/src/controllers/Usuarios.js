@@ -1,34 +1,37 @@
 const { Usuarios } = require("../db.js");
-// const sendEmailWithTemplate = require("../mailer/sendEmailWithTemplate");
+const bcrypt = require("bcrypt");
+const sendEmailWithTemplate = require("../mailer/sendEmailWithTemplate");
 
 const getUsers = async (req, res) => {
   try {
     if (!req.body?.email || !req.body?.password)
       throw "Missing email or password";
 
-    // Buscar usuario por email y contraseña
+    // Buscar usuario por email
     const requestUser = await Usuarios.findOne({
       where: {
         email: req.body.email.toLowerCase(),
-        password: req.body.password, // Verificar también la contraseña
       },
     });
 
-    // Si no se encuentra el usuario, devolver error 403 (Forbidden)
-    if (!requestUser) return res.status(403).send("Wrong email or password");
+    // Verificar si se encontró un usuario y si la contraseña proporcionada coincide con la almacenada en el base de datos
+    if (
+      !requestUser ||
+      !(await bcrypt.compare(req.body.password, requestUser.password))
+    ) {
+      return res.status(403).send("Wrong email or password");
+    }
 
     // Si el usuario tiene un rol asignado, devolver todos los usuarios
     let returnedUsers;
     if (requestUser.dataValues.role !== null)
       returnedUsers = await Usuarios.findAll();
-    // Si no tiene rol asignado, devolver solo el usuario que coincida con el email y contraseña
-    else
-      returnedUsers = await Usuarios.findAll({
-        where: { email: req.body.email.toLowerCase() },
-      });
+    // Si no tiene rol asignado, devolver solo el usuario que coincida con el email
+    else returnedUsers = [requestUser]; // Devolver solo el usuario encontrado
 
-    // Si no se encuentran usuarios devolver error 404 (Not Found)
-    if (!returnedUsers) return res.status(404).send("Users Not Found");
+    // Si no se encuentran usuarios, devolver error 404 (Not Found)
+    if (!returnedUsers || returnedUsers.length === 0)
+      return res.status(404).send("Users Not Found");
 
     // Devolver los usuarios encontrados
     res.send(returnedUsers);
@@ -43,16 +46,19 @@ const postUser = async (req, res) => {
     if (!req.body?.email || !req.body?.password)
       throw "Missing email or password";
 
+    // Genera un hash para la contraseña
+    const hashedPassword = await bcrypt.hash(req.body.password, 10);
+
     const [instance, created] = await Usuarios.findOrCreate({
       where: { email: req.body.email.toLowerCase() },
       defaults: {
-        password: req.body.password,
+        password: hashedPassword, // Guarda el hash en lugar de la contraseña en texto plano
       },
     });
 
     if (created) {
       console.log("Usuario Creado");
-      // sendEmailWithTemplate(instance.email, "newUser");
+      sendEmailWithTemplate(instance.email, "newUser");
     }
 
     res.send(instance);
@@ -81,7 +87,8 @@ const putUser = async (req, res) => {
 
       // Si se proporciona una nueva contraseña, actualizarla
       if (password) {
-        user.password = password;
+        const hashedPassword = await bcrypt.hash(password, 10);
+        user.password = hashedPassword;
       }
 
       // Guardar los cambios en la base de datos
