@@ -15,7 +15,7 @@ const getUsers = async (req, res) => {
     });
 
     // Verificar si se encontró un usuario y si la contraseña proporcionada coincide con la
-    // almacenada en el base de datos
+    // almacenada en la base de datos
     if (
       !requestUser ||
       !(await bcrypt.compare(req.body.password, requestUser.password))
@@ -25,7 +25,7 @@ const getUsers = async (req, res) => {
 
     // Si el usuario tiene un rol asignado, devolver todos los usuarios
     let returnedUsers;
-    if (requestUser.dataValues.role !== null)
+    if (requestUser.dataValues.rol !== null)
       returnedUsers = await Usuarios.findAll();
     // Si no tiene rol asignado, devolver solo el usuario que coincida con el email
     else returnedUsers = [requestUser]; // Devolver solo el usuario encontrado
