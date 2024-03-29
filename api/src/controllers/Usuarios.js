@@ -7,27 +7,39 @@ const getUsers = async (req, res) => {
     if (!req.body?.email || !req.body?.password)
       throw "Missing email or password";
 
-    // Buscar usuario por email
-    const requestUser = await Usuarios.findOne({
-      where: {
-        email: req.body.email.toLowerCase(),
-      },
-    });
+    // Verificar si la contraseña proporcionada es un hash o una contraseña en texto plano
+    const isPasswordHash = req.body.password.length === 60; // Assumiendo que la longitud del hash es 60
 
-    // Verificar si se encontró un usuario y si la contraseña proporcionada coincide con la
-    // almacenada en la base de datos
-    if (
-      !requestUser ||
-      !(await bcrypt.compare(req.body.password, requestUser.password))
-    ) {
-      return res.status(403).send("Wrong email or password");
+    let requestUser;
+
+    if (isPasswordHash) {
+      // Si la contraseña es un hash, buscar al usuario por el hash
+      requestUser = await Usuarios.findOne({
+        where: {
+          password: req.body.password,
+        },
+      });
+    } else {
+      // Si la contraseña es texto plano, buscar al usuario por su email
+      requestUser = await Usuarios.findOne({
+        where: {
+          email: req.body.email.toLowerCase(),
+        },
+      });
+
+      // Verificar si se encontró un usuario y si la contraseña proporcionada coincide con la almacenada
+      if (
+        !requestUser ||
+        !(await bcrypt.compare(req.body.password, requestUser.password))
+      ) {
+        return res.status(403).send("Wrong email or password");
+      }
     }
 
-    // Si el usuario tiene un rol asignado, devolver todos los usuarios
     let returnedUsers;
+
     if (requestUser.dataValues.rol !== null)
       returnedUsers = await Usuarios.findAll();
-    // Si no tiene rol asignado, devolver solo el usuario que coincida con el email
     else returnedUsers = [requestUser]; // Devolver solo el usuario encontrado
 
     // Si no se encuentran usuarios, devolver error 404 (Not Found)
@@ -134,8 +146,45 @@ const putUser = async (req, res) => {
   }
 };
 
+const resetPassword = async (req, res) => {
+  const { email } = req.body;
+
+  try {
+    // Buscar el usuario por su correo electrónico
+    const user = await Usuarios.findOne({ where: { email } });
+
+    if (!user) {
+      return res
+        .status(404)
+        .send("No se encontró un usuario con ese correo electrónico");
+    }
+
+    // Generar una nueva contraseña aleatoria
+    const newPassword = Math.random().toString(36).slice(-8);
+
+    // Hash de la nueva contraseña
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    // Actualizar la contraseña del usuario en la base de datos
+    user.password = hashedPassword;
+    await user.save();
+
+    // Enviar el nuevo password al correo electrónico del usuario
+    sendEmailWithTemplate(email, "newPassword", { password: user.password });
+
+    // Enviar el nuevo password al correo electrónico del usuario
+    res.send("Se ha enviado un correo electrónico con la nueva contraseña");
+  } catch (error) {
+    console.log(error);
+    return res
+      .status(500)
+      .send("Ocurrió un error al restablecer la contraseña");
+  }
+};
+
 module.exports = {
   getUsers,
   postUser,
   putUser,
+  resetPassword,
 };

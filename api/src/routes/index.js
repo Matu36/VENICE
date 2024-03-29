@@ -1,6 +1,11 @@
 const { Router } = require("express");
 // const {getComidas, putComidas, createComida, deleteComida} = require ("../controllers/ComidasCont");
-const { getUsers, postUser, putUser } = require("../controllers/Usuarios");
+const {
+  getUsers,
+  postUser,
+  putUser,
+  resetPassword,
+} = require("../controllers/Usuarios");
 // const {postMensaje, obtenerMensajes} = require ("../controllers/UserMensajesCont")
 // const {checkOut} = require ("../controllers/Stripe");
 // const { Payment, postVentaMercadoPago, getMercadoPago } = require('../controllers/MercadoPago');
@@ -15,6 +20,7 @@ const router = Router();
 router.get("/usuarios", getUsers);
 router.post("/usuarios", postUser);
 router.put("/usuarios", putUser);
+router.put("/usuarios/recoverpass", resetPassword);
 // router.post ("/mensajes", postMensaje)
 // router.get ("/mensajes", obtenerMensajes)
 // router.post("/api/checkout", checkOut);

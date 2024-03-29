@@ -1,8 +1,9 @@
 const transporter = require("../mailer/mailer");
 const newUser = require("./templates/newUser");
+const newPassword = require("./templates/newPassword");
 const { NODEMAILER_USER } = process.env;
 
-const sendEmailWithTemplate = (to, template) => {
+const sendEmailWithTemplate = (to, template, props) => {
   console.log("Enviando Email...");
   let emailOptions;
 
@@ -13,6 +14,15 @@ const sendEmailWithTemplate = (to, template) => {
         to,
         subject: "Bienvenido a VENICE INDUMENTARIA",
         html: newUser({ email: to }),
+      };
+      break;
+
+    case "newPassword":
+      emailOptions = {
+        from: NODEMAILER_USER,
+        to,
+        subject: "Recuperación de contraseña",
+        html: newPassword({ email: to, password: props.password }),
       };
       break;
 
