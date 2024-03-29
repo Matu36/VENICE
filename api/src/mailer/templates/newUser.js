@@ -42,7 +42,7 @@ const newUser = (props) => {
     </style>
   </head>
   <body>
-      <img src="https://res.cloudinary.com/dmfzplfra/image/upload/v1711588278/VENICE/LOGO_1_k79btn.jpg" alt="venice logo"/>
+      <img src="https://res.cloudinary.com/dmfzplfra/image/upload/v1711678602/VENICE/LOGO_1-removebg-preview_j1tfcu.png" alt="venice logo"/>
       <h3>Buenas Prendas 🤙</h3>
       
       <p><b>Hola ${props.email},</b></p>

@@ -14,7 +14,8 @@ const getUsers = async (req, res) => {
       },
     });
 
-    // Verificar si se encontró un usuario y si la contraseña proporcionada coincide con la almacenada en el base de datos
+    // Verificar si se encontró un usuario y si la contraseña proporcionada coincide con la
+    // almacenada en el base de datos
     if (
       !requestUser ||
       !(await bcrypt.compare(req.body.password, requestUser.password))
