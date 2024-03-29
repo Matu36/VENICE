@@ -46,6 +46,17 @@ const postUser = async (req, res) => {
     if (!req.body?.email || !req.body?.password)
       throw "Missing email or password";
 
+    //Validación para ver si el email ya esta registrado
+
+    const existingUser = await Usuarios.findOne({
+      where: { email: req.body.email.toLowerCase() },
+    });
+    if (existingUser) {
+      return res
+        .status(400)
+        .send("El Email ingresado ya se encuentra registrado");
+    }
+
     // Genera un hash para la contraseña
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
 
@@ -53,6 +64,9 @@ const postUser = async (req, res) => {
       where: { email: req.body.email.toLowerCase() },
       defaults: {
         password: hashedPassword, // Guarda el hash en lugar de la contraseña en texto plano
+        nombre: req.body.nombre || null,
+        apellido: req.body.apellido || null,
+        direccion: req.body.direccion || null,
       },
     });
 
@@ -77,9 +91,9 @@ const putUser = async (req, res) => {
       return res.status(404).send("No se encontró el usuario");
     }
 
-    // Verificar si se proporciona un nuevo email o contraseña en la solicitud
-    const { email, password } = req.body;
-    if (email || password) {
+    // Verificar si se proporciona una modificación en la solicitud
+    const { email, password, nombre, apellido, direccion } = req.body;
+    if (email || password || nombre || apellido || direccion) {
       // Si se proporciona un nuevo email, actualizarlo y volver a cargar el usuario
       if (email) {
         user.email = email.toLowerCase(); // Convertir a minúsculas
@@ -89,6 +103,16 @@ const putUser = async (req, res) => {
       if (password) {
         const hashedPassword = await bcrypt.hash(password, 10);
         user.password = hashedPassword;
+      }
+
+      if (nombre !== undefined) {
+        user.nombre = nombre;
+      }
+      if (apellido !== undefined) {
+        user.apellido = apellido;
+      }
+      if (direccion !== undefined) {
+        user.direccion = direccion;
       }
 
       // Guardar los cambios en la base de datos
