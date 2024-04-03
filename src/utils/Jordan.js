@@ -2,12 +2,12 @@ export const jordan = [
   {
     id: 42,
     marca: "Jordan",
-    talle: ["L, XL"],
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794289/VENICE/JORDAN/JORDANROJAFRONTCLASICA_jbkgfh.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794289/VENICE/JORDAN/JORDANROJABACKCLASICA_rbodvs.jpg",
-    Cantidad: 2,
+    Cantidad: 1,
     precio: 39990,
     codigo: "JN072",
   },

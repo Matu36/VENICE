@@ -2,6 +2,9 @@ const { Usuarios } = require("../db.js");
 const bcrypt = require("bcrypt");
 const sendEmailWithTemplate = require("../mailer/sendEmailWithTemplate");
 
+//Si el usuario no es role NULL, trae todos los usuarios; sino trae el mismo que se ingreso
+//La contraseña chequeda puede ser el hash o el texto plano (ambas funcionan).
+
 const getUsers = async (req, res) => {
   try {
     if (!req.body?.email || !req.body?.password)
@@ -109,7 +112,7 @@ const putUser = async (req, res) => {
     if (email || password || nombre || apellido || direccion) {
       // Si se proporciona un nuevo email, actualizarlo y volver a cargar el usuario
       if (email) {
-        user.email = email.toLowerCase(); // Convertir a minúsculas
+        user.email = email.toLowerCase();
       }
 
       // Si se proporciona una nueva contraseña, actualizarla
