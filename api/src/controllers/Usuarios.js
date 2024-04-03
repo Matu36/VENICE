@@ -1,14 +1,20 @@
 const { Usuarios } = require("../db.js");
 const bcrypt = require("bcrypt");
 const sendEmailWithTemplate = require("../mailer/sendEmailWithTemplate");
+const jwt = require("../services/jwt.js");
 
-const getUsers = async (req, res) => {
+//JWT: EN EL POSTUSER O REGISTRO SE GENERA EL TOKEN; USO EL ARCHIVO JWT.JS; LUEGO DONDE LO CODIFICO ES EN AUTH.JS
+//Y LO USO EN EL MIDDLEWARE EN LAS RUTAS PARA CHEQUEAR QUE SE OBTENGA
+
+//ACA SE DEBERIA GENERAR EL TOKEN
+
+const login = async (req, res) => {
   try {
     if (!req.body?.email || !req.body?.password)
       throw "Missing email or password";
 
     // Verificar si la contraseña proporcionada es un hash o una contraseña en texto plano
-    const isPasswordHash = req.body.password.length === 60; // Assumiendo que la longitud del hash es 60
+    const isPasswordHash = req.body.password.length === 60;
 
     let requestUser;
 
@@ -46,6 +52,8 @@ const getUsers = async (req, res) => {
     if (!returnedUsers || returnedUsers.length === 0)
       return res.status(404).send("Users Not Found");
 
+    const token = jwt.createToken(user);
+
     // Devolver los usuarios encontrados
     res.send(returnedUsers);
   } catch (error) {
@@ -54,7 +62,7 @@ const getUsers = async (req, res) => {
   }
 };
 
-const postUser = async (req, res) => {
+const registro = async (req, res) => {
   try {
     if (!req.body?.email || !req.body?.password)
       throw "Missing email or password";
@@ -183,8 +191,8 @@ const resetPassword = async (req, res) => {
 };
 
 module.exports = {
-  getUsers,
-  postUser,
+  login,
+  registro,
   putUser,
   resetPassword,
 };
