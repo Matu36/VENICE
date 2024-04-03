@@ -1,17 +1,64 @@
 const { Usuarios } = require("../db.js");
 const bcrypt = require("bcrypt");
 const sendEmailWithTemplate = require("../mailer/sendEmailWithTemplate");
+const jwt = require("../services/jwt.js");
+
+const registro = async (req, res) => {
+  try {
+    if (!req.body?.email || !req.body?.password)
+      throw "Missing email or password";
+
+    //Validación para ver si el email ya esta registrado
+
+    const existingUser = await Usuarios.findOne({
+      where: { email: req.body.email.toLowerCase() },
+    });
+    if (existingUser) {
+      return res
+        .status(400)
+        .send("El Email ingresado ya se encuentra registrado");
+    }
+
+    // Genera un hash para la contraseña
+    const hashedPassword = await bcrypt.hash(req.body.password, 10);
+
+    const [instance, created] = await Usuarios.findOrCreate({
+      where: { email: req.body.email.toLowerCase() },
+      defaults: {
+        password: hashedPassword, // Guarda el hash en lugar de la contraseña en texto plano
+        nombre: req.body.nombre || null,
+        apellido: req.body.apellido || null,
+        direccion: req.body.direccion || null,
+      },
+    });
+
+    if (created) {
+      console.log("Usuario Creado");
+      sendEmailWithTemplate(instance.email, "newUser");
+    }
+
+    res.send(instance);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error);
+  }
+};
 
 //Si el usuario no es role NULL, trae todos los usuarios; sino trae el mismo que se ingreso
 //La contraseña chequeda puede ser el hash o el texto plano (ambas funcionan).
 
-const getUsers = async (req, res) => {
+//JWT: EN EL POSTUSER O REGISTRO SE GENERA EL TOKEN; USO EL ARCHIVO JWT.JS; LUEGO DONDE LO CODIFICO ES EN AUTH.JS
+//Y LO USO EN EL MIDDLEWARE EN LAS RUTAS PARA CHEQUEAR QUE SE OBTENGA
+
+//ACA SE DEBERIA GENERAR EL TOKEN
+
+const login = async (req, res) => {
   try {
     if (!req.body?.email || !req.body?.password)
       throw "Missing email or password";
 
     // Verificar si la contraseña proporcionada es un hash o una contraseña en texto plano
-    const isPasswordHash = req.body.password.length === 60; // Assumiendo que la longitud del hash es 60
+    const isPasswordHash = req.body.password.length === 60;
 
     let requestUser;
 
@@ -49,49 +96,10 @@ const getUsers = async (req, res) => {
     if (!returnedUsers || returnedUsers.length === 0)
       return res.status(404).send("Users Not Found");
 
+    const token = jwt.createToken(returnedUsers);
+
     // Devolver los usuarios encontrados
-    res.send(returnedUsers);
-  } catch (error) {
-    console.log(error);
-    res.status(500).send(error);
-  }
-};
-
-const postUser = async (req, res) => {
-  try {
-    if (!req.body?.email || !req.body?.password)
-      throw "Missing email or password";
-
-    //Validación para ver si el email ya esta registrado
-
-    const existingUser = await Usuarios.findOne({
-      where: { email: req.body.email.toLowerCase() },
-    });
-    if (existingUser) {
-      return res
-        .status(400)
-        .send("El Email ingresado ya se encuentra registrado");
-    }
-
-    // Genera un hash para la contraseña
-    const hashedPassword = await bcrypt.hash(req.body.password, 10);
-
-    const [instance, created] = await Usuarios.findOrCreate({
-      where: { email: req.body.email.toLowerCase() },
-      defaults: {
-        password: hashedPassword, // Guarda el hash en lugar de la contraseña en texto plano
-        nombre: req.body.nombre || null,
-        apellido: req.body.apellido || null,
-        direccion: req.body.direccion || null,
-      },
-    });
-
-    if (created) {
-      console.log("Usuario Creado");
-      sendEmailWithTemplate(instance.email, "newUser");
-    }
-
-    res.send(instance);
+    res.send({ returnedUsers, token: token });
   } catch (error) {
     console.log(error);
     res.status(500).send(error);
@@ -186,8 +194,8 @@ const resetPassword = async (req, res) => {
 };
 
 module.exports = {
-  getUsers,
-  postUser,
+  login,
+  registro,
   putUser,
   resetPassword,
 };
