@@ -3,8 +3,58 @@ const bcrypt = require("bcrypt");
 const sendEmailWithTemplate = require("../mailer/sendEmailWithTemplate");
 const jwt = require("../services/jwt.js");
 
+<<<<<<< HEAD
 //JWT: EN EL POSTUSER O REGISTRO SE GENERA EL TOKEN; USO EL ARCHIVO JWT.JS; LUEGO DONDE LO CODIFICO ES EN AUTH.JS
 //Y LO USO EN EL MIDDLEWARE EN LAS RUTAS PARA CHEQUEAR QUE SE OBTENGA
+=======
+const registro = async (req, res) => {
+  try {
+    if (!req.body?.email || !req.body?.password)
+      throw "Missing email or password";
+
+    //Validación para ver si el email ya esta registrado
+
+    const existingUser = await Usuarios.findOne({
+      where: { email: req.body.email.toLowerCase() },
+    });
+    if (existingUser) {
+      return res
+        .status(400)
+        .send("El Email ingresado ya se encuentra registrado");
+    }
+
+    // Genera un hash para la contraseña
+    const hashedPassword = await bcrypt.hash(req.body.password, 10);
+
+    const [instance, created] = await Usuarios.findOrCreate({
+      where: { email: req.body.email.toLowerCase() },
+      defaults: {
+        password: hashedPassword, // Guarda el hash en lugar de la contraseña en texto plano
+        nombre: req.body.nombre || null,
+        apellido: req.body.apellido || null,
+        direccion: req.body.direccion || null,
+        telefono: req.body.telefono || null,
+      },
+    });
+
+    if (created) {
+      console.log("Usuario Creado");
+      sendEmailWithTemplate(instance.email, "newUser");
+    }
+
+    res.send(instance);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error);
+  }
+};
+
+//Si el usuario no es role NULL, trae todos los usuarios; sino trae el mismo que se ingreso
+//La contraseña chequeda puede ser el hash o el texto plano (ambas funcionan).
+
+//JWT: EN EL REGISTRO SE GENERA EL TOKEN; USO EL ARCHIVO JWT.JS; LUEGO DONDE LO CODIFICO ES EN AUTH.JS
+//Y LO USO EN EL MIDDLEWARE EN LAS RUTAS PARA CHEQUEAR QUE SE OBTENGA.
+>>>>>>> 8949178920db84dc77a4cba17a28b6d5e79642dd
 
 //ACA SE DEBERIA GENERAR EL TOKEN
 
@@ -97,6 +147,12 @@ const registro = async (req, res) => {
     }
 
     res.send(instance);
+
+    const token = jwt.createToken(requestUser);
+
+    // Devolver los usuarios encontrados
+    res.send({ returnedUsers, token: token });
+
   } catch (error) {
     console.log(error);
     res.status(500).send(error);
@@ -113,11 +169,11 @@ const putUser = async (req, res) => {
     }
 
     // Verificar si se proporciona una modificación en la solicitud
-    const { email, password, nombre, apellido, direccion } = req.body;
-    if (email || password || nombre || apellido || direccion) {
+    const { email, password, nombre, apellido, direccion, telefono } = req.body;
+    if (email || password || nombre || apellido || direccion || telefono) {
       // Si se proporciona un nuevo email, actualizarlo y volver a cargar el usuario
       if (email) {
-        user.email = email.toLowerCase(); // Convertir a minúsculas
+        user.email = email.toLowerCase();
       }
 
       // Si se proporciona una nueva contraseña, actualizarla
@@ -134,6 +190,10 @@ const putUser = async (req, res) => {
       }
       if (direccion !== undefined) {
         user.direccion = direccion;
+      }
+
+      if (telefono !== undefined) {
+        user.telefono = telefono;
       }
 
       // Guardar los cambios en la base de datos

@@ -18,21 +18,9 @@ const check = require("../middlewares/auth");
 
 const router = Router();
 
-// router.get ("/comidas", getComidas);
-// router.put ("/comidas", putComidas);
-// router.post ("/comidas", createComida)
-// router.delete("/comidas", deleteComida);
 router.post("/usuarios/login", login);
 router.post("/usuarios/registro", registro);
 router.put("/usuarios", putUser);
 router.put("/usuarios/recoverpass", resetPassword);
-// router.post ("/mensajes", postMensaje)
-// router.get ("/mensajes", obtenerMensajes)
-// router.post("/api/checkout", checkOut);
-// router.post("/payment", Payment)
-// router.post("/paymentDBLOCAL", postVentaMercadoPago)
-// router.get("/paymentDBLOCAL", getMercadoPago);
-// router.get("/ofertas", getOfertas)
-// router.post("/ofertas", postOfertas)
 
 module.exports = router;
