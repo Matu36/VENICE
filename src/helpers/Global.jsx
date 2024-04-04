@@ -1,5 +1,3 @@
-import React from "react";
-
-export default function Global() {
-  return <div>Global</div>;
-}
+export const Global = {
+  url: "http://localhost:3001/api",
+};

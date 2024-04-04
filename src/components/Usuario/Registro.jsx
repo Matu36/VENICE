@@ -1,14 +1,32 @@
 import React from "react";
 import { useForm } from "../hooks/useForm";
+import { Global } from "../../helpers/Global";
 
 export default function Registro() {
   const [form, changed] = useForm({});
+  const [saved, setSaved] = useState("not_sended");
 
   const saveUser = async (e) => {
     e.preventDefault();
     let newUser = form;
-    const request = await fetch("url completa", opciones);
+    const request = await fetch(Global.url + "usuarios/registro", {
+      method: "POST",
+      body: JSON.stringify(newUser),
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+
+    const data = await request.json();
+
+    if (data.status == "success") {
+      setSaved("saved");
+    } else {
+      setSaved("error");
+    }
   };
+
+  //minuto 8:25
 
   return (
     <div>
