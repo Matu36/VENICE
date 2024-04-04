@@ -3,10 +3,9 @@ const bcrypt = require("bcrypt");
 const sendEmailWithTemplate = require("../mailer/sendEmailWithTemplate");
 const jwt = require("../services/jwt.js");
 
-<<<<<<< HEAD
-//JWT: EN EL POSTUSER O REGISTRO SE GENERA EL TOKEN; USO EL ARCHIVO JWT.JS; LUEGO DONDE LO CODIFICO ES EN AUTH.JS
-//Y LO USO EN EL MIDDLEWARE EN LAS RUTAS PARA CHEQUEAR QUE SE OBTENGA
-=======
+//CON RESPECTO AL JWT: EN LA ACCIOND DE LOGIN DEBERIAMOS PASAR EL USER.ID, USER.DIRECCION (TODOS LOS DATOS QUE PRECISEMOS) Y SACARLOS DEL RETURN
+//ES DECIR, NO ME DEBERIA RETORNAR EL USUARIO LOGUEADO; ME DEBERIA RETORNAR EL TOKEN, QUE AL DECODIFICARLO ME MUESTRA LOS DATOS DEL USUARIO.
+
 const registro = async (req, res) => {
   try {
     if (!req.body?.email || !req.body?.password)
@@ -54,7 +53,6 @@ const registro = async (req, res) => {
 
 //JWT: EN EL REGISTRO SE GENERA EL TOKEN; USO EL ARCHIVO JWT.JS; LUEGO DONDE LO CODIFICO ES EN AUTH.JS
 //Y LO USO EN EL MIDDLEWARE EN LAS RUTAS PARA CHEQUEAR QUE SE OBTENGA.
->>>>>>> 8949178920db84dc77a4cba17a28b6d5e79642dd
 
 //ACA SE DEBERIA GENERAR EL TOKEN
 
@@ -106,53 +104,6 @@ const login = async (req, res) => {
 
     // Devolver los usuarios encontrados
     res.send(returnedUsers);
-  } catch (error) {
-    console.log(error);
-    res.status(500).send(error);
-  }
-};
-
-const registro = async (req, res) => {
-  try {
-    if (!req.body?.email || !req.body?.password)
-      throw "Missing email or password";
-
-    //Validación para ver si el email ya esta registrado
-
-    const existingUser = await Usuarios.findOne({
-      where: { email: req.body.email.toLowerCase() },
-    });
-    if (existingUser) {
-      return res
-        .status(400)
-        .send("El Email ingresado ya se encuentra registrado");
-    }
-
-    // Genera un hash para la contraseña
-    const hashedPassword = await bcrypt.hash(req.body.password, 10);
-
-    const [instance, created] = await Usuarios.findOrCreate({
-      where: { email: req.body.email.toLowerCase() },
-      defaults: {
-        password: hashedPassword, // Guarda el hash en lugar de la contraseña en texto plano
-        nombre: req.body.nombre || null,
-        apellido: req.body.apellido || null,
-        direccion: req.body.direccion || null,
-      },
-    });
-
-    if (created) {
-      console.log("Usuario Creado");
-      sendEmailWithTemplate(instance.email, "newUser");
-    }
-
-    res.send(instance);
-
-    const token = jwt.createToken(requestUser);
-
-    // Devolver los usuarios encontrados
-    res.send({ returnedUsers, token: token });
-
   } catch (error) {
     console.log(error);
     res.status(500).send(error);
