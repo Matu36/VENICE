@@ -26,10 +26,10 @@ export default function Registro() {
     }
   };
 
-  //minuto 8:25
-
   return (
     <div>
+      <strong>{saved == "saved" ? "Usuario Registrado" : null}</strong>
+      <strong>{saved == "error" ? "Error papu" : null}</strong>
       <form className="registro" onSubmit={saveUser}>
         <div className="registroform">
           <label htmlFor="email">Correo Electrónico</label>
