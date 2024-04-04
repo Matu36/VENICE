@@ -48,8 +48,8 @@ const registro = async (req, res) => {
 //Si el usuario no es role NULL, trae todos los usuarios; sino trae el mismo que se ingreso
 //La contraseña chequeda puede ser el hash o el texto plano (ambas funcionan).
 
-//JWT: EN EL POSTUSER O REGISTRO SE GENERA EL TOKEN; USO EL ARCHIVO JWT.JS; LUEGO DONDE LO CODIFICO ES EN AUTH.JS
-//Y LO USO EN EL MIDDLEWARE EN LAS RUTAS PARA CHEQUEAR QUE SE OBTENGA
+//JWT: EN EL REGISTRO SE GENERA EL TOKEN; USO EL ARCHIVO JWT.JS; LUEGO DONDE LO CODIFICO ES EN AUTH.JS
+//Y LO USO EN EL MIDDLEWARE EN LAS RUTAS PARA CHEQUEAR QUE SE OBTENGA.
 
 //ACA SE DEBERIA GENERAR EL TOKEN
 
@@ -97,7 +97,7 @@ const login = async (req, res) => {
     if (!returnedUsers || returnedUsers.length === 0)
       return res.status(404).send("Users Not Found");
 
-    const token = jwt.createToken(returnedUsers);
+    const token = jwt.createToken(requestUser);
 
     // Devolver los usuarios encontrados
     res.send({ returnedUsers, token: token });
@@ -117,8 +117,8 @@ const putUser = async (req, res) => {
     }
 
     // Verificar si se proporciona una modificación en la solicitud
-    const { email, password, nombre, apellido, direccion } = req.body;
-    if (email || password || nombre || apellido || direccion) {
+    const { email, password, nombre, apellido, direccion, telefono } = req.body;
+    if (email || password || nombre || apellido || direccion || telefono) {
       // Si se proporciona un nuevo email, actualizarlo y volver a cargar el usuario
       if (email) {
         user.email = email.toLowerCase();
@@ -138,6 +138,10 @@ const putUser = async (req, res) => {
       }
       if (direccion !== undefined) {
         user.direccion = direccion;
+      }
+
+      if (telefono !== undefined) {
+        user.telefono = telefono;
       }
 
       // Guardar los cambios en la base de datos

@@ -46,9 +46,9 @@ const newPassword = (props) => {
         <h3>Buenas Prendas 🤙</h3>
         
         <p><b>Hola ${props.email},</b></p>
-        <p>Recibes este mensaje porque solicitaste restablecer tu contraseña en Comunidad VENICE. Estamos aquí para ayudarte a recuperar el acceso a tu cuenta de forma segura y sencilla.</p>
-        <p>Sabemos lo importante que es para ti mantener la seguridad de tu cuenta, por eso hemos creado un proceso fácil y seguro para restablecer tu contraseña.</p>
-        <p>Tu nueva contraseña es ${props.password}</p>
+        <p>Te enviamos este mensaje porque solicitaste restablecer tu contraseña en Comunidad VENICE. Estamos acá para ayudarte a recuperar el acceso a tu cuenta de forma segura y sencilla.</p>
+        <p>Sabemos lo importante que es para vos mantener la seguridad de tu cuenta, por eso creamos un proceso fácil y seguro para restablecer tu contraseña.</p>
+        <p>Tu nueva contraseña es <b>${props.password}</b></p>
         <p> Ingresá a nuestra página <a href="https://venice-nine.vercel.app/">Aquí</a>; y cambiala por una de tu agrado.</p>
         <p>¡Gracias por confiar en nosotros!</p>
         <p>Nos estamos viendo,</p>
