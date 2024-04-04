@@ -29,6 +29,7 @@ const registro = async (req, res) => {
         nombre: req.body.nombre || null,
         apellido: req.body.apellido || null,
         direccion: req.body.direccion || null,
+        telefono: req.body.telefono || null,
       },
     });
 

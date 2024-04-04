@@ -32,6 +32,10 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         defaultValue: null,
       },
+      telefono: {
+        type: DataTypes.STRING,
+        defaultValue: null,
+      },
       rol: {
         // null: basic user ; false: admin user ; true: super admin user
         type: DataTypes.BOOLEAN,

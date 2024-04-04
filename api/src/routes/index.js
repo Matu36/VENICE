@@ -20,7 +20,7 @@ const router = Router();
 
 router.post("/usuarios/login", login);
 router.post("/usuarios/registro", registro);
-router.put("/usuarios", check.auth, putUser);
+router.put("/usuarios", putUser);
 router.put("/usuarios/recoverpass", resetPassword);
 
 module.exports = router;
