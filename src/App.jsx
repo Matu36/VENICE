@@ -12,6 +12,8 @@ import { Slide, toast } from "react-toastify";
 import CargandoStock from "./components/CargandoStock";
 import Videos from "./components/Videos";
 import NavBarAlternativo from "../src/components/NavBarAlternativo";
+import Registro from "./components/usuario/Registro";
+import Login from "./components/usuario/Login";
 
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
@@ -23,6 +25,7 @@ function App() {
   const [carritoC, setCarritoC] = useState(0);
   const [contact, setContact] = useState(false);
   const cardsContainerRef = useRef(null);
+  const [registro, setRegistro] = useState(false);
 
   useEffect(() => {
     toast.info("Prendas 100% ORIGINALES", {
@@ -120,6 +123,14 @@ function App() {
     actualizarContadorCarrito();
   };
 
+  const handleMostrarModalRegistro = () => {
+    setRegistro(true);
+  };
+
+  const handleCerrarModalRegistro = () => {
+    setRegistro(false);
+  };
+
   const handleInicioClick = () => {
     setSelectedMarca(null);
   };
@@ -171,10 +182,16 @@ function App() {
           />
         </div>
       )}
+      {registro && (
+        <div>
+          <Registro handleMostrarModalRegistro={handleMostrarModalRegistro} />
+        </div>
+      )}
       <NavBarAlternativo
         handleMostrarModalCarrito={handleMostrarModalCarrito}
         carritoC={carritoC}
         handleSearchByMarca={handleSearchByMarca}
+        handleMostrarModalRegistro={handleMostrarModalRegistro}
       />
       {/* {showLoading && <CargandoStock onClose={closeLoading} />} */}
       <div>

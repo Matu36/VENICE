@@ -6,6 +6,7 @@ export default function NavBarAlternativo({
   handleMostrarModalCarrito,
   carritoC,
   handleSearchByMarca,
+  handleMostrarModalRegistro,
 }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
@@ -128,6 +129,12 @@ export default function NavBarAlternativo({
               </div>
             )}
           </div>
+          <button
+            className="shoppingButton"
+            onClick={handleMostrarModalRegistro}
+          >
+            Registro
+          </button>
           <button
             className="shoppingButton"
             onClick={handleMostrarModalCarrito}
