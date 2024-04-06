@@ -100,10 +100,11 @@ const login = async (req, res) => {
     const token = jwt.createToken(requestUser);
 
     // Devolver los usuarios encontrados
-    res.send({ returnedUsers, token: token });
+    res.status(200).send({ returnedUsers, token: token, status: "success" });
   } catch (error) {
     console.log(error);
-    res.status(500).send(error);
+    // Devolver un error con el estado 500 (Internal Server Error)
+    res.status(500).send({ error: error, status: "Error" });
   }
 };
 
