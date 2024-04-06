@@ -40,7 +40,7 @@ export default function Registro({ handleCerrarModalRegistro }) {
         <div className="columna">
           <div className="registroform">
             <label htmlFor="email">
-              Correo Electrónico<span className="required">*</span>
+              Email<span className="required">*</span>
             </label>
             <input type="email" name="email" onChange={changed} required />
           </div>
