@@ -1514,3 +1514,40 @@ button:focus-visible {
   color: black;
 }
 
+/* Estilos CSS personalizados */
+
+
+.registroform {
+  margin-bottom: 10px;
+}
+
+.registroform label {
+  display: block;
+  margin-bottom: 5px;
+  color: white; /* Texto negro */
+}
+
+.registroform input {
+  width: calc(100% - 80px); /* Ancho reducido */
+  padding: 8px;
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 3px;
+}
+
+.button-registro {
+  background-color: #333; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button-registro:hover {
+  background-color: #555; /* Fondo gris oscuro al pasar el mouse */
+}
+
+.required {
+  color: white;
+  margin-left: 5px;
+}

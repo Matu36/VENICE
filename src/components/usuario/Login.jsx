@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "../../hooks/useForm";
 import { Global } from "../../helpers/Global";
 
-export default function Login() {
+export default function Login({ handleCerrarModalLogin }) {
   const { form, changed } = useForm({});
   const [saved, setSaved] = useState("not_sended");
 
@@ -37,20 +37,22 @@ export default function Login() {
   };
 
   return (
-    <div>
+    <div className="carrito">
+      <button onClick={handleCerrarModalLogin} className="button-cerrar">
+        X
+      </button>
       <strong>
         {saved == "login" ? "Usuario Logueado correctamente" : null}
       </strong>
       <strong>{saved == "error" ? "Error papu" : null}</strong>
       <form className="login-form" onSubmit={loginUser}>
         <div className="form-gropu">
-          <label htmlFor="contraseña">Contraseña</label>
-          <input type="text" name="password" onChange={changed} />
-        </div>
-
-        <div className="form-gropu">
           <label htmlFor="email">Correo Electrónico</label>
           <input type="email" name="email" onChange={changed} />
+        </div>
+        <div className="form-gropu">
+          <label htmlFor="contraseña">Contraseña</label>
+          <input type="text" name="password" onChange={changed} />
         </div>
 
         <input type="submit" value="identificate" className="btn btn-success" />

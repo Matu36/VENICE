@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import logo from "../assets/img/logos/LOGO 1.jpeg";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
+import { FaUser } from "react-icons/fa";
 
 export default function NavBarAlternativo({
   handleMostrarModalCarrito,
   carritoC,
   handleSearchByMarca,
   handleMostrarModalRegistro,
+  handleMostrarModalLogin,
 }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
@@ -129,19 +131,22 @@ export default function NavBarAlternativo({
               </div>
             )}
           </div>
-          <button
-            className="shoppingButton"
-            onClick={handleMostrarModalRegistro}
-          >
-            Registro
-          </button>
-          <button
-            className="shoppingButton"
-            onClick={handleMostrarModalCarrito}
-          >
-            <FiShoppingCart />
-            {carritoC > 0 && <span className="badge">{carritoC}</span>}
-          </button>
+          <div>
+            <button
+              className="shoppingButton"
+              onClick={handleMostrarModalRegistro}
+            >
+              <FaUser />
+            </button>
+            <button onClick={handleMostrarModalLogin}>Iniciar Sesion</button>
+            <button
+              className="shoppingButton"
+              onClick={handleMostrarModalCarrito}
+            >
+              <FiShoppingCart />
+              {carritoC > 0 && <span className="badge">{carritoC}</span>}
+            </button>
+          </div>
         </div>
       </div>
     </div>

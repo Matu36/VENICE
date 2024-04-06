@@ -26,6 +26,7 @@ function App() {
   const [contact, setContact] = useState(false);
   const cardsContainerRef = useRef(null);
   const [registro, setRegistro] = useState(false);
+  const [login, setLogin] = useState(false);
 
   useEffect(() => {
     toast.info("Prendas 100% ORIGINALES", {
@@ -131,6 +132,14 @@ function App() {
     setRegistro(false);
   };
 
+  const handleMostrarModalLogin = () => {
+    setLogin(true);
+  };
+
+  const handleCerrarModalLogin = () => {
+    setLogin(false);
+  };
+
   const handleInicioClick = () => {
     setSelectedMarca(null);
   };
@@ -184,7 +193,18 @@ function App() {
       )}
       {registro && (
         <div>
-          <Registro handleMostrarModalRegistro={handleMostrarModalRegistro} />
+          <Registro
+            handleMostrarModalRegistro={handleMostrarModalRegistro}
+            handleCerrarModalRegistro={handleCerrarModalRegistro}
+          />
+        </div>
+      )}
+      {login && (
+        <div>
+          <Login
+            handleMostrarModalLogin={handleMostrarModalLogin}
+            handleCerrarModalLogin={handleCerrarModalLogin}
+          />
         </div>
       )}
       <NavBarAlternativo
@@ -192,6 +212,7 @@ function App() {
         carritoC={carritoC}
         handleSearchByMarca={handleSearchByMarca}
         handleMostrarModalRegistro={handleMostrarModalRegistro}
+        handleMostrarModalLogin={handleMostrarModalLogin}
       />
       {/* {showLoading && <CargandoStock onClose={closeLoading} />} */}
       <div>

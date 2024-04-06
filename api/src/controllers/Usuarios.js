@@ -38,7 +38,7 @@ const registro = async (req, res) => {
       sendEmailWithTemplate(instance.email, "newUser");
     }
 
-    res.send(instance);
+    res.send({ status: "success", data: instance });
   } catch (error) {
     console.log(error);
     res.status(500).send(error);
