@@ -25,7 +25,7 @@ function App() {
   const [carritoC, setCarritoC] = useState(0);
   const [contact, setContact] = useState(false);
   const cardsContainerRef = useRef(null);
-  const [registro, setRegistro] = useState(false);
+
   const [login, setLogin] = useState(false);
 
   useEffect(() => {
@@ -124,14 +124,6 @@ function App() {
     actualizarContadorCarrito();
   };
 
-  const handleMostrarModalRegistro = () => {
-    setRegistro(true);
-  };
-
-  const handleCerrarModalRegistro = () => {
-    setRegistro(false);
-  };
-
   const handleMostrarModalLogin = () => {
     setLogin(true);
   };
@@ -191,14 +183,7 @@ function App() {
           />
         </div>
       )}
-      {registro && (
-        <div>
-          <Registro
-            handleMostrarModalRegistro={handleMostrarModalRegistro}
-            handleCerrarModalRegistro={handleCerrarModalRegistro}
-          />
-        </div>
-      )}
+
       {login && (
         <div>
           <Login
@@ -211,7 +196,6 @@ function App() {
         handleMostrarModalCarrito={handleMostrarModalCarrito}
         carritoC={carritoC}
         handleSearchByMarca={handleSearchByMarca}
-        handleMostrarModalRegistro={handleMostrarModalRegistro}
         handleMostrarModalLogin={handleMostrarModalLogin}
       />
       {/* {showLoading && <CargandoStock onClose={closeLoading} />} */}

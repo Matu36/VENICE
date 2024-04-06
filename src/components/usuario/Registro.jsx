@@ -32,51 +32,55 @@ export default function Registro({ handleCerrarModalRegistro }) {
   };
 
   return (
-    <div className="carrito">
-      <button onClick={handleCerrarModalRegistro} className="button-cerrar">
-        X
-      </button>
-      <strong>
-        {saved == "saved" ? "Usuario Registrado Correctamente" : null}
-      </strong>
-      <strong>{saved == "error" ? "Error papu" : null}</strong>
-      <strong>
-        {saved == "400" ? "El email ya se encuentra registrado" : null}
-      </strong>
+    <div className="registro-container">
+      <div className="button-close-login">
+        <button onClick={handleCerrarModalRegistro}>X</button>
+      </div>
       <form className="registro" onSubmit={saveUser}>
-        <div className="registroform">
-          <label htmlFor="email">
-            Correo Electrónico<span className="required">*</span>
-          </label>
-          <input type="email" name="email" onChange={changed} required />
-        </div>
+        <div className="columna">
+          <div className="registroform">
+            <label htmlFor="email">
+              Correo Electrónico<span className="required">*</span>
+            </label>
+            <input type="email" name="email" onChange={changed} required />
+          </div>
 
-        <div className="registroform">
-          <label htmlFor="contraseña">
-            Contraseña<span className="required">*</span>
-          </label>
-          <input type="text" name="password" onChange={changed} required />
-        </div>
+          <div className="registroform">
+            <label htmlFor="contraseña">
+              Contraseña<span className="required">*</span>
+            </label>
+            <input type="text" name="password" onChange={changed} required />
+          </div>
 
-        <div className="registroform">
-          <label htmlFor="nombre">Nombre</label>
-          <input type="text" name="nombre" onChange={changed} />
+          <div className="registroform">
+            <label htmlFor="nombre">Nombre</label>
+            <input type="text" name="nombre" onChange={changed} />
+          </div>
         </div>
-        <div className="registroform">
-          <label htmlFor="apellidos">Apellidos</label>
-          <input type="text" name="apellido" onChange={changed} />
+        <div className="columna">
+          <div className="registroform">
+            <label htmlFor="apellidos">Apellidos</label>
+            <input type="text" name="apellido" onChange={changed} />
+          </div>
+          <div className="registroform">
+            <label htmlFor="telefono">Teléfono</label>
+            <input type="text" name="telefono" onChange={changed} />
+          </div>
+          <div className="registroform">
+            <label htmlFor="direccion">Dirección</label>
+            <input type="text" name="direccion" onChange={changed} />
+          </div>
         </div>
-        <div className="registroform">
-          <label htmlFor="telefono">Teléfono</label>
-          <input type="text" name="telefono" onChange={changed} />
-        </div>
-        <div className="registroform">
-          <label htmlFor="direccion">Dirección</label>
-          <input type="text" name="direccion" onChange={changed} />
-        </div>
-
         <input type="submit" value="Registrate" className="button-registro" />
       </form>
+      <br />
+      <span>
+        {saved == "saved" ? "Usuario Registrado Correctamente" : null}
+      </span>
+      <span>{saved == "error" ? "Error papu" : null}</span>
+      <span>
+        {saved == "400" ? "El email ya se encuentra registrado" : null}
+      </span>
     </div>
   );
 }
