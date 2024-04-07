@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { useForm } from "../../hooks/useForm";
 import { Global } from "../../helpers/Global";
 import Registro from "./Registro";
+import RecoverPass from "./RecoverPass";
 
 export default function Login({ handleCerrarModalLogin }) {
   const { form, changed } = useForm({});
   const [saved, setSaved] = useState("not_sended");
   const [registro, setRegistro] = useState(false);
+  const [recover, setRecover] = useState(false);
 
   const handleMostrarModalRegistro = () => {
     setRegistro(true);
@@ -14,6 +16,14 @@ export default function Login({ handleCerrarModalLogin }) {
 
   const handleCerrarModalRegistro = () => {
     setRegistro(false);
+  };
+
+  const handleMostrarModalRecover = () => {
+    setRecover(true);
+  };
+
+  const handleCerrarModalRecover = () => {
+    setRecover(false);
   };
 
   const loginUser = async (e) => {
@@ -63,9 +73,22 @@ export default function Login({ handleCerrarModalLogin }) {
               <label htmlFor="contraseña">Contraseña</label>
               <input type="text" name="password" onChange={changed} />
             </div>
-            <span style={{ color: "blue" }}>¿Olvidaste tu contraeña?</span>
+            <button onClick={handleMostrarModalRecover}>
+              <span style={{ color: "blue" }}>¿Olvidaste tu contraeña?</span>
+            </button>
+
             <input type="submit" value="Ingresar" className="btn btn-success" />
           </form>
+          {recover && (
+            <div className="modal">
+              <div className="modal-content">
+                <span className="close" onClick={handleCerrarModalRecover}>
+                  &times;
+                </span>
+                <RecoverPass />
+              </div>
+            </div>
+          )}
           <strong>
             {saved === "login" ? "Usuario Logueado correctamente" : null}
           </strong>

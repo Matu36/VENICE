@@ -837,11 +837,11 @@ button:focus-visible {
  
 }
 
-@media screen and (max-width: 584px) {
+/* @media screen and (max-width: 584px) {
   .shoppingButton {
     margin: 10px; 
   }
-}
+} */
 
 /* Estilos cuando se realiza scroll
 .container.scrolled .shoppingButton {

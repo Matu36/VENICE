@@ -1,6 +1,3 @@
-import jordan1 from "../assets/img/jordan/dorso.jpg";
-import jordan from "../assets/img/jordan/frente.jpg";
-
 export const nike = [
   {
     id: 53,
@@ -24,7 +21,7 @@ export const nike = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795517/VENICE/JORDAN/NIKE/PIPANEGRAREMERABLANCABACK_heccx7.jpg",
     Cantidad: 2,
     precio: 35000,
-    codigo: "NK097",
+    codigo: "NK087",
   },
   {
     id: 55,
@@ -53,12 +50,12 @@ export const nike = [
   {
     id: 57,
     marca: "Nike",
-    talle: ["L, XL"],
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795509/VENICE/JORDAN/NIKE/NIKEDAYFRONT_x1kfsa.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795507/VENICE/JORDAN/NIKE/NIKEDAYBACK_nmf4gm.jpg",
-    Cantidad: 2,
+    Cantidad: 1,
     precio: 37000,
     codigo: "NK081",
   },
@@ -113,12 +110,12 @@ export const nike = [
   {
     id: 62,
     marca: "Nike",
-    talle: ["M"],
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795490/VENICE/JORDAN/NIKE/3PIPASNEGRAFRONT_vhpr94.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710795489/VENICE/JORDAN/NIKE/3PIPASNEGRABACK_ut0jy6.jpg",
-    Cantidad: 1,
+    Cantidad: 3,
     precio: 35000,
     codigo: "NK084",
   },
@@ -130,7 +127,7 @@ export const nike = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710796610/VENICE/JORDAN/NIKE/PIPAROJAFRENTE_ackzkp.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710796607/VENICE/JORDAN/NIKE/PIPAROJABACK_jyiasd.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 35000,
     codigo: "NK086",
   },

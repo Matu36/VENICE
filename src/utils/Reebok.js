@@ -14,7 +14,7 @@ export const reebok = [
   {
     id: 69,
     marca: "Reebok",
-    talle: ["L"],
+    talle: [" L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630837/VENICE/RBLOGOCELESTEFRONT_viikzg.jpg",
     imagen2:
@@ -26,7 +26,7 @@ export const reebok = [
   {
     id: 70,
     marca: "Reebok",
-    talle: ["L"],
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630832/VENICE/RBLOGOBLANCOFRONT_p1hqac.jpg",
     imagen2:
@@ -38,7 +38,7 @@ export const reebok = [
   {
     id: 71,
     marca: "Reebok",
-    talle: ["L"],
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630828/VENICE/RBLOGOAZULROJOFRONT_aorw0e.jpg",
     imagen2:
@@ -79,7 +79,7 @@ export const reebok = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630823/VENICE/RBCELESTEFRONT_bb4vfe.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630821/VENICE/RBCELESTEBACK_mv9ynn.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 28000,
     codigo: "RBK025",
   },

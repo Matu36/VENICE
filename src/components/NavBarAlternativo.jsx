@@ -134,12 +134,12 @@ export default function NavBarAlternativo({
             )}
           </div>
           <div>
-            <button
+            {/* <button
               className="shoppingButton"
               onClick={handleMostrarModalLogin}
             >
               <FaUser />
-            </button>
+            </button> */}
             {/* {auth ? <p style={{ color: "gray" }}>{auth[0].nombre}</p> : null} */}
             <button
               className="shoppingButton"

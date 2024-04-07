@@ -44,7 +44,7 @@ export const levis = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875606/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.48_1_cgnkcp.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875631/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.50_n6h7hx.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 37990,
     codigo: "LVS008",
   },

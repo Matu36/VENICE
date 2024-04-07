@@ -55,7 +55,7 @@ export const calvin = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630156/VENICE/CALVINBORDADAFRENTE_namksu.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630154/VENICE/CALVINBORDADABACK_kzbtol.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 45000,
     codigo: "CK045",
   },

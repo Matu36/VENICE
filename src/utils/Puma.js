@@ -31,7 +31,7 @@ export const puma = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631926/VENICE/PUMAATHLETICSNARANJA_xifhkf.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631929/VENICE/PUMAATHLETICSNARANJABACK_digsnr.jpg",
-    Cantidad: 1,
+    Cantidad: 2,
     precio: 35000,
     codigo: "PM016",
   },
@@ -43,7 +43,7 @@ export const puma = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631923/VENICE/PUMAATHLETICSFRONT_ja57gd.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710631921/VENICE/PUMAATHLETICSBACK_nghdiw.jpg",
-    Cantidad: 1,
+    Cantidad: 2,
     precio: 35000,
     codigo: "PM014",
   },
