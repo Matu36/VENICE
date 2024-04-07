@@ -12,8 +12,8 @@ import { Slide, toast } from "react-toastify";
 import CargandoStock from "./components/CargandoStock";
 import Videos from "./components/Videos";
 import NavBarAlternativo from "../src/components/NavBarAlternativo";
-import Registro from "./components/usuario/Registro";
-import Login from "./components/usuario/Login";
+// import Registro from "./components/usuario/Registro";
+// import Login from "./components/usuario/Login";
 import useAuth from "./hooks/useAuth";
 
 function App() {
@@ -187,14 +187,14 @@ function App() {
         </div>
       )}
 
-      {login && (
+      {/* {login && (
         <div>
           <Login
             handleMostrarModalLogin={handleMostrarModalLogin}
             handleCerrarModalLogin={handleCerrarModalLogin}
           />
         </div>
-      )}
+      )} */}
       <NavBarAlternativo
         handleMostrarModalCarrito={handleMostrarModalCarrito}
         carritoC={carritoC}
