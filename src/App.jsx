@@ -14,6 +14,7 @@ import Videos from "./components/Videos";
 import NavBarAlternativo from "../src/components/NavBarAlternativo";
 import Registro from "./components/usuario/Registro";
 import Login from "./components/usuario/Login";
+import useAuth from "./hooks/useAuth";
 
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
@@ -25,6 +26,8 @@ function App() {
   const [carritoC, setCarritoC] = useState(0);
   const [contact, setContact] = useState(false);
   const cardsContainerRef = useRef(null);
+
+  const { auth } = useAuth();
 
   const [login, setLogin] = useState(false);
 

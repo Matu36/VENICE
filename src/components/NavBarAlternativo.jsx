@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import logo from "../assets/img/logos/LOGO 1.jpeg";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
+import useAuth from "../hooks/useAuth";
 
 export default function NavBarAlternativo({
   handleMostrarModalCarrito,
   carritoC,
   handleSearchByMarca,
-
   handleMostrarModalLogin,
 }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+
+  const { auth } = useAuth();
 
   const handleInputChange = (event) => {
     const value = event.target.value;
@@ -138,7 +140,7 @@ export default function NavBarAlternativo({
             >
               <FaUser />
             </button>
-
+            {/* {auth ? <p style={{ color: "gray" }}>{auth[0].nombre}</p> : null} */}
             <button
               className="shoppingButton"
               onClick={handleMostrarModalCarrito}

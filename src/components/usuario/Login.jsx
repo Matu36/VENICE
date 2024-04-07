@@ -63,7 +63,7 @@ export default function Login({ handleCerrarModalLogin }) {
               <label htmlFor="contraseña">Contraseña</label>
               <input type="text" name="password" onChange={changed} />
             </div>
-
+            <span style={{ color: "blue" }}>¿Olvidaste tu contraeña?</span>
             <input type="submit" value="Ingresar" className="btn btn-success" />
           </form>
           <strong>

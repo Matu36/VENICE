@@ -1,14 +1,36 @@
 import React, { createContext, useState, useEffect } from "react";
+import { Global } from "../helpers/Global";
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const [compartido, setCompartido] = useState(
-    "Compartido en todos los componentes"
-  );
+  const [auth, setAuth] = useState({});
+
+  useEffect(() => {
+    authUser();
+  }, []);
+
+  const authUser = async () => {
+    //sacar datos del usuario identificado en localstorage
+
+    const token = localStorage.getItem("token");
+    const user = localStorage.getItem("user");
+
+    //comprobar si tengo el token y el user
+
+    if (!token || !user) {
+      return false;
+    }
+
+    //transformar los datos a un objeto javascript
+
+    const userObj = JSON.parse(user);
+
+    setAuth(userObj);
+  };
 
   return (
-    <AuthContext.Provider value={{ compartido }}>
+    <AuthContext.Provider value={{ auth, setAuth }}>
       {children}
     </AuthContext.Provider>
   );
