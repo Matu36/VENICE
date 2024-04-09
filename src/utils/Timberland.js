@@ -2,12 +2,12 @@ export const timberland = [
   {
     id: 75,
     marca: "Timberland",
-    talle: ["L, XL"],
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710626589/VENICE/TM068FRONT_o76wcl.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710626588/VENICE/TM068BACK_lvbtxy.jpg",
-    Cantidad: 2,
+    Cantidad: 1,
     precio: 39990,
     codigo: "TM068",
   },

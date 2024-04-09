@@ -47,7 +47,7 @@ export const variadas = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628508/VENICE/UA060FRONT_oio2wd.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628507/VENICE/UA060BACK_q5cdat.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 39990,
     codigo: "UA060",
   },
@@ -60,7 +60,7 @@ export const variadas = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628511/VENICE/VS062FRONT_fg3qmy.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628509/VENICE/VS062BACK_fosb42.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 30000,
     codigo: "VS062",
   },
@@ -86,7 +86,7 @@ export const variadas = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628501/VENICE/NB029FRONT_rnkji0.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628500/VENICE/NB029BACK_fk85px.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 36990,
     codigo: "NB069",
   },
@@ -138,7 +138,7 @@ export const variadas = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628503/VENICE/NF001FRONT_ztjun9.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628502/VENICE/NF001BACK_ijq7pi.jpg",
-    Cantidad: 2,
+    Cantidad: 0,
     precio: 39990,
     codigo: "NF001",
   },
@@ -158,7 +158,7 @@ export const variadas = [
   {
     id: 99,
     marca: "Variadas",
-    nombre: "AEROPORTABLE",
+    nombre: "AEROPOSTALE",
 
     talle: ["XL"],
     imagen:

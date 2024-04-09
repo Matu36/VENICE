@@ -1,22 +1,19 @@
-import { createBrowserRouter } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "../App";
-import Landing from "../components/Landing";
-import LittleVenice from "../components/LittleVenice";
+import { AuthProvider } from "../context/AuthProvider";
+import Logout from "../components/Usuario/Logout";
 
-const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <Landing />,
-  // },
-  {
-    path: "/",
-    element: <App />,
-  },
-  // {
-  //   path: "/littleVenice",
-  //   element: <LittleVenice />,
-  // },
-]);
+const AppRouter = () => {
+  return (
+    <Router>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/logout" element={<Logout />} />
+        </Routes>
+      </AuthProvider>
+    </Router>
+  );
+};
 
-export default router;
+export default AppRouter;

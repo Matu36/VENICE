@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import logo from "../assets/img/logos/LOGO 1.jpeg";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
+import { FaUser } from "react-icons/fa";
+import useAuth from "../hooks/useAuth";
+import { NavLink } from "react-router-dom";
 
 export default function NavBarAlternativo({
   handleMostrarModalCarrito,
   carritoC,
   handleSearchByMarca,
+  handleMostrarModalLogin,
 }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+
+  const { auth } = useAuth();
 
   const handleInputChange = (event) => {
     const value = event.target.value;
@@ -128,13 +134,26 @@ export default function NavBarAlternativo({
               </div>
             )}
           </div>
-          <button
-            className="shoppingButton"
-            onClick={handleMostrarModalCarrito}
-          >
-            <FiShoppingCart />
-            {carritoC > 0 && <span className="badge">{carritoC}</span>}
-          </button>
+
+          {/* PONER CONDICIONAL ACA Y SI EXISTE AUTH QUE DIGA CERRAR SESION Y SINO INICIA LA SESION; SI ESTA INICIADA LA SESION QUE PUEDA EDITAR LOS DATOS DEL USUARIO */}
+          <div>
+            <button
+              className="shoppingButton"
+              onClick={handleMostrarModalLogin}
+            >
+              <FaUser />
+            </button>
+
+            <NavLink to="/logout">Cerrar Sesión</NavLink>
+            {auth ? <p style={{ color: "gray" }}>{auth[0].nombre}</p> : null}
+            <button
+              className="shoppingButton"
+              onClick={handleMostrarModalCarrito}
+            >
+              <FiShoppingCart />
+              {carritoC > 0 && <span className="badge">{carritoC}</span>}
+            </button>
+          </div>
         </div>
       </div>
     </div>
