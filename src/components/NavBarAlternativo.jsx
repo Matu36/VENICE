@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/img/logos/LOGO 1.jpeg";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
@@ -9,11 +9,12 @@ export default function NavBarAlternativo({
   carritoC,
   handleSearchByMarca,
   handleMostrarModalLogin,
+  handleMostrarModalEdit,
 }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
-
-  const { auth } = useAuth();
+  const [showUserMenu, setShowUserMenu] = useState(false);
+  const { auth, setAuth } = useAuth();
 
   const handleInputChange = (event) => {
     const value = event.target.value;
@@ -70,6 +71,18 @@ export default function NavBarAlternativo({
     }
   };
 
+  const handleUserMenuToggle = () => {
+    setShowUserMenu(!showUserMenu);
+  };
+  const handleUserButtonClick = () => {
+    if (Object.keys(auth).length === 0) {
+      handleMostrarModalLogin();
+    } else {
+      setShowUserMenu(!showUserMenu);
+    }
+  };
+
+  console.log(auth);
   window.addEventListener("scroll", function () {
     var blackBar = document.querySelector(".black-bar");
     var whiteBar = document.querySelector(".white-bar");
@@ -82,6 +95,12 @@ export default function NavBarAlternativo({
       blackBar.style.visibility = "visible";
     }
   });
+
+  const handleLogout = () => {
+    localStorage.clear();
+    setAuth({});
+    window.location.reload();
+  };
 
   return (
     <div>
@@ -133,14 +152,27 @@ export default function NavBarAlternativo({
               </div>
             )}
           </div>
+
           <div>
-            {/* <button
-              className="shoppingButton"
-              onClick={handleMostrarModalLogin}
-            >
+            {/* {Object.keys(auth).length > 0 ? (
+              <div className="user-menu-container">
+                <span className="cerrar-sesion">
+                  <button
+                    onClick={handleMostrarModalEdit}
+                    style={{ color: "gray" }}
+                  >
+                    {auth[0].nombre ? auth[0].nombre : auth[0].email}
+                  </button>
+                  <button style={{ color: "black" }} onClick={handleLogout}>
+                    Cerrar sesión
+                  </button>
+                </span>
+              </div>
+            ) : null} */}
+            {/* <button className="shoppingButton" onClick={handleUserButtonClick}>
               <FaUser />
             </button> */}
-            {/* {auth ? <p style={{ color: "gray" }}>{auth[0].nombre}</p> : null} */}
+
             <button
               className="shoppingButton"
               onClick={handleMostrarModalCarrito}

@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from "react";
-import { Global } from "../helpers/Global";
 
 const AuthContext = createContext();
 
@@ -10,7 +9,7 @@ export const AuthProvider = ({ children }) => {
     authUser();
   }, []);
 
-  const authUser = async () => {
+  const authUser = () => {
     //sacar datos del usuario identificado en localstorage
 
     const token = localStorage.getItem("token");
@@ -37,3 +36,5 @@ export const AuthProvider = ({ children }) => {
 };
 
 export default AuthContext;
+
+//este es el authprovider fuckyeah
