@@ -12,9 +12,9 @@ import { Slide, toast } from "react-toastify";
 import CargandoStock from "./components/CargandoStock";
 import Videos from "./components/Videos";
 import NavBarAlternativo from "../src/components/NavBarAlternativo";
-// import Registro from "./components/usuario/Registro";
-// import Login from "./components/usuario/Login";
+import Login from "./components/usuario/Login";
 import useAuth from "./hooks/useAuth";
+import EditarUsuario from "./components/usuario/EditarUsuario";
 
 function App() {
   const [selectedMarca, setSelectedMarca] = useState();
@@ -26,8 +26,15 @@ function App() {
   const [carritoC, setCarritoC] = useState(0);
   const [contact, setContact] = useState(false);
   const cardsContainerRef = useRef(null);
+  const { auth, setAuth } = useAuth();
+  const [edit, setEdit] = useState(false);
 
-  const { auth } = useAuth();
+  useEffect(() => {
+    const storedAuth = JSON.parse(localStorage.getItem("auth"));
+    if (storedAuth) {
+      setAuth(storedAuth);
+    }
+  }, [setAuth]);
 
   const [login, setLogin] = useState(false);
 
@@ -54,9 +61,25 @@ function App() {
 
     // Aplicar filtro por talle
     if (filtroTalle) {
-      camisasFiltradas = camisasFiltradas.filter((camisa) =>
-        camisa.talle.includes(filtroTalle)
-      );
+      camisasFiltradas = camisasFiltradas.filter((camisa) => {
+        // Verificar si talle es una cadena o una matriz
+        if (typeof camisa.talle === "string") {
+          // Si es una cadena, dividirla en una matriz
+          const tallesDisponibles = camisa.talle
+            .split(", ")
+            .map((talle) => talle.trim());
+          // Verificar si alguna de las tallas disponibles incluye el filtroTalle
+          return tallesDisponibles.includes(filtroTalle.trim());
+        } else {
+          // Si es una matriz, buscar directamente
+          return camisa.talle.some((talleGrupo) => {
+            const tallesDisponibles = talleGrupo
+              .split(", ")
+              .map((talle) => talle.trim());
+            return tallesDisponibles.includes(filtroTalle.trim());
+          });
+        }
+      });
     }
 
     // Aplicar filtro por precio si está definido
@@ -135,6 +158,14 @@ function App() {
     setLogin(false);
   };
 
+  const handleMostrarModalEdit = () => {
+    setEdit(true);
+  };
+
+  const handleCerrarModalEdit = () => {
+    setEdit(false);
+  };
+
   const handleInicioClick = () => {
     setSelectedMarca(null);
   };
@@ -187,19 +218,28 @@ function App() {
         </div>
       )}
 
-      {/* {login && (
+      {login && (
         <div>
           <Login
             handleMostrarModalLogin={handleMostrarModalLogin}
             handleCerrarModalLogin={handleCerrarModalLogin}
           />
         </div>
-      )} */}
+      )}
+      {edit && (
+        <div>
+          <EditarUsuario
+            handleMostrarModalEdit={handleMostrarModalEdit}
+            handleCerrarModalEdit={handleCerrarModalEdit}
+          />
+        </div>
+      )}
       <NavBarAlternativo
         handleMostrarModalCarrito={handleMostrarModalCarrito}
         carritoC={carritoC}
         handleSearchByMarca={handleSearchByMarca}
         handleMostrarModalLogin={handleMostrarModalLogin}
+        handleMostrarModalEdit={handleMostrarModalEdit}
       />
       {/* {showLoading && <CargandoStock onClose={closeLoading} />} */}
       <div>
