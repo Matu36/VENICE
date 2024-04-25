@@ -31,7 +31,7 @@ export const tommy = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797467/VENICE/TOMMY/TOMMYNEGRARAYASBLANCASFRONT_lmrcij.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710797463/VENICE/TOMMY/TOMMYNEGRARAYASBLANCASBACK_ufk85f.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 44990,
     codigo: "TH030",
   },

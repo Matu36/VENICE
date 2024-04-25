@@ -43,7 +43,7 @@ export const adidas = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875733/VENICE/ADIDAS/WhatsApp_Image_2024-03-17_at_15.32.47_rzbumg.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875728/VENICE/ADIDAS/WhatsApp_Image_2024-03-17_at_15.32.47_1_e5x7sd.jpg",
-    Cantidad: 4,
+    Cantidad: 3,
     precio: 42000,
     codigo: "ADOR052",
   },

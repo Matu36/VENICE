@@ -62,7 +62,7 @@ export const asics = [
   {
     id: 13,
     marca: "Asics",
-    talle: ["L"],
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710798399/VENICE/ASICS/WhatsApp_Image_2024-03-17_at_15.33.29_1_hp7umx.jpg",
     imagen2:
