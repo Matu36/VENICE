@@ -34,7 +34,7 @@ export const variadas = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628489/VENICE/CH064FRONT_byq84d.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710628487/VENICE/CH064BACK_qa2nz9.jpg",
-    Cantidad: 1,
+    Cantidad: 0,
     precio: 28000,
     codigo: "CH064",
   },

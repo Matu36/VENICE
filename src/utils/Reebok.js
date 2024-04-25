@@ -14,12 +14,12 @@ export const reebok = [
   {
     id: 69,
     marca: "Reebok",
-    talle: [" L, XL"],
+    talle: ["L, XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630837/VENICE/RBLOGOCELESTEFRONT_viikzg.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630835/VENICE/RBLOGOCELESTEBACK_t6jgws.jpg",
-    Cantidad: 1,
+    Cantidad: 2,
     precio: 25000,
     codigo: "RBK026",
   },
@@ -31,14 +31,14 @@ export const reebok = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630832/VENICE/RBLOGOBLANCOFRONT_p1hqac.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630830/VENICE/RBLOGOBLANCOBACKGRIS_dm2ydi.jpg",
-    Cantidad: 1,
+    Cantidad: 2,
     precio: 25000,
     codigo: "RBK026",
   },
   {
     id: 71,
     marca: "Reebok",
-    talle: ["L, XL"],
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710630828/VENICE/RBLOGOAZULROJOFRONT_aorw0e.jpg",
     imagen2:

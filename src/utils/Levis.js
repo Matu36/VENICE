@@ -63,7 +63,7 @@ export const levis = [
   {
     id: 51,
     marca: "Levis",
-    talle: ["L, XL"],
+    talle: ["L"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875636/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.51_1_j5jof9.jpg",
     imagen2:
@@ -75,7 +75,7 @@ export const levis = [
   {
     id: 52,
     marca: "Levis",
-    talle: ["L, XL"],
+    talle: ["XL"],
     imagen:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710875656/VENICE/LEVIS/WhatsApp_Image_2024-03-17_at_15.31.53_o1azhl.jpg",
     imagen2:

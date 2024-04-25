@@ -31,7 +31,7 @@ export const jordan = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794289/VENICE/JORDAN/JORDANJUMPBACKFRONT_vn2nua.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794288/VENICE/JORDAN/JORDANBACKAZULCLASICA_k7rugv.jpg",
-    Cantidad: 3,
+    Cantidad: 2,
     precio: 38990,
     codigo: "JN076",
   },
@@ -43,7 +43,7 @@ export const jordan = [
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794288/VENICE/JORDAN/JORDANFRONTAZULCLASICA_mkop7x.jpg",
     imagen2:
       "https://res.cloudinary.com/dmfzplfra/image/upload/v1710794288/VENICE/JORDAN/JORDANJUMPBACK_lvnpdx.jpg",
-    Cantidad: 5,
+    Cantidad: 3,
     precio: 39990,
     codigo: "JN074",
   },
